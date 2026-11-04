@@ -5,15 +5,44 @@ project:
   # title:
   # description:
   keywords: []
-  authors: []
+  authors:
+    - name: Barry Linkletter
+      affiliations:
+        - University of Prince Edward Island
+  copyright: '2026'
+  description: A webbook of Psi4 examples and exercises for chemistry students.
+  license: CC-BY-NC-4.0
   github: https://github.com/blinkletter/UsingPsi4
-  # bibliography: []
+  #bibliography:
+  #  - references.bib
+  exclude:
+    - _build
+    - Thumbs.db
+    - .DS_Store
+    - '**.ipynb_checkpoints'
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  toc:
+    - file: index.md
+    - file: book/00A-toc.md
+      children:
+        - file: book/00B-notes.md
 site:
   template: book-theme
-  # title:
-  # options:
-  #   favicon: favicon.ico
-  #   logo: site_logo.png
+  options:
+#    logo: images/Solvent_plot3.png
+    logo_text: Fun with Psi4
+    style: ./custom.css
+    folders: true
+#    baseurl: /samplewebbook/
+#    favicon: images/favicon_io/favicon.ico
+    # used https://favicon.io/favicon-generator/
+#    hide_authors: true
+#    hide_footer_links: true # Hide the previous/next links in the footer
+#    hide_outline: true # Hide the document outline on all pages (right side)
+#    hide_toc: true # left side table of contents
   nav: []
   actions:
     - title: Learn More
