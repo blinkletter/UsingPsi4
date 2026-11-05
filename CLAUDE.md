@@ -13,7 +13,8 @@ Every chat in this project should work with all three of these folders. If any i
 # Psi4 Simulation Workflow
 - **Environment:** Python 3.x with `psi4` package installed via Conda. 
 - **Resource Constraints:** Limit calculations to 4 threads and 4GB memory per run.
-- **Primary Method:** DFT (e.g., B3LYP) or Coupled-Cluster (CCSD(T)) for single points.
+- **Primary Method:** HF (e.g., HF/6-31G) and similar low cost methods.
+- **Secondary Method:** DFT (e.g., B3LYP) or Coupled-Cluster (CCSD(T)) for single points.
 - **Task Rule:** Always output JSON data schemas or parse output `.out` files to summarize energy variables.
 
 # Psi4 Reference Documentation

@@ -13,8 +13,8 @@ project:
   description: A webbook of Psi4 examples and exercises for chemistry students.
   license: CC-BY-NC-4.0
   github: https://github.com/blinkletter/UsingPsi4
-  #bibliography:
-  #  - references.bib
+  bibliography:
+    - references.bib
   exclude:
     - _build
     - Thumbs.db
@@ -26,9 +26,11 @@ project:
       output: exports/book.pdf
   toc:
     - file: index.md
-    - file: book/00A-toc.md
+    - file: book/001-toc.md
       children:
-        - file: book/00B-notes.md
+        - file: book/002-notes.md
+    - file: book/011-Setup.md
+    - file: book/021-SmallMolecules.ipynb
 site:
   template: book-theme
   options:
@@ -43,8 +45,10 @@ site:
 #    hide_footer_links: true # Hide the previous/next links in the footer
 #    hide_outline: true # Hide the document outline on all pages (right side)
 #    hide_toc: true # left side table of contents
-  nav: []
-  actions:
-    - title: Learn More
-      url: https://mystmd.org/guide
-  domains: []
+#  nav: # items will appear in top bar navigation menu
+#    - title: Learn More
+#      url: https://mystmd.org/guide
+#  actions: # items will appear in top bar navigation menu on right side
+#    - title: Learn More
+#      url: https://mystmd.org/guide
+#  domains: [] # ignored by github pages, but can be used to specify custom domains for other hosting platforms
