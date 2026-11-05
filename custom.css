@@ -30,3 +30,16 @@ article {
   display: inline-block !important;
   margin: 0 !important;
 }
+/* Scrollable notebook cells. Put one of these lines at the top of a code cell
+   (MyST hides the line on the web page):
+     #| class: scroll-input     -> the code is shown in a short box with a scrollbar
+     #| class: scroll-output    -> the output is shown in a short box with a scrollbar
+   Both can be used together:  #| class: scroll-input scroll-output  */
+.scroll-input .myst-code pre {
+  max-height: 18rem;
+  overflow-y: auto;
+}
+.scroll-output [data-name="outputs-container"] {
+  max-height: 18rem;
+  overflow-y: auto;
+}
