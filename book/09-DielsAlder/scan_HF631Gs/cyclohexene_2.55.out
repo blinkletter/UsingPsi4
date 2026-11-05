@@ -1,0 +1,3457 @@
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.11 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, D. L. Poole, T. Győri, E. C. Mitchell, J. P. Pederson,
+    and A. M. Wallace
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    https://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Thursday, 05 November 2026 06:54PM
+
+    Process ID: 84146
+    Host:       MonkeyBook.local
+    PSIDATADIR: /Users/blink/miniconda3/envs/psi4/share/psi4
+    Memory:     3.7 GiB
+    Threads:    4
+    Addons:     a̶d̶c̶c̶, a̶m̶b̶i̶t̶, b̶s̶e̶, c̶c̶t̶3̶, c̶f̶o̶u̶r̶, c̶h̶e̶m̶p̶s̶2̶, c̶p̶p̶e̶, ddx, dftd3,
+                d̶f̶t̶d̶4̶, dkh, ecpint, einsums, f̶o̶r̶t̶e̶, gauxc, g̶c̶p̶, g̶d̶m̶a̶,
+                geometric, g̶p̶u̶_̶d̶f̶c̶c̶, i̶n̶t̶e̶g̶r̶a̶t̶o̶r̶x̶x̶, i̶p̶i̶, l̶i̶b̶e̶f̶p̶,
+                m̶d̶i̶, m̶p̶2̶d̶, m̶r̶c̶c̶, ooo, o̶p̶e̶n̶f̶e̶r̶m̶i̶o̶n̶p̶s̶i̶4̶, pcmsolver,
+                p̶s̶i̶4̶f̶o̶c̶k̶c̶i̶, p̶s̶i̶x̶a̶s̶, p̶y̶e̶i̶n̶s̶u̶m̶s̶, r̶e̶s̶p̶, s̶i̶m̶i̶n̶t̶,
+                s̶n̶s̶m̶p̶2̶, v̶2̶r̶d̶m̶_̶c̶a̶s̶s̶c̶f̶
+
+
+  ==> GeomeTRIC Optimizer <==                                                                   ~
+
+Scratch directory: /Users/blink/PSI4_SCRATCH/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, 4
+    Auxiliary basis highest AM E, G, H:  7, 7, 6
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:05:53 2026
+
+   => Loading Basis Set <=
+
+    Name: 6-31G*
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-6  entry C          line   111 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+    atoms 7-16 entry H          line    44 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        4 Threads,   3814 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: cs
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.315439614932     0.188114353648     0.727715492684    12.000000000000
+         C            1.315439614932     0.188114353648    -0.727715492684    12.000000000000
+         C            0.486677667188    -0.541758000868     1.469987143320    12.000000000000
+         C            0.486677667188    -0.541758000868    -1.469987143320    12.000000000000
+         C           -1.700674550784     0.361099810043     0.663549540907    12.000000000000
+         C           -1.700674550784     0.361099810043    -0.663549540907    12.000000000000
+         H            1.921860141300     0.936845717043     1.209831379735     1.007825032230
+         H            1.921860141300     0.936845717043    -1.209831379735     1.007825032230
+         H           -1.403435845047     1.223400282541     1.227087597565     1.007825032230
+         H           -1.403435845047     1.223400282541    -1.227087597565     1.007825032230
+         H            0.457084479736    -0.426582670588     2.539454453453     1.007825032230
+         H            0.457084479736    -0.426582670588    -2.539454453453     1.007825032230
+         H           -2.122212675048    -0.451005557520     1.227837376651     1.007825032230
+         H           -2.122212675048    -0.451005557520    -1.227837376651     1.007825032230
+         H           -0.061157323968    -1.371437024824     1.077268957376     1.007825032230
+         H           -0.061157323968    -1.371437024824    -1.077268957376     1.007825032230
+
+  Running in cs symmetry.
+
+  Rotational constants: A =      0.14238  B =      0.10674  C =      0.07067 [cm^-1]
+  Rotational constants: A =   4268.56730  B =   3200.07906  C =   2118.71993 [MHz]
+  Nuclear repulsion =  222.068552872909493
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 46
+  Nalpha       = 23
+  Nbeta        = 23
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                  16
+      Number of AO shells:              56
+      Number of primitives:            130
+      Number of atomic orbitals:       110
+      Number of basis functions:       110
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 4
+
+  Performing in-core PK
+  Using 37277130 doubles for integral storage.
+  We computed 1258449 shell quartets total.
+  Whereas there are 1274406 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:             2861
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              4
+
+  Minimum eigenvalue in the overlap matrix is 3.5352959662E-03.
+  Reciprocal condition number of the overlap matrix is 4.9701673622E-04.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A'        55      55 
+     A"        55      55 
+   -------------------------
+    Total     110     110
+   -------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter SAD:  -231.60350003229584   -2.31604e+02   0.00000e+00 
+   @RHF iter   1:  -232.77720931159249   -1.17371e+00   5.58932e-03 ADIIS/DIIS
+   @RHF iter   2:  -232.88889610205936   -1.11687e-01   2.13280e-03 ADIIS/DIIS
+   @RHF iter   3:  -232.90373389678501   -1.48378e-02   4.59584e-04 ADIIS/DIIS
+   @RHF iter   4:  -232.90517631130450   -1.44241e-03   9.78240e-05 DIIS
+   @RHF iter   5:  -232.90526269771817   -8.63864e-05   4.58967e-05 DIIS
+   @RHF iter   6:  -232.90528748056119   -2.47828e-05   1.81213e-05 DIIS
+   @RHF iter   7:  -232.90529132721224   -3.84665e-06   4.64118e-06 DIIS
+   @RHF iter   8:  -232.90529166926905   -3.42057e-07   7.73261e-07 DIIS
+   @RHF iter   9:  -232.90529167394308   -4.67404e-09   2.90800e-07 DIIS
+   @RHF iter  10:  -232.90529167448534   -5.42258e-10   9.56516e-08 DIIS
+   @RHF iter  11:  -232.90529167455622   -7.08837e-11   1.90006e-08 DIIS
+   @RHF iter  12:  -232.90529167455881   -2.58638e-12   5.04539e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1Ap   -11.221693     1App  -11.221327     2Ap   -11.219994  
+       2App  -11.219552     3Ap   -11.210546     3App  -11.208837  
+       4Ap    -1.088800     5Ap    -1.019880     4App   -0.988143  
+       6Ap    -0.839971     5App   -0.787523     6App   -0.719430  
+       7Ap    -0.668384     8Ap    -0.636079     9Ap    -0.603658  
+       7App   -0.574805    10Ap    -0.573617     8App   -0.517915  
+      11Ap    -0.492308     9App   -0.487813    12Ap    -0.456408  
+      13Ap    -0.326435    10App   -0.310006  
+
+    Virtual:                                                              
+
+      14Ap     0.132837    11App    0.191621    15Ap     0.239566  
+      16Ap     0.252273    12App    0.292383    17Ap     0.299970  
+      13App    0.302196    18Ap     0.304941    14App    0.319802  
+      15App    0.354709    19Ap     0.359317    16App    0.386431  
+      17App    0.414853    20Ap     0.477538    18App    0.505692  
+      19App    0.531531    21Ap     0.632979    20App    0.634703  
+      22Ap     0.697377    23Ap     0.731478    24Ap     0.764856  
+      25Ap     0.787105    21App    0.799012    26Ap     0.831214  
+      27Ap     0.841684    22App    0.865713    28Ap     0.903087  
+      23App    0.911038    24App    0.924920    29Ap     0.973862  
+      25App    0.992247    30Ap     1.104561    26App    1.129428  
+      31Ap     1.130881    27App    1.164594    32Ap     1.170494  
+      28App    1.183244    29App    1.193400    30App    1.228066  
+      33Ap     1.231278    34Ap     1.240403    31App    1.269592  
+      32App    1.279208    35Ap     1.284022    33App    1.316733  
+      36Ap     1.373068    34App    1.428407    37Ap     1.503905  
+      35App    1.515718    36App    1.642059    38Ap     1.666328  
+      39Ap     1.766029    40Ap     1.805996    41Ap     1.861908  
+      37App    1.867947    38App    1.916931    42Ap     2.031446  
+      39App    2.133817    43Ap     2.155392    40App    2.177182  
+      44Ap     2.225294    45Ap     2.230958    46Ap     2.315698  
+      41App    2.359971    47Ap     2.376139    48Ap     2.454367  
+      42App    2.466322    43App    2.558199    49Ap     2.577752  
+      44App    2.620043    50Ap     2.643542    45App    2.661021  
+      46App    2.796925    47App    2.918701    48App    2.943474  
+      51Ap     2.944350    52Ap     3.009267    49App    3.108621  
+      50App    3.119920    51App    3.263465    52App    3.476586  
+      53Ap     4.540750    54Ap     4.655245    55Ap     4.687643  
+      53App    4.690071    54App    4.841094    55App    4.942454  
+
+    Final Occupation by Irrep:
+             Ap   App 
+    DOCC [    13,   10 ]
+    NA   [    13,   10 ]
+    NB   [    13,   10 ]
+
+  @RHF Final Energy:  -232.90529167455881
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            222.0685528729094926
+    One-Electron Energy =                -753.1614430455711044
+    Two-Electron Energy =                 298.1875984981027159
+    Total Energy =                       -232.9052916745588391
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          2.2423917           -2.2646661           -0.0222743
+ Dipole Y            :          0.1598969           -0.1664557           -0.0065588
+ Dipole Z            :          0.0000000            0.0000000            0.0000000
+ Magnitude           :                                                    0.0232199
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:05:54 2026
+Module time:
+	user time   =       2.19 seconds =       0.04 minutes
+	system time =       0.05 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1931.85 seconds =      32.20 minutes
+	system time =      28.18 seconds =       0.47 minutes
+	total time  =        683 seconds =      11.38 minutes
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:05:54 2026
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: cs
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.315439614932     0.188114353648     0.727715492684    12.000000000000
+         C            1.315439614932     0.188114353648    -0.727715492684    12.000000000000
+         C            0.486677667188    -0.541758000868     1.469987143320    12.000000000000
+         C            0.486677667188    -0.541758000868    -1.469987143320    12.000000000000
+         C           -1.700674550784     0.361099810043     0.663549540907    12.000000000000
+         C           -1.700674550784     0.361099810043    -0.663549540907    12.000000000000
+         H            1.921860141300     0.936845717043     1.209831379735     1.007825032230
+         H            1.921860141300     0.936845717043    -1.209831379735     1.007825032230
+         H           -1.403435845047     1.223400282541     1.227087597565     1.007825032230
+         H           -1.403435845047     1.223400282541    -1.227087597565     1.007825032230
+         H            0.457084479736    -0.426582670588     2.539454453453     1.007825032230
+         H            0.457084479736    -0.426582670588    -2.539454453453     1.007825032230
+         H           -2.122212675048    -0.451005557520     1.227837376651     1.007825032230
+         H           -2.122212675048    -0.451005557520    -1.227837376651     1.007825032230
+         H           -0.061157323968    -1.371437024824     1.077268957376     1.007825032230
+         H           -0.061157323968    -1.371437024824    -1.077268957376     1.007825032230
+
+  Nuclear repulsion =  222.068552872909493
+
+  ==> Basis Set <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> DirectJKGrad: Integral-Direct SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           4
+    Schwarz Cutoff:          1E-12
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000050646717    -0.000031768045    -0.000002458446
+       2        0.000050646717    -0.000031768045     0.000002458446
+       3       -0.022257797425     0.009208446410    -0.008153102293
+       4       -0.022257797425     0.009208446410     0.008153102293
+       5        0.022164531720    -0.009163838079     0.008172193477
+       6        0.022164531720    -0.009163838079    -0.008172193477
+       7       -0.000015167181     0.000010719396    -0.000005798601
+       8       -0.000015167181     0.000010719396     0.000005798601
+       9        0.000028183078     0.000004107334     0.000025245163
+      10        0.000028183078     0.000004107334    -0.000025245163
+      11        0.000016852275     0.000006091143    -0.000008524884
+      12        0.000016852275     0.000006091143     0.000008524884
+      13        0.000006882537    -0.000014192185     0.000005259522
+      14        0.000006882537    -0.000014192185    -0.000005259522
+      15        0.000005868279    -0.000019565973    -0.000029065493
+      16        0.000005868279    -0.000019565973     0.000029065493
+
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:05:55 2026
+Module time:
+	user time   =       3.22 seconds =       0.05 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1935.07 seconds =      32.25 minutes
+	system time =      28.18 seconds =       0.47 minutes
+	total time  =        684 seconds =      11.40 minutes
+
+  Measures of convergence in internal coordinates in au.                                        ~
+  Criteria marked as inactive (o), active & met (*), and active & unmet ( ).                    ~
+  --------------------------------------------------------------------------------------------- ~
+   Step     Total Energy     Delta E     MAX Force     RMS Force      MAX Disp      RMS Disp    ~
+  --------------------------------------------------------------------------------------------- ~
+    Convergence Criteria    1.00e-06      4.50e-04      3.00e-04      1.80e-03      1.20e-03    ~
+  --------------------------------------------------------------------------------------------- ~
+      0  -2.32905292e+02    --------      7.01e-05 *    4.32e-05 *    --------      --------    ~
+Scratch directory: /Users/blink/PSI4_SCRATCH/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, 4
+    Auxiliary basis highest AM E, G, H:  7, 7, 6
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:05:55 2026
+
+   => Loading Basis Set <=
+
+    Name: 6-31G*
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-6  entry C          line   111 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+    atoms 7-16 entry H          line    44 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        4 Threads,   3814 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.325492752461     0.179638230265     0.727718344039    12.000000000000
+         C            1.326174089047     0.179523636766    -0.728097363833    12.000000000000
+         C            0.504340059200    -0.549315156425     1.479355301415    12.000000000000
+         C            0.505905165924    -0.549853387763    -1.480270297504    12.000000000000
+         C           -1.718219411557     0.368834958986     0.663756539033    12.000000000000
+         C           -1.718831535864     0.369143469070    -0.663096551355    12.000000000000
+         H            1.930989114460     0.931402596701     1.206139597371     1.007825032230
+         H            1.931812968760     0.931424488584    -1.206113308201     1.007825032230
+         H           -1.416546750620     1.228860880403     1.228291440633     1.007825032230
+         H           -1.417291066957     1.229157041548    -1.227731702090     1.007825032230
+         H            0.477545916891    -0.427647996864     2.548209542065     1.007825032230
+         H            0.479109241608    -0.428262686182    -2.549122983338     1.007825032230
+         H           -2.135069424690    -0.445607285624     1.228090424949     1.007825032230
+         H           -2.135796269464    -0.445253717123    -1.227422766392     1.007825032230
+         H           -0.047232842999    -1.379823740506     1.093695740384     1.007825032230
+         H           -0.045813444626    -1.380298364277    -1.094660213695     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.14127  B =      0.10464  C =      0.06952 [cm^-1]
+  Rotational constants: A =   4235.04603  B =   3136.92831  C =   2084.22276 [MHz]
+  Nuclear repulsion =  221.064938930109719
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 46
+  Nalpha       = 23
+  Nbeta        = 23
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                  16
+      Number of AO shells:              56
+      Number of primitives:            130
+      Number of atomic orbitals:       110
+      Number of basis functions:       110
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 4
+
+  Performing in-core PK
+  Using 37277130 doubles for integral storage.
+  We computed 1254794 shell quartets total.
+  Whereas there are 1274406 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:             2861
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              4
+
+  Minimum eigenvalue in the overlap matrix is 2.2885482402E-03.
+  Reciprocal condition number of the overlap matrix is 3.2099558937E-04.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A        110     110 
+   -------------------------
+    Total     110     110
+   -------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter SAD:  -231.57291478572844   -2.31573e+02   0.00000e+00 
+   @RHF iter   1:  -232.78146109516078   -1.20855e+00   3.94626e-03 ADIIS/DIIS
+   @RHF iter   2:  -232.89290923882845   -1.11448e-01   1.49829e-03 ADIIS/DIIS
+   @RHF iter   3:  -232.90753123724463   -1.46220e-02   3.20455e-04 ADIIS/DIIS
+   @RHF iter   4:  -232.90892027508571   -1.38904e-03   6.71404e-05 DIIS
+   @RHF iter   5:  -232.90899628522897   -7.60101e-05   3.11616e-05 DIIS
+   @RHF iter   6:  -232.90901754944565   -2.12642e-05   1.17009e-05 DIIS
+   @RHF iter   7:  -232.90902071528865   -3.16584e-06   3.01582e-06 DIIS
+   @RHF iter   8:  -232.90902099900572   -2.83717e-07   4.96674e-07 DIIS
+   @RHF iter   9:  -232.90902100294483   -3.93911e-09   1.84262e-07 DIIS
+   @RHF iter  10:  -232.90902100337803   -4.33204e-10   6.22775e-08 DIIS
+   @RHF iter  11:  -232.90902100343820   -6.01688e-11   1.22922e-08 DIIS
+   @RHF iter  12:  -232.90902100344050   -2.30216e-12   3.20172e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.222219     2A    -11.221668     3A    -11.220206  
+       4A    -11.219953     5A    -11.210761     6A    -11.209048  
+       7A     -1.087765     8A     -1.019845     9A     -0.988269  
+      10A     -0.840089    11A     -0.786842    12A     -0.720119  
+      13A     -0.667660    14A     -0.635254    15A     -0.604076  
+      16A     -0.575500    17A     -0.573779    18A     -0.516933  
+      19A     -0.492390    20A     -0.488423    21A     -0.454726  
+      22A     -0.329062    23A     -0.310338  
+
+    Virtual:                                                              
+
+      24A      0.131883    25A      0.192230    26A      0.239856  
+      27A      0.252111    28A      0.292456    29A      0.300038  
+      30A      0.300161    31A      0.304493    32A      0.319383  
+      33A      0.354641    34A      0.359668    35A      0.385186  
+      36A      0.413981    37A      0.477681    38A      0.505210  
+      39A      0.530876    40A      0.632007    41A      0.633539  
+      42A      0.696567    43A      0.731716    44A      0.762491  
+      45A      0.786630    46A      0.799948    47A      0.830314  
+      48A      0.832887    49A      0.864563    50A      0.903232  
+      51A      0.913042    52A      0.922269    53A      0.970112  
+      54A      0.985751    55A      1.104901    56A      1.130263  
+      57A      1.131193    58A      1.164187    59A      1.170792  
+      60A      1.183451    61A      1.192160    62A      1.228665  
+      63A      1.229604    64A      1.239771    65A      1.266644  
+      66A      1.277875    67A      1.279470    68A      1.308141  
+      69A      1.373271    70A      1.427290    71A      1.502849  
+      72A      1.514721    73A      1.637509    74A      1.665192  
+      75A      1.764115    76A      1.801539    77A      1.858202  
+      78A      1.865377    79A      1.913549    80A      2.030055  
+      81A      2.110940    82A      2.149883    83A      2.172555  
+      84A      2.223318    85A      2.228849    86A      2.313813  
+      87A      2.356966    88A      2.375358    89A      2.452920  
+      90A      2.464674    91A      2.553969    92A      2.577455  
+      93A      2.621820    94A      2.641627    95A      2.660665  
+      96A      2.795042    97A      2.918443    98A      2.940592  
+      99A      2.944081   100A      3.007492   101A      3.106919  
+     102A      3.119028   103A      3.262689   104A      3.479536  
+     105A      4.536811   106A      4.649646   107A      4.680297  
+     108A      4.687203   109A      4.839329   110A      4.941808  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    23 ]
+    NA   [    23 ]
+    NB   [    23 ]
+
+  @RHF Final Energy:  -232.90902100344050
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            221.0649389301097187
+    One-Electron Energy =                -751.1580735339221064
+    Two-Electron Energy =                 297.1841136003718589
+    Total Energy =                       -232.9090210034405004
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          1.9275844           -1.9447660           -0.0171816
+ Dipole Y            :          0.3705817           -0.3745783           -0.0039966
+ Dipole Z            :          0.0087721           -0.0083685            0.0004036
+ Magnitude           :                                                    0.0176449
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:05:56 2026
+Module time:
+	user time   =       2.19 seconds =       0.04 minutes
+	system time =       0.05 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1937.29 seconds =      32.29 minutes
+	system time =      28.24 seconds =       0.47 minutes
+	total time  =        685 seconds =      11.42 minutes
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:05:56 2026
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.325492752461     0.179638230265     0.727718344039    12.000000000000
+         C            1.326174089047     0.179523636766    -0.728097363833    12.000000000000
+         C            0.504340059200    -0.549315156425     1.479355301415    12.000000000000
+         C            0.505905165924    -0.549853387763    -1.480270297504    12.000000000000
+         C           -1.718219411557     0.368834958986     0.663756539033    12.000000000000
+         C           -1.718831535864     0.369143469070    -0.663096551355    12.000000000000
+         H            1.930989114460     0.931402596701     1.206139597371     1.007825032230
+         H            1.931812968760     0.931424488584    -1.206113308201     1.007825032230
+         H           -1.416546750620     1.228860880403     1.228291440633     1.007825032230
+         H           -1.417291066957     1.229157041548    -1.227731702090     1.007825032230
+         H            0.477545916891    -0.427647996864     2.548209542065     1.007825032230
+         H            0.479109241608    -0.428262686182    -2.549122983338     1.007825032230
+         H           -2.135069424690    -0.445607285624     1.228090424949     1.007825032230
+         H           -2.135796269464    -0.445253717123    -1.227422766392     1.007825032230
+         H           -0.047232842999    -1.379823740506     1.093695740384     1.007825032230
+         H           -0.045813444626    -1.380298364277    -1.094660213695     1.007825032230
+
+  Nuclear repulsion =  221.064938930109719
+
+  ==> Basis Set <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> DirectJKGrad: Integral-Direct SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           4
+    Schwarz Cutoff:          1E-12
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.001112560297     0.000211904636    -0.002481407248
+       2        0.001170380569     0.000194284616     0.002497009913
+       3       -0.021931119496     0.008391789341    -0.006688060683
+       4       -0.021758070431     0.008332692938     0.006637673621
+       5        0.020997760572    -0.008394622873     0.009456440447
+       6        0.020871142490    -0.008277976489    -0.009402085579
+       7       -0.000185896658    -0.000088711658     0.000055085546
+       8       -0.000191433679    -0.000091344522    -0.000056852275
+       9       -0.000374781218    -0.000100250873    -0.000038156799
+      10       -0.000388698060    -0.000110857826     0.000020789074
+      11       -0.000348359806    -0.000082334603     0.000078380172
+      12       -0.000401258617    -0.000087881926    -0.000074698223
+      13       -0.000177559921     0.000211835443    -0.000047388854
+      14       -0.000178617111     0.000221928763     0.000048958468
+      15        0.000873896554    -0.000165808048     0.000485205128
+      16        0.000910054514    -0.000164646919    -0.000490892709
+
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:05:57 2026
+Module time:
+	user time   =       3.22 seconds =       0.05 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1940.51 seconds =      32.34 minutes
+	system time =      28.25 seconds =       0.47 minutes
+	total time  =        686 seconds =      11.43 minutes
+
+      1  -2.32909021e+02   -3.73e-03      2.75e-03      1.48e-03      2.37e-02      1.80e-02    ~
+Scratch directory: /Users/blink/PSI4_SCRATCH/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, 4
+    Auxiliary basis highest AM E, G, H:  7, 7, 6
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:05:57 2026
+
+   => Loading Basis Set <=
+
+    Name: 6-31G*
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-6  entry C          line   111 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+    atoms 7-16 entry H          line    44 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        4 Threads,   3814 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.331621527317     0.187661587329     0.728432797100    12.000000000000
+         C            1.331749229032     0.187457988873    -0.728623231537    12.000000000000
+         C            0.509703137491    -0.550579656643     1.468285874315    12.000000000000
+         C            0.510232333245    -0.550755121581    -1.468942645545    12.000000000000
+         C           -1.725834510173     0.368518757476     0.663003284912    12.000000000000
+         C           -1.726193239055     0.368430710774    -0.662514143558    12.000000000000
+         H            1.937679079264     0.935961451845     1.211845812287     1.007825032230
+         H            1.938174521191     0.935529790456    -1.211929093308     1.007825032230
+         H           -1.418299440126     1.227475082081     1.226510669142     1.007825032230
+         H           -1.418628009377     1.227436007711    -1.225951199909     1.007825032230
+         H            0.484909910000    -0.443307372938     2.538639370374     1.007825032230
+         H            0.486979803153    -0.443495006254    -2.539326243700     1.007825032230
+         H           -2.138123532229    -0.447448033896     1.228628219427     1.007825032230
+         H           -2.138529570006    -0.447586296382    -1.228057031940     1.007825032230
+         H           -0.051217162805    -1.369072248371     1.069026566532     1.007825032230
+         H           -0.051752954101    -1.368765259907    -1.070108869966     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.14228  B =      0.10381  C =      0.06947 [cm^-1]
+  Rotational constants: A =   4265.39989  B =   3112.23539  C =   2082.72288 [MHz]
+  Nuclear repulsion =  221.078325733047336
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 46
+  Nalpha       = 23
+  Nbeta        = 23
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                  16
+      Number of AO shells:              56
+      Number of primitives:            130
+      Number of atomic orbitals:       110
+      Number of basis functions:       110
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 4
+
+  Performing in-core PK
+  Using 37277130 doubles for integral storage.
+  We computed 1254559 shell quartets total.
+  Whereas there are 1274406 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:             2861
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              4
+
+  Minimum eigenvalue in the overlap matrix is 2.2618695805E-03.
+  Reciprocal condition number of the overlap matrix is 3.1680703952E-04.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A        110     110 
+   -------------------------
+    Total     110     110
+   -------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter SAD:  -231.57813435517915   -2.31578e+02   0.00000e+00 
+   @RHF iter   1:  -232.78190081213620   -1.20377e+00   3.95367e-03 ADIIS/DIIS
+   @RHF iter   2:  -232.89362110303438   -1.11720e-01   1.49985e-03 ADIIS/DIIS
+   @RHF iter   3:  -232.90825503381126   -1.46339e-02   3.19659e-04 ADIIS/DIIS
+   @RHF iter   4:  -232.90963027143610   -1.37524e-03   6.52226e-05 DIIS
+   @RHF iter   5:  -232.90970259496433   -7.23235e-05   3.02515e-05 DIIS
+   @RHF iter   6:  -232.90972215055885   -1.95556e-05   1.13396e-05 DIIS
+   @RHF iter   7:  -232.90972504356660   -2.89301e-06   2.91200e-06 DIIS
+   @RHF iter   8:  -232.90972530714021   -2.63574e-07   4.63999e-07 DIIS
+   @RHF iter   9:  -232.90972531070224   -3.56204e-09   1.67301e-07 DIIS
+   @RHF iter  10:  -232.90972531105888   -3.56636e-10   5.84148e-08 DIIS
+   @RHF iter  11:  -232.90972531111115   -5.22675e-11   1.19003e-08 DIIS
+   @RHF iter  12:  -232.90972531111322   -2.07478e-12   3.06712e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.222113     2A    -11.221478     3A    -11.219761  
+       4A    -11.219595     5A    -11.210840     6A    -11.209116  
+       7A     -1.088354     8A     -1.020547     9A     -0.987791  
+      10A     -0.839590    11A     -0.786783    12A     -0.719769  
+      13A     -0.668395    14A     -0.635743    15A     -0.604462  
+      16A     -0.574380    17A     -0.574141    18A     -0.517411  
+      19A     -0.492204    20A     -0.488714    21A     -0.454396  
+      22A     -0.330409    23A     -0.310488  
+
+    Virtual:                                                              
+
+      24A      0.132362    25A      0.192491    26A      0.240438  
+      27A      0.252165    28A      0.293028    29A      0.299688  
+      30A      0.300458    31A      0.304364    32A      0.319432  
+      33A      0.354020    34A      0.359767    35A      0.385313  
+      36A      0.414546    37A      0.477060    38A      0.505197  
+      39A      0.530890    40A      0.632051    41A      0.636041  
+      42A      0.696200    43A      0.731724    44A      0.763800  
+      45A      0.785976    46A      0.801133    47A      0.829649  
+      48A      0.832345    49A      0.864436    50A      0.904002  
+      51A      0.913079    52A      0.921506    53A      0.968786  
+      54A      0.984615    55A      1.105553    56A      1.128853  
+      57A      1.129485    58A      1.164557    59A      1.170627  
+      60A      1.183621    61A      1.191884    62A      1.227734  
+      63A      1.230342    64A      1.241135    65A      1.266277  
+      66A      1.277297    67A      1.279086    68A      1.312604  
+      69A      1.375911    70A      1.429309    71A      1.505228  
+      72A      1.515520    73A      1.637626    74A      1.661706  
+      75A      1.761780    76A      1.799839    77A      1.856217  
+      78A      1.861294    79A      1.907395    80A      2.036462  
+      81A      2.110802    82A      2.144985    83A      2.169701  
+      84A      2.223944    85A      2.229730    86A      2.313040  
+      87A      2.360128    88A      2.375208    89A      2.453154  
+      90A      2.467623    91A      2.554481    92A      2.580497  
+      93A      2.625182    94A      2.642954    95A      2.663009  
+      96A      2.795736    97A      2.916639    98A      2.939275  
+      99A      2.945220   100A      3.010060   101A      3.108535  
+     102A      3.118588   103A      3.262952   104A      3.475581  
+     105A      4.536937   106A      4.647767   107A      4.677838  
+     108A      4.686739   109A      4.837998   110A      4.939956  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    23 ]
+    NA   [    23 ]
+    NB   [    23 ]
+
+  @RHF Final Energy:  -232.90972531111322
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            221.0783257330473361
+    One-Electron Energy =                -751.1831453275875674
+    Two-Electron Energy =                 297.1950942834270109
+    Total Energy =                       -232.9097253111132204
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          1.8417028           -1.8540793           -0.0123764
+ Dipole Y            :          0.2414546           -0.2435220           -0.0020674
+ Dipole Z            :          0.0057618           -0.0054239            0.0003379
+ Magnitude           :                                                    0.0125525
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:05:58 2026
+Module time:
+	user time   =       2.15 seconds =       0.04 minutes
+	system time =       0.05 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1942.70 seconds =      32.38 minutes
+	system time =      28.30 seconds =       0.47 minutes
+	total time  =        687 seconds =      11.45 minutes
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:05:58 2026
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.331621527317     0.187661587329     0.728432797100    12.000000000000
+         C            1.331749229032     0.187457988873    -0.728623231537    12.000000000000
+         C            0.509703137491    -0.550579656643     1.468285874315    12.000000000000
+         C            0.510232333245    -0.550755121581    -1.468942645545    12.000000000000
+         C           -1.725834510173     0.368518757476     0.663003284912    12.000000000000
+         C           -1.726193239055     0.368430710774    -0.662514143558    12.000000000000
+         H            1.937679079264     0.935961451845     1.211845812287     1.007825032230
+         H            1.938174521191     0.935529790456    -1.211929093308     1.007825032230
+         H           -1.418299440126     1.227475082081     1.226510669142     1.007825032230
+         H           -1.418628009377     1.227436007711    -1.225951199909     1.007825032230
+         H            0.484909910000    -0.443307372938     2.538639370374     1.007825032230
+         H            0.486979803153    -0.443495006254    -2.539326243700     1.007825032230
+         H           -2.138123532229    -0.447448033896     1.228628219427     1.007825032230
+         H           -2.138529570006    -0.447586296382    -1.228057031940     1.007825032230
+         H           -0.051217162805    -1.369072248371     1.069026566532     1.007825032230
+         H           -0.051752954101    -1.368765259907    -1.070108869966     1.007825032230
+
+  Nuclear repulsion =  221.078325733047336
+
+  ==> Basis Set <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> DirectJKGrad: Integral-Direct SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           4
+    Schwarz Cutoff:          1E-12
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.001339405454     0.000323360519    -0.001046242597
+       2        0.001256129010     0.000300578543     0.001032501361
+       3       -0.021353280931     0.008002430843    -0.008296369745
+       4       -0.021321027587     0.007961492375     0.008257802831
+       5        0.020412091202    -0.008401575115     0.008190071764
+       6        0.020323420736    -0.008476193044    -0.008191978181
+       7       -0.000180204429     0.000320254901    -0.000027734566
+       8       -0.000197709956     0.000333968997     0.000040261713
+       9       -0.000065101586     0.000064923492    -0.000073227505
+      10       -0.000052379240     0.000086022087     0.000110369364
+      11        0.000128474872     0.000040905374    -0.000055128456
+      12        0.000187968945     0.000059219086     0.000060747073
+      13        0.000007971612     0.000057112815    -0.000078890072
+      14        0.000009529807     0.000043097588     0.000056577210
+      15       -0.000226578528    -0.000354329137    -0.000254911867
+      16       -0.000268709381    -0.000361269324     0.000276151674
+
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:05:59 2026
+Module time:
+	user time   =       3.17 seconds =       0.05 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1945.87 seconds =      32.43 minutes
+	system time =      28.30 seconds =       0.47 minutes
+	total time  =        688 seconds =      11.47 minutes
+
+      2  -2.32909725e+02   -7.04e-04      1.72e-03      8.57e-04      2.81e-02      1.39e-02    ~
+Scratch directory: /Users/blink/PSI4_SCRATCH/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, 4
+    Auxiliary basis highest AM E, G, H:  7, 7, 6
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:05:59 2026
+
+   => Loading Basis Set <=
+
+    Name: 6-31G*
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-6  entry C          line   111 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+    atoms 7-16 entry H          line    44 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        4 Threads,   3814 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.314136120288     0.191372817575     0.729992102296    12.000000000000
+         C            1.314237114128     0.191293381759    -0.730249574550    12.000000000000
+         C            0.509037552555    -0.544962654748     1.487589668740    12.000000000000
+         C            0.509110631341    -0.544682560013    -1.488168118354    12.000000000000
+         C           -1.725365889318     0.363818496687     0.662114267584    12.000000000000
+         C           -1.725543584885     0.363592615389    -0.661627697150    12.000000000000
+         H            1.931045597381     0.935456538934     1.206334390373     1.007825032230
+         H            1.931857129027     0.934851378307    -1.206516541869     1.007825032230
+         H           -1.412728166616     1.221942957856     1.224740428511     1.007825032230
+         H           -1.412786900849     1.221611545577    -1.224379531558     1.007825032230
+         H            0.512793811148    -0.438143123739     2.558199912794     1.007825032230
+         H            0.514902328967    -0.438146413085    -2.558799569521     1.007825032230
+         H           -2.134775230285    -0.453000691966     1.228923438261     1.007825032230
+         H           -2.135003717116    -0.453382699953    -1.228179781261     1.007825032230
+         H           -0.069954231166    -1.356895966642     1.100192217270     1.007825032230
+         H           -0.071427983028    -1.355767238589    -1.101226361131     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.14053  B =      0.10480  C =      0.06936 [cm^-1]
+  Rotational constants: A =   4213.01434  B =   3141.89049  C =   2079.39052 [MHz]
+  Nuclear repulsion =  221.007133124817187
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 46
+  Nalpha       = 23
+  Nbeta        = 23
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                  16
+      Number of AO shells:              56
+      Number of primitives:            130
+      Number of atomic orbitals:       110
+      Number of basis functions:       110
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 4
+
+  Performing in-core PK
+  Using 37277130 doubles for integral storage.
+  We computed 1254565 shell quartets total.
+  Whereas there are 1274406 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:             2861
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              4
+
+  Minimum eigenvalue in the overlap matrix is 2.2962754438E-03.
+  Reciprocal condition number of the overlap matrix is 3.2222329296E-04.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A        110     110 
+   -------------------------
+    Total     110     110
+   -------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter SAD:  -231.57778261210368   -2.31578e+02   0.00000e+00 
+   @RHF iter   1:  -232.78184919378424   -1.20407e+00   3.95683e-03 ADIIS/DIIS
+   @RHF iter   2:  -232.89370714071862   -1.11858e-01   1.49908e-03 ADIIS/DIIS
+   @RHF iter   3:  -232.90831989556040   -1.46128e-02   3.19514e-04 ADIIS/DIIS
+   @RHF iter   4:  -232.90968372149149   -1.36383e-03   6.67884e-05 DIIS
+   @RHF iter   5:  -232.90975454189891   -7.08204e-05   3.03533e-05 DIIS
+   @RHF iter   6:  -232.90977392389163   -1.93820e-05   1.11159e-05 DIIS
+   @RHF iter   7:  -232.90977671040866   -2.78652e-06   2.87019e-06 DIIS
+   @RHF iter   8:  -232.90977696430133   -2.53893e-07   4.83112e-07 DIIS
+   @RHF iter   9:  -232.90977696798896   -3.68763e-09   1.79427e-07 DIIS
+   @RHF iter  10:  -232.90977696840471   -4.15753e-10   6.02577e-08 DIIS
+   @RHF iter  11:  -232.90977696846130   -5.65876e-11   1.14883e-08 DIIS
+   @RHF iter  12:  -232.90977696846372   -2.41585e-12   2.87334e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.222542     2A    -11.221889     3A    -11.220011  
+       4A    -11.219875     5A    -11.210023     6A    -11.208282  
+       7A     -1.087569     8A     -1.020567     9A     -0.989711  
+      10A     -0.839423    11A     -0.786401    12A     -0.720042  
+      13A     -0.667789    14A     -0.635789    15A     -0.604446  
+      16A     -0.576454    17A     -0.573858    18A     -0.517437  
+      19A     -0.491618    20A     -0.488091    21A     -0.453708  
+      22A     -0.330423    23A     -0.312082  
+
+    Virtual:                                                              
+
+      24A      0.131773    25A      0.194364    26A      0.240245  
+      27A      0.251476    28A      0.293719    29A      0.299475  
+      30A      0.300568    31A      0.305482    32A      0.317446  
+      33A      0.354011    34A      0.360628    35A      0.383620  
+      36A      0.413551    37A      0.477972    38A      0.504913  
+      39A      0.530923    40A      0.631040    41A      0.635037  
+      42A      0.696661    43A      0.732248    44A      0.762569  
+      45A      0.785701    46A      0.800724    47A      0.829811  
+      48A      0.835654    49A      0.864105    50A      0.905265  
+      51A      0.914348    52A      0.923188    53A      0.970234  
+      54A      0.983535    55A      1.106394    56A      1.129558  
+      57A      1.131685    58A      1.163591    59A      1.172185  
+      60A      1.185274    61A      1.192494    62A      1.228248  
+      63A      1.228697    64A      1.239629    65A      1.266924  
+      66A      1.277666    67A      1.278427    68A      1.311287  
+      69A      1.371886    70A      1.431542    71A      1.506962  
+      72A      1.515812    73A      1.635314    74A      1.655361  
+      75A      1.763734    76A      1.802687    77A      1.856452  
+      78A      1.858652    79A      1.897033    80A      2.043345  
+      81A      2.112232    82A      2.138525    83A      2.170715  
+      84A      2.222919    85A      2.227522    86A      2.315372  
+      87A      2.357395    88A      2.376068    89A      2.456011  
+      90A      2.468198    91A      2.543209    92A      2.580700  
+      93A      2.631855    94A      2.643077    95A      2.667273  
+      96A      2.795600    97A      2.917174    98A      2.937100  
+      99A      2.946615   100A      3.008278   101A      3.111546  
+     102A      3.119998   103A      3.262376   104A      3.482449  
+     105A      4.535847   106A      4.648781   107A      4.677805  
+     108A      4.682507   109A      4.835582   110A      4.939553  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    23 ]
+    NA   [    23 ]
+    NB   [    23 ]
+
+  @RHF Final Energy:  -232.90977696846372
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            221.0071331248171873
+    One-Electron Energy =                -751.0377656814100646
+    Two-Electron Energy =                 297.1208555881291318
+    Total Energy =                       -232.9097769684637456
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          2.2210072           -2.2155257            0.0054815
+ Dipole Y            :          0.1021502           -0.1112692           -0.0091190
+ Dipole Z            :          0.0055221           -0.0053054            0.0002167
+ Magnitude           :                                                    0.0106419
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:06:00 2026
+Module time:
+	user time   =       2.18 seconds =       0.04 minutes
+	system time =       0.05 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1948.09 seconds =      32.47 minutes
+	system time =      28.36 seconds =       0.47 minutes
+	total time  =        689 seconds =      11.48 minutes
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:06:00 2026
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.314136120288     0.191372817575     0.729992102296    12.000000000000
+         C            1.314237114128     0.191293381759    -0.730249574550    12.000000000000
+         C            0.509037552555    -0.544962654748     1.487589668740    12.000000000000
+         C            0.509110631341    -0.544682560013    -1.488168118354    12.000000000000
+         C           -1.725365889318     0.363818496687     0.662114267584    12.000000000000
+         C           -1.725543584885     0.363592615389    -0.661627697150    12.000000000000
+         H            1.931045597381     0.935456538934     1.206334390373     1.007825032230
+         H            1.931857129027     0.934851378307    -1.206516541869     1.007825032230
+         H           -1.412728166616     1.221942957856     1.224740428511     1.007825032230
+         H           -1.412786900849     1.221611545577    -1.224379531558     1.007825032230
+         H            0.512793811148    -0.438143123739     2.558199912794     1.007825032230
+         H            0.514902328967    -0.438146413085    -2.558799569521     1.007825032230
+         H           -2.134775230285    -0.453000691966     1.228923438261     1.007825032230
+         H           -2.135003717116    -0.453382699953    -1.228179781261     1.007825032230
+         H           -0.069954231166    -1.356895966642     1.100192217270     1.007825032230
+         H           -0.071427983028    -1.355767238589    -1.101226361131     1.007825032230
+
+  Nuclear repulsion =  221.007133124817187
+
+  ==> Basis Set <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> DirectJKGrad: Integral-Direct SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           4
+    Schwarz Cutoff:          1E-12
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1       -0.000773378103    -0.000356647525     0.000456992825
+       2       -0.000838508645    -0.000314807763    -0.000505432419
+       3       -0.020343271006     0.009198107352    -0.006264055764
+       4       -0.020377211302     0.009178170557     0.006277136976
+       5        0.021039141946    -0.008862325700     0.006702605465
+       6        0.021011387067    -0.008944744935    -0.006712823509
+       7       -0.000269344860     0.000145791783     0.000144114639
+       8       -0.000282411888     0.000171375130    -0.000143092119
+       9        0.000401942951     0.000340893849    -0.000027800239
+      10        0.000428317137     0.000361468824     0.000050264690
+      11        0.000766459421    -0.000292234204    -0.000045262671
+      12        0.000862685177    -0.000279323992     0.000053709037
+      13        0.000251761191    -0.000252500480     0.000016765661
+      14        0.000256355752    -0.000266235745    -0.000028015103
+      15       -0.001027324577     0.000090070690    -0.000345855422
+      16       -0.001106600260     0.000082942158     0.000370747953
+
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:06:00 2026
+Module time:
+	user time   =       3.25 seconds =       0.05 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =    1951.34 seconds =      32.52 minutes
+	system time =      28.37 seconds =       0.47 minutes
+	total time  =        689 seconds =      11.48 minutes
+
+      3  -2.32909777e+02   -5.17e-05      1.44e-03      9.42e-04      3.91e-02      2.11e-02    ~
+Scratch directory: /Users/blink/PSI4_SCRATCH/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, 4
+    Auxiliary basis highest AM E, G, H:  7, 7, 6
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:06:01 2026
+
+   => Loading Basis Set <=
+
+    Name: 6-31G*
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-6  entry C          line   111 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+    atoms 7-16 entry H          line    44 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        4 Threads,   3814 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.321920650505     0.192953541482     0.729549289385    12.000000000000
+         C            1.322186964218     0.193151861528    -0.729775161561    12.000000000000
+         C            0.510668029713    -0.546071511358     1.478512328461    12.000000000000
+         C            0.510745822674    -0.545507288187    -1.478912093349    12.000000000000
+         C           -1.726547539164     0.365473695138     0.662466587997    12.000000000000
+         C           -1.726575282737     0.365448379574    -0.662151843290    12.000000000000
+         H            1.936675466684     0.936444648553     1.209310367818     1.007825032230
+         H            1.937602184566     0.936254232048    -1.209309936364     1.007825032230
+         H           -1.415260758701     1.221957084627     1.227719357796     1.007825032230
+         H           -1.415244971551     1.221649129324    -1.227807833870     1.007825032230
+         H            0.499155410023    -0.444666896646     2.549669639619     1.007825032230
+         H            0.499876023907    -0.444937288505    -2.550167539092     1.007825032230
+         H           -2.137133385183    -0.451637942702     1.227855175918     1.007825032230
+         H           -2.137224844528    -0.451811554491    -1.227237753016     1.007825032230
+         H           -0.061314136744    -1.357687586862     1.082116139936     1.007825032230
+         H           -0.062139523583    -1.356385165442    -1.082399187388     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.14137  B =      0.10431  C =      0.06940 [cm^-1]
+  Rotational constants: A =   4238.13489  B =   3127.00758  C =   2080.43713 [MHz]
+  Nuclear repulsion =  221.044015216200961
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 46
+  Nalpha       = 23
+  Nbeta        = 23
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                  16
+      Number of AO shells:              56
+      Number of primitives:            130
+      Number of atomic orbitals:       110
+      Number of basis functions:       110
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 4
+
+  Performing in-core PK
+  Using 37277130 doubles for integral storage.
+  We computed 1254529 shell quartets total.
+  Whereas there are 1274406 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:             2861
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              4
+
+  Minimum eigenvalue in the overlap matrix is 2.2659468332E-03.
+  Reciprocal condition number of the overlap matrix is 3.1762873858E-04.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A        110     110 
+   -------------------------
+    Total     110     110
+   -------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter SAD:  -231.57893016003294   -2.31579e+02   0.00000e+00 
+   @RHF iter   1:  -232.78200188424384   -1.20307e+00   3.95524e-03 ADIIS/DIIS
+   @RHF iter   2:  -232.89381477018898   -1.11813e-01   1.49878e-03 ADIIS/DIIS
+   @RHF iter   3:  -232.90842536756833   -1.46106e-02   3.19530e-04 ADIIS/DIIS
+   @RHF iter   4:  -232.90979345342720   -1.36809e-03   6.59203e-05 DIIS
+   @RHF iter   5:  -232.90986452265344   -7.10692e-05   3.02387e-05 DIIS
+   @RHF iter   6:  -232.90988380982233   -1.92872e-05   1.11593e-05 DIIS
+   @RHF iter   7:  -232.90988661005250   -2.80023e-06   2.87486e-06 DIIS
+   @RHF iter   8:  -232.90988686565618   -2.55604e-07   4.73112e-07 DIIS
+   @RHF iter   9:  -232.90988686926849   -3.61231e-09   1.73972e-07 DIIS
+   @RHF iter  10:  -232.90988686965585   -3.87359e-10   5.94519e-08 DIIS
+   @RHF iter  11:  -232.90988686971008   -5.42286e-11   1.16109e-08 DIIS
+   @RHF iter  12:  -232.90988686971247   -2.38742e-12   2.92715e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.222411     2A    -11.221744     3A    -11.219809  
+       4A    -11.219684     5A    -11.210415     6A    -11.208682  
+       7A     -1.087983     8A     -1.020537     9A     -0.988862  
+      10A     -0.839575    11A     -0.786770    12A     -0.720185  
+      13A     -0.668070    14A     -0.635680    15A     -0.604600  
+      16A     -0.575698    17A     -0.574217    18A     -0.517354  
+      19A     -0.492035    20A     -0.488319    21A     -0.453927  
+      22A     -0.330518    23A     -0.311472  
+
+    Virtual:                                                              
+
+      24A      0.132073    25A      0.193561    26A      0.240591  
+      27A      0.251986    28A      0.293410    29A      0.299714  
+      30A      0.300617    31A      0.305031    32A      0.318550  
+      33A      0.353490    34A      0.360097    35A      0.384456  
+      36A      0.414180    37A      0.477854    38A      0.505196  
+      39A      0.531163    40A      0.631404    41A      0.636216  
+      42A      0.696078    43A      0.732049    44A      0.763105  
+      45A      0.785891    46A      0.800659    47A      0.829533  
+      48A      0.834232    49A      0.864222    50A      0.904930  
+      51A      0.913577    52A      0.922392    53A      0.969258  
+      54A      0.983772    55A      1.106665    56A      1.129541  
+      57A      1.130284    58A      1.164067    59A      1.171639  
+      60A      1.184487    61A      1.191742    62A      1.228472  
+      63A      1.230011    64A      1.241211    65A      1.266826  
+      66A      1.277099    67A      1.279371    68A      1.312540  
+      69A      1.373770    70A      1.429989    71A      1.507303  
+      72A      1.515035    73A      1.636832    74A      1.657382  
+      75A      1.761781    76A      1.801212    77A      1.855882  
+      78A      1.858512    79A      1.901074    80A      2.041430  
+      81A      2.111613    82A      2.140927    83A      2.169865  
+      84A      2.223757    85A      2.228426    86A      2.313787  
+      87A      2.357734    88A      2.375734    89A      2.454394  
+      90A      2.470417    91A      2.547254    92A      2.580692  
+      93A      2.628406    94A      2.643255    95A      2.665183  
+      96A      2.795163    97A      2.916288    98A      2.938099  
+      99A      2.946285   100A      3.010784   101A      3.110021  
+     102A      3.120836   103A      3.263526   104A      3.479682  
+     105A      4.536313   106A      4.647902   107A      4.677785  
+     108A      4.684055   109A      4.836238   110A      4.939275  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    23 ]
+    NA   [    23 ]
+    NB   [    23 ]
+
+  @RHF Final Energy:  -232.90988686971247
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            221.0440152162009610
+    One-Electron Energy =                -751.1107143925836453
+    Two-Electron Energy =                 297.1568123066702469
+    Total Energy =                       -232.9098868697124658
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          2.0415216           -2.0420695           -0.0005479
+ Dipole Y            :          0.0647746           -0.0720539           -0.0072793
+ Dipole Z            :          0.0040187           -0.0040004            0.0000183
+ Magnitude           :                                                    0.0072999
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:06:02 2026
+Module time:
+	user time   =       2.14 seconds =       0.04 minutes
+	system time =       0.05 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1953.53 seconds =      32.56 minutes
+	system time =      28.42 seconds =       0.47 minutes
+	total time  =        691 seconds =      11.52 minutes
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:06:02 2026
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.321920650505     0.192953541482     0.729549289385    12.000000000000
+         C            1.322186964218     0.193151861528    -0.729775161561    12.000000000000
+         C            0.510668029713    -0.546071511358     1.478512328461    12.000000000000
+         C            0.510745822674    -0.545507288187    -1.478912093349    12.000000000000
+         C           -1.726547539164     0.365473695138     0.662466587997    12.000000000000
+         C           -1.726575282737     0.365448379574    -0.662151843290    12.000000000000
+         H            1.936675466684     0.936444648553     1.209310367818     1.007825032230
+         H            1.937602184566     0.936254232048    -1.209309936364     1.007825032230
+         H           -1.415260758701     1.221957084627     1.227719357796     1.007825032230
+         H           -1.415244971551     1.221649129324    -1.227807833870     1.007825032230
+         H            0.499155410023    -0.444666896646     2.549669639619     1.007825032230
+         H            0.499876023907    -0.444937288505    -2.550167539092     1.007825032230
+         H           -2.137133385183    -0.451637942702     1.227855175918     1.007825032230
+         H           -2.137224844528    -0.451811554491    -1.227237753016     1.007825032230
+         H           -0.061314136744    -1.357687586862     1.082116139936     1.007825032230
+         H           -0.062139523583    -1.356385165442    -1.082399187388     1.007825032230
+
+  Nuclear repulsion =  221.044015216200961
+
+  ==> Basis Set <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> DirectJKGrad: Integral-Direct SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           4
+    Schwarz Cutoff:          1E-12
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1       -0.000283824536    -0.000041050255    -0.000191901550
+       2       -0.000265527436     0.000037148407     0.000204833105
+       3       -0.020388863583     0.008662150835    -0.007104622252
+       4       -0.020392446768     0.008688281649     0.007116953196
+       5        0.020746013859    -0.008580917110     0.007518977803
+       6        0.020788570506    -0.008510189856    -0.007507793569
+       7       -0.000148729608     0.000082363835     0.000033863213
+       8       -0.000151835367     0.000095627547    -0.000046987229
+       9        0.000179786242    -0.000011663190     0.000094556552
+      10        0.000190889653    -0.000028754160    -0.000131955375
+      11        0.000153151840    -0.000452772683     0.000042425752
+      12        0.000159757760    -0.000503359399    -0.000052807574
+      13        0.000199970120    -0.000071339415     0.000008001018
+      14        0.000206566495    -0.000060552568     0.000018601307
+      15       -0.000484552996     0.000333590582    -0.000217700439
+      16       -0.000508926180     0.000361435781     0.000215556043
+
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:06:02 2026
+Module time:
+	user time   =       3.19 seconds =       0.05 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =    1956.73 seconds =      32.61 minutes
+	system time =      28.43 seconds =       0.47 minutes
+	total time  =        691 seconds =      11.52 minutes
+
+      4  -2.32909887e+02   -1.10e-04      7.61e-04      4.40e-04      2.08e-02      1.10e-02    ~
+Scratch directory: /Users/blink/PSI4_SCRATCH/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, 4
+    Auxiliary basis highest AM E, G, H:  7, 7, 6
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:06:02 2026
+
+   => Loading Basis Set <=
+
+    Name: 6-31G*
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-6  entry C          line   111 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+    atoms 7-16 entry H          line    44 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        4 Threads,   3814 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.328020383145     0.187131809832     0.729498937153    12.000000000000
+         C            1.327605394780     0.186730033471    -0.729180559721    12.000000000000
+         C            0.510525060967    -0.547733490151     1.476201305760    12.000000000000
+         C            0.510307515975    -0.547991845880    -1.476241809728    12.000000000000
+         C           -1.726992526034     0.365328167875     0.662403287894    12.000000000000
+         C           -1.727326786586     0.364934654124    -0.662513027052    12.000000000000
+         H            1.939357851383     0.933628197856     1.208910459904     1.007825032230
+         H            1.939118834835     0.932948942798    -1.208768504843     1.007825032230
+         H           -1.418172471675     1.224734368983     1.224319340741     1.007825032230
+         H           -1.418672426241     1.224727986121    -1.223887209671     1.007825032230
+         H            0.493373168183    -0.428480807784     2.545426305939     1.007825032230
+         H            0.494351597730    -0.427811287427    -2.545385285294     1.007825032230
+         H           -2.140532236186    -0.449461513802     1.229053737313     1.007825032230
+         H           -2.140938412405    -0.449890777852    -1.229104067001     1.007825032230
+         H           -0.051274850032    -1.369888450914     1.087202937602     1.007825032230
+         H           -0.051594602920    -1.370474711839    -1.088117223802     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.14164  B =      0.10399  C =      0.06931 [cm^-1]
+  Rotational constants: A =   4246.22219  B =   3117.45615  C =   2078.00014 [MHz]
+  Nuclear repulsion =  220.968744510369447
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 46
+  Nalpha       = 23
+  Nbeta        = 23
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                  16
+      Number of AO shells:              56
+      Number of primitives:            130
+      Number of atomic orbitals:       110
+      Number of basis functions:       110
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 4
+
+  Performing in-core PK
+  Using 37277130 doubles for integral storage.
+  We computed 1254283 shell quartets total.
+  Whereas there are 1274406 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:             2861
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              4
+
+  Minimum eigenvalue in the overlap matrix is 2.2869904890E-03.
+  Reciprocal condition number of the overlap matrix is 3.2075575354E-04.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A        110     110 
+   -------------------------
+    Total     110     110
+   -------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter SAD:  -231.57576945821501   -2.31576e+02   0.00000e+00 
+   @RHF iter   1:  -232.78203507137704   -1.20627e+00   3.95544e-03 ADIIS/DIIS
+   @RHF iter   2:  -232.89380997095355   -1.11775e-01   1.49967e-03 ADIIS/DIIS
+   @RHF iter   3:  -232.90843595146094   -1.46260e-02   3.19195e-04 ADIIS/DIIS
+   @RHF iter   4:  -232.90980601852442   -1.37007e-03   6.50021e-05 DIIS
+   @RHF iter   5:  -232.90987749646843   -7.14779e-05   3.00329e-05 DIIS
+   @RHF iter   6:  -232.90989671940056   -1.92229e-05   1.12681e-05 DIIS
+   @RHF iter   7:  -232.90989955373735   -2.83434e-06   2.89633e-06 DIIS
+   @RHF iter   8:  -232.90989981400207   -2.60265e-07   4.70537e-07 DIIS
+   @RHF iter   9:  -232.90989981761618   -3.61410e-09   1.71524e-07 DIIS
+   @RHF iter  10:  -232.90989981799223   -3.76048e-10   5.90427e-08 DIIS
+   @RHF iter  11:  -232.90989981804654   -5.43139e-11   1.17547e-08 DIIS
+   @RHF iter  12:  -232.90989981804876   -2.21689e-12   3.00497e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.222109     2A    -11.221472     3A    -11.219710  
+       4A    -11.219552     5A    -11.210591     6A    -11.208862  
+       7A     -1.087881     8A     -1.020575     9A     -0.988647  
+      10A     -0.839362    11A     -0.786568    12A     -0.719755  
+      13A     -0.668015    14A     -0.635722    15A     -0.604532  
+      16A     -0.575086    17A     -0.573999    18A     -0.517809  
+      19A     -0.491480    20A     -0.488745    21A     -0.454136  
+      22A     -0.330405    23A     -0.310940  
+
+    Virtual:                                                              
+
+      24A      0.132378    25A      0.192835    26A      0.240269  
+      27A      0.251894    28A      0.293059    29A      0.299672  
+      30A      0.300346    31A      0.304478    32A      0.318667  
+      33A      0.354890    34A      0.360194    35A      0.384769  
+      36A      0.413951    37A      0.477323    38A      0.504925  
+      39A      0.530175    40A      0.631396    41A      0.634388  
+      42A      0.696922    43A      0.731998    44A      0.763256  
+      45A      0.786015    46A      0.800779    47A      0.829639  
+      48A      0.832529    49A      0.864418    50A      0.904479  
+      51A      0.913676    52A      0.921985    53A      0.969240  
+      54A      0.984391    55A      1.105438    56A      1.129733  
+      57A      1.130042    58A      1.164082    59A      1.171530  
+      60A      1.184566    61A      1.193232    62A      1.227926  
+      63A      1.229241    64A      1.239738    65A      1.266390  
+      66A      1.277486    67A      1.278358    68A      1.310818  
+      69A      1.376072    70A      1.429647    71A      1.504676  
+      72A      1.514735    73A      1.639277    74A      1.663222  
+      75A      1.761335    76A      1.800611    77A      1.856321  
+      78A      1.861794    79A      1.906738    80A      2.034673  
+      81A      2.108118    82A      2.145804    83A      2.170805  
+      84A      2.223441    85A      2.228622    86A      2.314236  
+      87A      2.359649    88A      2.375678    89A      2.454162  
+      90A      2.465407    91A      2.551078    92A      2.580943  
+      93A      2.627117    94A      2.643658    95A      2.663881  
+      96A      2.796022    97A      2.917629    98A      2.939073  
+      99A      2.945932   100A      3.008682   101A      3.109662  
+     102A      3.118207   103A      3.261999   104A      3.478115  
+     105A      4.536435   106A      4.647450   107A      4.677899  
+     108A      4.686375   109A      4.837409   110A      4.940320  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    23 ]
+    NA   [    23 ]
+    NB   [    23 ]
+
+  @RHF Final Energy:  -232.90989981804876
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            220.9687445103694472
+    One-Electron Energy =                -750.9653798112074128
+    Two-Electron Energy =                 297.0867354827892086
+    Total Energy =                       -232.9098998180487570
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          1.9226318           -1.9315822           -0.0089504
+ Dipole Y            :          0.2415019           -0.2448557           -0.0033539
+ Dipole Z            :         -0.0009716            0.0012459            0.0002743
+ Magnitude           :                                                    0.0095621
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:06:03 2026
+Module time:
+	user time   =       2.15 seconds =       0.04 minutes
+	system time =       0.05 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1958.92 seconds =      32.65 minutes
+	system time =      28.48 seconds =       0.47 minutes
+	total time  =        692 seconds =      11.53 minutes
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:06:03 2026
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.328020383145     0.187131809832     0.729498937153    12.000000000000
+         C            1.327605394780     0.186730033471    -0.729180559721    12.000000000000
+         C            0.510525060967    -0.547733490151     1.476201305760    12.000000000000
+         C            0.510307515975    -0.547991845880    -1.476241809728    12.000000000000
+         C           -1.726992526034     0.365328167875     0.662403287894    12.000000000000
+         C           -1.727326786586     0.364934654124    -0.662513027052    12.000000000000
+         H            1.939357851383     0.933628197856     1.208910459904     1.007825032230
+         H            1.939118834835     0.932948942798    -1.208768504843     1.007825032230
+         H           -1.418172471675     1.224734368983     1.224319340741     1.007825032230
+         H           -1.418672426241     1.224727986121    -1.223887209671     1.007825032230
+         H            0.493373168183    -0.428480807784     2.545426305939     1.007825032230
+         H            0.494351597730    -0.427811287427    -2.545385285294     1.007825032230
+         H           -2.140532236186    -0.449461513802     1.229053737313     1.007825032230
+         H           -2.140938412405    -0.449890777852    -1.229104067001     1.007825032230
+         H           -0.051274850032    -1.369888450914     1.087202937602     1.007825032230
+         H           -0.051594602920    -1.370474711839    -1.088117223802     1.007825032230
+
+  Nuclear repulsion =  220.968744510369447
+
+  ==> Basis Set <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> DirectJKGrad: Integral-Direct SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           4
+    Schwarz Cutoff:          1E-12
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000289793951     0.000248573109     0.000709596113
+       2        0.000096127113     0.000116277179    -0.000709901915
+       3       -0.021380742073     0.007681339770    -0.008538790762
+       4       -0.021460669878     0.007625865893     0.008509012293
+       5        0.020641654119    -0.008274317893     0.007648052477
+       6        0.020524719135    -0.008538173554    -0.007743746617
+       7        0.000091123471     0.000009039379    -0.000075374479
+       8        0.000099264445    -0.000016985514     0.000113036067
+       9       -0.000048708837     0.000083429145    -0.000222429731
+      10       -0.000047148163     0.000130007828     0.000362027963
+      11        0.000411017751     0.000610130461    -0.000165645168
+      12        0.000477033664     0.000673620875     0.000168048919
+      13       -0.000099013185     0.000021078359    -0.000035397478
+      14       -0.000102378831    -0.000011508376    -0.000015990229
+      15        0.000243650546    -0.000175874068     0.000144448475
+      16        0.000264276772    -0.000182502595    -0.000146945930
+
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:06:04 2026
+Module time:
+	user time   =       3.22 seconds =       0.05 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1962.15 seconds =      32.70 minutes
+	system time =      28.49 seconds =       0.47 minutes
+	total time  =        693 seconds =      11.55 minutes
+
+      5  -2.32909900e+02   -1.29e-05      1.48e-03      6.80e-04      1.93e-02      9.89e-03    ~
+Scratch directory: /Users/blink/PSI4_SCRATCH/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, 4
+    Auxiliary basis highest AM E, G, H:  7, 7, 6
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:06:04 2026
+
+   => Loading Basis Set <=
+
+    Name: 6-31G*
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-6  entry C          line   111 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+    atoms 7-16 entry H          line    44 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        4 Threads,   3814 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.327048894390     0.188609835730     0.729442118539    12.000000000000
+         C            1.327364483541     0.188779242942    -0.729673620250    12.000000000000
+         C            0.511363373575    -0.545449145305     1.478925147351    12.000000000000
+         C            0.511393109003    -0.545203206633    -1.478912135637    12.000000000000
+         C           -1.726446590865     0.364507508807     0.662424321726    12.000000000000
+         C           -1.726452731030     0.364590436277    -0.662310792928    12.000000000000
+         H            1.939234876683     0.934781781503     1.208311143798     1.007825032230
+         H            1.939757294198     0.934853654758    -1.208447806507     1.007825032230
+         H           -1.417383757006     1.222592268880     1.226460346359     1.007825032230
+         H           -1.417458976588     1.222445455287    -1.226745156522     1.007825032230
+         H            0.490056999899    -0.432694016027     2.548829454360     1.007825032230
+         H            0.490023675562    -0.432427737110    -2.548811028602     1.007825032230
+         H           -2.139598015545    -0.451209533020     1.228051558668     1.007825032230
+         H           -2.139678193583    -0.451216476428    -1.227738550890     1.007825032230
+         H           -0.052865412277    -1.364555509434     1.086457069813     1.007825032230
+         H           -0.052947931356    -1.364197801036    -1.086356553547     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.14144  B =      0.10410  C =      0.06928 [cm^-1]
+  Rotational constants: A =   4240.14505  B =   3120.95780  C =   2077.08427 [MHz]
+  Nuclear repulsion =  220.957341693574961
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 46
+  Nalpha       = 23
+  Nbeta        = 23
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                  16
+      Number of AO shells:              56
+      Number of primitives:            130
+      Number of atomic orbitals:       110
+      Number of basis functions:       110
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 4
+
+  Performing in-core PK
+  Using 37277130 doubles for integral storage.
+  We computed 1254255 shell quartets total.
+  Whereas there are 1274406 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:             2861
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              4
+
+  Minimum eigenvalue in the overlap matrix is 2.2759280665E-03.
+  Reciprocal condition number of the overlap matrix is 3.1922842705E-04.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A        110     110 
+   -------------------------
+    Total     110     110
+   -------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter SAD:  -231.57521961725814   -2.31575e+02   0.00000e+00 
+   @RHF iter   1:  -232.78209527224965   -1.20688e+00   3.95359e-03 ADIIS/DIIS
+   @RHF iter   2:  -232.89384581449144   -1.11751e-01   1.49845e-03 ADIIS/DIIS
+   @RHF iter   3:  -232.90845464149365   -1.46088e-02   3.19366e-04 ADIIS/DIIS
+   @RHF iter   4:  -232.90982584523189   -1.37120e-03   6.54148e-05 DIIS
+   @RHF iter   5:  -232.90989738899842   -7.15438e-05   3.01780e-05 DIIS
+   @RHF iter   6:  -232.90991671300142   -1.93240e-05   1.12277e-05 DIIS
+   @RHF iter   7:  -232.90991953979648   -2.82680e-06   2.89038e-06 DIIS
+   @RHF iter   8:  -232.90991979849190   -2.58695e-07   4.74618e-07 DIIS
+   @RHF iter   9:  -232.90991980213551   -3.64361e-09   1.74337e-07 DIIS
+   @RHF iter  10:  -232.90991980252542   -3.89917e-10   5.95271e-08 DIIS
+   @RHF iter  11:  -232.90991980258065   -5.52234e-11   1.17016e-08 DIIS
+   @RHF iter  12:  -232.90991980258264   -1.98952e-12   2.97379e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.222347     2A    -11.221696     3A    -11.219860  
+       4A    -11.219719     5A    -11.210588     6A    -11.208857  
+       7A     -1.087792     8A     -1.020590     9A     -0.988715  
+      10A     -0.839499    11A     -0.786711    12A     -0.720069  
+      13A     -0.667835    14A     -0.635616    15A     -0.604493  
+      16A     -0.575673    17A     -0.574192    18A     -0.517226  
+      19A     -0.491901    20A     -0.488447    21A     -0.454040  
+      22A     -0.330488    23A     -0.311130  
+
+    Virtual:                                                              
+
+      24A      0.132272    25A      0.192991    26A      0.240341  
+      27A      0.252081    28A      0.292885    29A      0.299695  
+      30A      0.300342    31A      0.304645    32A      0.318904  
+      33A      0.354079    34A      0.359950    35A      0.384742  
+      36A      0.413981    37A      0.477912    38A      0.505129  
+      39A      0.530841    40A      0.631235    41A      0.635050  
+      42A      0.696300    43A      0.732222    44A      0.762936  
+      45A      0.786097    46A      0.800229    47A      0.829385  
+      48A      0.832963    49A      0.864272    50A      0.904522  
+      51A      0.913589    52A      0.922144    53A      0.969306  
+      54A      0.984195    55A      1.106055    56A      1.129429  
+      57A      1.130483    58A      1.164097    59A      1.171510  
+      60A      1.184284    61A      1.192383    62A      1.228203  
+      63A      1.229570    64A      1.240484    65A      1.266383  
+      66A      1.277202    67A      1.278815    68A      1.310579  
+      69A      1.374506    70A      1.428412    71A      1.505846  
+      72A      1.514782    73A      1.638093    74A      1.661796  
+      75A      1.761614    76A      1.800975    77A      1.855783  
+      78A      1.860875    79A      1.905614    80A      2.035900  
+      81A      2.108717    82A      2.144739    83A      2.170614  
+      84A      2.223246    85A      2.228428    86A      2.313464  
+      87A      2.357229    88A      2.375535    89A      2.454255  
+      90A      2.467707    91A      2.549744    92A      2.580072  
+      93A      2.625840    94A      2.642995    95A      2.663547  
+      96A      2.795552    97A      2.917028    98A      2.938617  
+      99A      2.945470   100A      3.010255   101A      3.109611  
+     102A      3.119813   103A      3.263144   104A      3.478994  
+     105A      4.536079   106A      4.647345   107A      4.677892  
+     108A      4.685664   109A      4.836706   110A      4.940216  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    23 ]
+    NA   [    23 ]
+    NB   [    23 ]
+
+  @RHF Final Energy:  -232.90991980258264
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            220.9573416935749606
+    One-Electron Energy =                -750.9395532064140752
+    Two-Electron Energy =                 297.0722917102564224
+    Total Energy =                       -232.9099198025826354
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          1.9090345           -1.9185184           -0.0094839
+ Dipole Y            :          0.1599848           -0.1636879           -0.0037030
+ Dipole Z            :          0.0010272           -0.0011703           -0.0001431
+ Magnitude           :                                                    0.0101822
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:06:05 2026
+Module time:
+	user time   =       2.12 seconds =       0.04 minutes
+	system time =       0.05 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1964.31 seconds =      32.74 minutes
+	system time =      28.54 seconds =       0.48 minutes
+	total time  =        694 seconds =      11.57 minutes
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:06:05 2026
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.327048894390     0.188609835730     0.729442118539    12.000000000000
+         C            1.327364483541     0.188779242942    -0.729673620250    12.000000000000
+         C            0.511363373575    -0.545449145305     1.478925147351    12.000000000000
+         C            0.511393109003    -0.545203206633    -1.478912135637    12.000000000000
+         C           -1.726446590865     0.364507508807     0.662424321726    12.000000000000
+         C           -1.726452731030     0.364590436277    -0.662310792928    12.000000000000
+         H            1.939234876683     0.934781781503     1.208311143798     1.007825032230
+         H            1.939757294198     0.934853654758    -1.208447806507     1.007825032230
+         H           -1.417383757006     1.222592268880     1.226460346359     1.007825032230
+         H           -1.417458976588     1.222445455287    -1.226745156522     1.007825032230
+         H            0.490056999899    -0.432694016027     2.548829454360     1.007825032230
+         H            0.490023675562    -0.432427737110    -2.548811028602     1.007825032230
+         H           -2.139598015545    -0.451209533020     1.228051558668     1.007825032230
+         H           -2.139678193583    -0.451216476428    -1.227738550890     1.007825032230
+         H           -0.052865412277    -1.364555509434     1.086457069813     1.007825032230
+         H           -0.052947931356    -1.364197801036    -1.086356553547     1.007825032230
+
+  Nuclear repulsion =  220.957341693574961
+
+  ==> Basis Set <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> DirectJKGrad: Integral-Direct SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           4
+    Schwarz Cutoff:          1E-12
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1       -0.000091843537    -0.000170791505    -0.000233038990
+       2        0.000051880772    -0.000069547027     0.000145489652
+       3       -0.020411811805     0.008695904181    -0.007206969531
+       4       -0.020435419386     0.008672566295     0.007304008068
+       5        0.020656742281    -0.008536953008     0.007439409689
+       6        0.020703529606    -0.008417774096    -0.007407798688
+       7       -0.000045204041    -0.000040408755     0.000035687553
+       8       -0.000031867804    -0.000029434424    -0.000056253501
+       9        0.000009173757     0.000070442880    -0.000027819427
+      10        0.000006418342     0.000050466191    -0.000027137144
+      11       -0.000223020081    -0.000095186902     0.000039131033
+      12       -0.000211568520    -0.000073755418    -0.000027047606
+      13       -0.000034902603     0.000009446603     0.000010593118
+      14       -0.000033510384     0.000019858407     0.000014432757
+      15        0.000051298079    -0.000033529065    -0.000024900258
+      16        0.000040105325    -0.000051304358     0.000022213274
+
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:06:06 2026
+Module time:
+	user time   =       3.11 seconds =       0.05 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1967.42 seconds =      32.79 minutes
+	system time =      28.54 seconds =       0.48 minutes
+	total time  =        695 seconds =      11.58 minutes
+
+      6  -2.32909920e+02   -2.00e-05      4.37e-04 *    2.01e-04 *    7.53e-03      3.86e-03    ~
+Scratch directory: /Users/blink/PSI4_SCRATCH/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, 4
+    Auxiliary basis highest AM E, G, H:  7, 7, 6
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:06:06 2026
+
+   => Loading Basis Set <=
+
+    Name: 6-31G*
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-6  entry C          line   111 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+    atoms 7-16 entry H          line    44 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        4 Threads,   3814 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.326756835712     0.189884745159     0.729737834755    12.000000000000
+         C            1.326396847932     0.189649751929    -0.729284329418    12.000000000000
+         C            0.511060475925    -0.545482970379     1.477917423747    12.000000000000
+         C            0.511016851985    -0.545353885124    -1.478205141139    12.000000000000
+         C           -1.726880499821     0.365049072703     0.662417920711    12.000000000000
+         C           -1.726970523634     0.364848142203    -0.662459998639    12.000000000000
+         H            1.939499014384     0.935493639809     1.208827030877     1.007825032230
+         H            1.939311495328     0.935131696683    -1.208310330543     1.007825032230
+         H           -1.417643433536     1.221946707555     1.228078126570     1.007825032230
+         H           -1.417813636824     1.221833567448    -1.228019448781     1.007825032230
+         H            0.493900247965    -0.434088471256     2.548009900507     1.007825032230
+         H            0.493716981992    -0.434117833581    -2.548323579820     1.007825032230
+         H           -2.139353129360    -0.451429206839     1.227409811265     1.007825032230
+         H           -2.139510591405    -0.451674589041    -1.227352514792     1.007825032230
+         H           -0.054558935111    -1.363444622824     1.085227950083     1.007825032230
+         H           -0.054747869586    -1.363281674719    -1.085719919629     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.14149  B =      0.10410  C =      0.06930 [cm^-1]
+  Rotational constants: A =   4241.78321  B =   3120.69237  C =   2077.69186 [MHz]
+  Nuclear repulsion =  220.971561126701886
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 46
+  Nalpha       = 23
+  Nbeta        = 23
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                  16
+      Number of AO shells:              56
+      Number of primitives:            130
+      Number of atomic orbitals:       110
+      Number of basis functions:       110
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 4
+
+  Performing in-core PK
+  Using 37277130 doubles for integral storage.
+  We computed 1254267 shell quartets total.
+  Whereas there are 1274406 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:             2861
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              4
+
+  Minimum eigenvalue in the overlap matrix is 2.2763417554E-03.
+  Reciprocal condition number of the overlap matrix is 3.1924127732E-04.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A        110     110 
+   -------------------------
+    Total     110     110
+   -------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter SAD:  -231.57580489984713   -2.31576e+02   0.00000e+00 
+   @RHF iter   1:  -232.78208639244741   -1.20628e+00   3.95390e-03 ADIIS/DIIS
+   @RHF iter   2:  -232.89384530221574   -1.11759e-01   1.49865e-03 ADIIS/DIIS
+   @RHF iter   3:  -232.90845639858898   -1.46111e-02   3.19377e-04 ADIIS/DIIS
+   @RHF iter   4:  -232.90982703585905   -1.37064e-03   6.54498e-05 DIIS
+   @RHF iter   5:  -232.90989850384614   -7.14680e-05   3.01743e-05 DIIS
+   @RHF iter   6:  -232.90991781856309   -1.93147e-05   1.12245e-05 DIIS
+   @RHF iter   7:  -232.90992064412978   -2.82557e-06   2.88832e-06 DIIS
+   @RHF iter   8:  -232.90992090246812   -2.58338e-07   4.72883e-07 DIIS
+   @RHF iter   9:  -232.90992090609259   -3.62448e-09   1.73431e-07 DIIS
+   @RHF iter  10:  -232.90992090647734   -3.84745e-10   5.93571e-08 DIIS
+   @RHF iter  11:  -232.90992090653214   -5.47971e-11   1.16913e-08 DIIS
+   @RHF iter  12:  -232.90992090653458   -2.44427e-12   2.97340e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.222313     2A    -11.221660     3A    -11.219820  
+       4A    -11.219678     5A    -11.210604     6A    -11.208873  
+       7A     -1.087852     8A     -1.020534     9A     -0.988700  
+      10A     -0.839500    11A     -0.786795    12A     -0.720002  
+      13A     -0.667933    14A     -0.635558    15A     -0.604541  
+      16A     -0.575505    17A     -0.574265    18A     -0.517416  
+      19A     -0.491823    20A     -0.488462    21A     -0.454013  
+      22A     -0.330487    23A     -0.311150  
+
+    Virtual:                                                              
+
+      24A      0.132242    25A      0.193029    26A      0.240385  
+      27A      0.251990    28A      0.293045    29A      0.299776  
+      30A      0.300411    31A      0.304695    32A      0.318752  
+      33A      0.354142    34A      0.360032    35A      0.384632  
+      36A      0.414077    37A      0.477697    38A      0.505100  
+      39A      0.530779    40A      0.631245    41A      0.635191  
+      42A      0.696568    43A      0.732043    44A      0.762982  
+      45A      0.786135    46A      0.800544    47A      0.829351  
+      48A      0.833294    49A      0.864264    50A      0.904601  
+      51A      0.913475    52A      0.922079    53A      0.969129  
+      54A      0.984112    55A      1.106012    56A      1.129543  
+      57A      1.130313    58A      1.163983    59A      1.171483  
+      60A      1.184486    61A      1.192395    62A      1.228272  
+      63A      1.229629    64A      1.240592    65A      1.266435  
+      66A      1.277104    67A      1.278795    68A      1.311157  
+      69A      1.374386    70A      1.429178    71A      1.506079  
+      72A      1.514405    73A      1.637237    74A      1.661027  
+      75A      1.761649    76A      1.800827    77A      1.855951  
+      78A      1.860307    79A      1.905137    80A      2.036995  
+      81A      2.109292    82A      2.144066    83A      2.170315  
+      84A      2.223432    85A      2.228491    86A      2.313718  
+      87A      2.358061    88A      2.375495    89A      2.453968  
+      90A      2.467784    91A      2.549565    92A      2.580348  
+      93A      2.626519    94A      2.643201    95A      2.663731  
+      96A      2.795230    97A      2.916865    98A      2.938508  
+      99A      2.945760   100A      3.009908   101A      3.109343  
+     102A      3.120463   103A      3.262878   104A      3.478751  
+     105A      4.536172   106A      4.647374   107A      4.677795  
+     108A      4.685414   109A      4.836580   110A      4.940015  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    23 ]
+    NA   [    23 ]
+    NB   [    23 ]
+
+  @RHF Final Energy:  -232.90992090653458
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            220.9715611267018858
+    One-Electron Energy =                -750.9679936610120876
+    Two-Electron Energy =                 297.0865116277756215
+    Total Energy =                       -232.9099209065345804
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          1.9375389           -1.9443769           -0.0068380
+ Dipole Y            :          0.1315247           -0.1361768           -0.0046521
+ Dipole Z            :         -0.0007761            0.0010758            0.0002997
+ Magnitude           :                                                    0.0082759
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:06:07 2026
+Module time:
+	user time   =       2.13 seconds =       0.04 minutes
+	system time =       0.05 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1969.59 seconds =      32.83 minutes
+	system time =      28.59 seconds =       0.48 minutes
+	total time  =        696 seconds =      11.60 minutes
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:06:07 2026
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.326756835712     0.189884745159     0.729737834755    12.000000000000
+         C            1.326396847932     0.189649751929    -0.729284329418    12.000000000000
+         C            0.511060475925    -0.545482970379     1.477917423747    12.000000000000
+         C            0.511016851985    -0.545353885124    -1.478205141139    12.000000000000
+         C           -1.726880499821     0.365049072703     0.662417920711    12.000000000000
+         C           -1.726970523634     0.364848142203    -0.662459998639    12.000000000000
+         H            1.939499014384     0.935493639809     1.208827030877     1.007825032230
+         H            1.939311495328     0.935131696683    -1.208310330543     1.007825032230
+         H           -1.417643433536     1.221946707555     1.228078126570     1.007825032230
+         H           -1.417813636824     1.221833567448    -1.228019448781     1.007825032230
+         H            0.493900247965    -0.434088471256     2.548009900507     1.007825032230
+         H            0.493716981992    -0.434117833581    -2.548323579820     1.007825032230
+         H           -2.139353129360    -0.451429206839     1.227409811265     1.007825032230
+         H           -2.139510591405    -0.451674589041    -1.227352514792     1.007825032230
+         H           -0.054558935111    -1.363444622824     1.085227950083     1.007825032230
+         H           -0.054747869586    -1.363281674719    -1.085719919629     1.007825032230
+
+  Nuclear repulsion =  220.971561126701886
+
+  ==> Basis Set <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> DirectJKGrad: Integral-Direct SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           4
+    Schwarz Cutoff:          1E-12
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000198900385     0.000098141508     0.000117695564
+       2       -0.000058923718    -0.000119628638     0.000099392740
+       3       -0.020825387594     0.008375989717    -0.007630928446
+       4       -0.020746318607     0.008466837939     0.007416260477
+       5        0.020676685247    -0.008342917367     0.007566455426
+       6        0.020654222520    -0.008442307203    -0.007600404445
+       7       -0.000020318281     0.000055300880     0.000002231330
+       8       -0.000035369940     0.000019402045     0.000034938703
+       9        0.000014347522    -0.000057181580     0.000131912840
+      10        0.000016353508    -0.000039905382    -0.000087388682
+      11        0.000113894340     0.000024456217    -0.000030983158
+      12        0.000042093798    -0.000045920269    -0.000001793881
+      13        0.000033873868     0.000013547079    -0.000004027416
+      14        0.000028889505     0.000004146740    -0.000013397375
+      15       -0.000059692612    -0.000024233004    -0.000040213038
+      16       -0.000033249939     0.000014271320     0.000040249362
+
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:06:08 2026
+Module time:
+	user time   =       3.18 seconds =       0.05 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1972.77 seconds =      32.88 minutes
+	system time =      28.59 seconds =       0.48 minutes
+	total time  =        697 seconds =      11.62 minutes
+
+      7  -2.32909921e+02   -1.10e-06      2.40e-04 *    1.13e-04 *    4.12e-03      1.89e-03    ~
+Scratch directory: /Users/blink/PSI4_SCRATCH/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, 4
+    Auxiliary basis highest AM E, G, H:  7, 7, 6
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:06:08 2026
+
+   => Loading Basis Set <=
+
+    Name: 6-31G*
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-6  entry C          line   111 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+    atoms 7-16 entry H          line    44 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        4 Threads,   3814 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.326655793075     0.189621591486     0.729208862897    12.000000000000
+         C            1.327199076186     0.190066700605    -0.729806380929    12.000000000000
+         C            0.511248182859    -0.545425164006     1.478044886551    12.000000000000
+         C            0.511309001574    -0.545215268253    -1.477848755310    12.000000000000
+         C           -1.727021522649     0.364227702193     0.662456648334    12.000000000000
+         C           -1.727077414495     0.364251554217    -0.662369641550    12.000000000000
+         H            1.939404799262     0.935163223495     1.208340254194     1.007825032230
+         H            1.939971367530     0.935673952963    -1.208856536327     1.007825032230
+         H           -1.417918417426     1.222397606589     1.226230374939     1.007825032230
+         H           -1.418044150189     1.222312413710    -1.226346910558     1.007825032230
+         H            0.493302484811    -0.433814412057     2.548115316837     1.007825032230
+         H            0.493511220949    -0.433488325201    -2.547898823398     1.007825032230
+         H           -2.139652327819    -0.451662499991     1.228230087715     1.007825032230
+         H           -2.139751630536    -0.451696766064    -1.228019497884     1.007825032230
+         H           -0.054123345665    -1.363591192915     1.085532598633     1.007825032230
+         H           -0.053970553184    -1.363361258125    -1.085133191524     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.14151  B =      0.10407  C =      0.06930 [cm^-1]
+  Rotational constants: A =   4242.51095  B =   3120.07544  C =   2077.52057 [MHz]
+  Nuclear repulsion =  220.970080083929560
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 46
+  Nalpha       = 23
+  Nbeta        = 23
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                  16
+      Number of AO shells:              56
+      Number of primitives:            130
+      Number of atomic orbitals:       110
+      Number of basis functions:       110
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 4
+
+  Performing in-core PK
+  Using 37277130 doubles for integral storage.
+  We computed 1254259 shell quartets total.
+  Whereas there are 1274406 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:             2861
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              4
+
+  Minimum eigenvalue in the overlap matrix is 2.2762557437E-03.
+  Reciprocal condition number of the overlap matrix is 3.1922809290E-04.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A        110     110 
+   -------------------------
+    Total     110     110
+   -------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter SAD:  -231.57592408526875   -2.31576e+02   0.00000e+00 
+   @RHF iter   1:  -232.78208705518489   -1.20616e+00   3.95405e-03 ADIIS/DIIS
+   @RHF iter   2:  -232.89384691124667   -1.11760e-01   1.49860e-03 ADIIS/DIIS
+   @RHF iter   3:  -232.90845713468386   -1.46102e-02   3.19346e-04 ADIIS/DIIS
+   @RHF iter   4:  -232.90982759831635   -1.37046e-03   6.53697e-05 DIIS
+   @RHF iter   5:  -232.90989904357411   -7.14453e-05   3.01484e-05 DIIS
+   @RHF iter   6:  -232.90991833136212   -1.92878e-05   1.12269e-05 DIIS
+   @RHF iter   7:  -232.90992115553618   -2.82417e-06   2.88863e-06 DIIS
+   @RHF iter   8:  -232.90992141398669   -2.58451e-07   4.72674e-07 DIIS
+   @RHF iter   9:  -232.90992141761038   -3.62368e-09   1.73266e-07 DIIS
+   @RHF iter  10:  -232.90992141799481   -3.84432e-10   5.93248e-08 DIIS
+   @RHF iter  11:  -232.90992141804946   -5.46549e-11   1.17051e-08 DIIS
+   @RHF iter  12:  -232.90992141805208   -2.61480e-12   2.98269e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.222299     2A    -11.221646     3A    -11.219806  
+       4A    -11.219663     5A    -11.210586     6A    -11.208856  
+       7A     -1.087847     8A     -1.020579     9A     -0.988680  
+      10A     -0.839490    11A     -0.786716    12A     -0.719988  
+      13A     -0.667925    14A     -0.635662    15A     -0.604529  
+      16A     -0.575490    17A     -0.574157    18A     -0.517411  
+      19A     -0.491818    20A     -0.488519    21A     -0.454017  
+      22A     -0.330493    23A     -0.311125  
+
+    Virtual:                                                              
+
+      24A      0.132265    25A      0.193007    26A      0.240400  
+      27A      0.252021    28A      0.293067    29A      0.299696  
+      30A      0.300428    31A      0.304664    32A      0.318773  
+      33A      0.354167    34A      0.360029    35A      0.384715  
+      36A      0.414025    37A      0.477723    38A      0.505040  
+      39A      0.530750    40A      0.631300    41A      0.635179  
+      42A      0.696460    43A      0.732141    44A      0.763069  
+      45A      0.786054    46A      0.800532    47A      0.829446  
+      48A      0.833143    49A      0.864270    50A      0.904597  
+      51A      0.913538    52A      0.922106    53A      0.969188  
+      54A      0.984149    55A      1.106049    56A      1.129509  
+      57A      1.130307    58A      1.164065    59A      1.171495  
+      60A      1.184454    61A      1.192429    62A      1.228137  
+      63A      1.229616    64A      1.240471    65A      1.266446  
+      66A      1.277089    67A      1.278789    68A      1.311150  
+      69A      1.374519    70A      1.429108    71A      1.506054  
+      72A      1.514559    73A      1.637892    74A      1.661209  
+      75A      1.761582    76A      1.800794    77A      1.855874  
+      78A      1.860528    79A      1.905211    80A      2.036825  
+      81A      2.109176    82A      2.144239    83A      2.170453  
+      84A      2.223500    85A      2.228506    86A      2.313599  
+      87A      2.358048    88A      2.375573    89A      2.454144  
+      90A      2.467753    91A      2.549666    92A      2.580366  
+      93A      2.626541    94A      2.643209    95A      2.663837  
+      96A      2.795532    97A      2.916939    98A      2.938575  
+      99A      2.945769   100A      3.009958   101A      3.109632  
+     102A      3.119513   103A      3.262909   104A      3.478731  
+     105A      4.536196   106A      4.647356   107A      4.677793  
+     108A      4.685510   109A      4.836649   110A      4.940051  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    23 ]
+    NA   [    23 ]
+    NB   [    23 ]
+
+  @RHF Final Energy:  -232.90992141805208
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            220.9700800839295596
+    One-Electron Energy =                -750.9653952378763506
+    Two-Electron Energy =                 297.0853937358946837
+    Total Energy =                       -232.9099214180520789
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          1.9262464           -1.9339303           -0.0076839
+ Dipole Y            :          0.1410583           -0.1453286           -0.0042703
+ Dipole Z            :          0.0028419           -0.0031986           -0.0003567
+ Magnitude           :                                                    0.0087980
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:06:09 2026
+Module time:
+	user time   =       2.14 seconds =       0.04 minutes
+	system time =       0.04 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1974.95 seconds =      32.92 minutes
+	system time =      28.64 seconds =       0.48 minutes
+	total time  =        698 seconds =      11.63 minutes
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:06:09 2026
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.326655793075     0.189621591486     0.729208862897    12.000000000000
+         C            1.327199076186     0.190066700605    -0.729806380929    12.000000000000
+         C            0.511248182859    -0.545425164006     1.478044886551    12.000000000000
+         C            0.511309001574    -0.545215268253    -1.477848755310    12.000000000000
+         C           -1.727021522649     0.364227702193     0.662456648334    12.000000000000
+         C           -1.727077414495     0.364251554217    -0.662369641550    12.000000000000
+         H            1.939404799262     0.935163223495     1.208340254194     1.007825032230
+         H            1.939971367530     0.935673952963    -1.208856536327     1.007825032230
+         H           -1.417918417426     1.222397606589     1.226230374939     1.007825032230
+         H           -1.418044150189     1.222312413710    -1.226346910558     1.007825032230
+         H            0.493302484811    -0.433814412057     2.548115316837     1.007825032230
+         H            0.493511220949    -0.433488325201    -2.547898823398     1.007825032230
+         H           -2.139652327819    -0.451662499991     1.228230087715     1.007825032230
+         H           -2.139751630536    -0.451696766064    -1.228019497884     1.007825032230
+         H           -0.054123345665    -1.363591192915     1.085532598633     1.007825032230
+         H           -0.053970553184    -1.363361258125    -1.085133191524     1.007825032230
+
+  Nuclear repulsion =  220.970080083929560
+
+  ==> Basis Set <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> DirectJKGrad: Integral-Direct SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           4
+    Schwarz Cutoff:          1E-12
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1       -0.000108637492    -0.000157192891    -0.000111887147
+       2        0.000226376319     0.000133767665    -0.000144131462
+       3       -0.020705089253     0.008452955346    -0.007417184921
+       4       -0.020807936092     0.008349628211     0.007688811782
+       5        0.020682030023    -0.008475583691     0.007596353234
+       6        0.020694105934    -0.008421153361    -0.007580732295
+       7       -0.000029237230     0.000004096466    -0.000041202456
+       8       -0.000004316001     0.000044277302    -0.000009766491
+       9        0.000017574209     0.000043696948    -0.000064574381
+      10        0.000014330992     0.000032712894     0.000043602367
+      11        0.000011166930    -0.000030084314     0.000004660630
+      12        0.000088439701     0.000040199093     0.000032010958
+      13       -0.000019137239    -0.000012289868     0.000010303156
+      14       -0.000016479438    -0.000005848362     0.000000904131
+      15       -0.000008958010     0.000020060137    -0.000035399198
+      16       -0.000034233353    -0.000019241575     0.000028232094
+
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:06:10 2026
+Module time:
+	user time   =       3.14 seconds =       0.05 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1978.09 seconds =      32.97 minutes
+	system time =      28.65 seconds =       0.48 minutes
+	total time  =        699 seconds =      11.65 minutes
+
+      8  -2.32909921e+02   -5.12e-07 *    2.91e-04 *    1.17e-04 *    1.93e-03      9.39e-04 *  ~
+Scratch directory: /Users/blink/PSI4_SCRATCH/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, 4
+    Auxiliary basis highest AM E, G, H:  7, 7, 6
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:06:10 2026
+
+   => Loading Basis Set <=
+
+    Name: 6-31G*
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-6  entry C          line   111 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+    atoms 7-16 entry H          line    44 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/6-31gs.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        4 Threads,   3814 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.327345851602     0.189861102580     0.729733951787    12.000000000000
+         C            1.326892205245     0.189565171284    -0.729321195392    12.000000000000
+         C            0.511506840759    -0.545071202193     1.478167568568    12.000000000000
+         C            0.511352989784    -0.545110440964    -1.478357582199    12.000000000000
+         C           -1.726931122601     0.364021011125     0.662413676602    12.000000000000
+         C           -1.726986347267     0.364010594160    -0.662369027834    12.000000000000
+         H            1.939928378571     0.935670218998     1.208700899079     1.007825032230
+         H            1.939505398255     0.935295547595    -1.208333602017     1.007825032230
+         H           -1.418024272060     1.222317745607     1.226129551786     1.007825032230
+         H           -1.418134206650     1.222235950683    -1.226226953710     1.007825032230
+         H            0.492212976492    -0.432819134750     2.548145258541     1.007825032230
+         H            0.492294296861    -0.432648808147    -2.548324197231     1.007825032230
+         H           -2.139610661556    -0.451842977730     1.228188920441     1.007825032230
+         H           -2.139703031600    -0.451908573044    -1.228038569107     1.007825032230
+         H           -0.053189397650    -1.363661938074     1.085496700686     1.007825032230
+         H           -0.053467881471    -1.363790235240    -1.086070465507     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.14150  B =      0.10408  C =      0.06929 [cm^-1]
+  Rotational constants: A =   4241.91392  B =   3120.16750  C =   2077.26524 [MHz]
+  Nuclear repulsion =  220.964534919103869
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 46
+  Nalpha       = 23
+  Nbeta        = 23
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                  16
+      Number of AO shells:              56
+      Number of primitives:            130
+      Number of atomic orbitals:       110
+      Number of basis functions:       110
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 4
+
+  Performing in-core PK
+  Using 37277130 doubles for integral storage.
+  We computed 1254245 shell quartets total.
+  Whereas there are 1274406 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:             2861
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              4
+
+  Minimum eigenvalue in the overlap matrix is 2.2762550039E-03.
+  Reciprocal condition number of the overlap matrix is 3.1924577674E-04.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A        110     110 
+   -------------------------
+    Total     110     110
+   -------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter SAD:  -231.57571692869266   -2.31576e+02   0.00000e+00 
+   @RHF iter   1:  -232.78208831043801   -1.20637e+00   3.95396e-03 ADIIS/DIIS
+   @RHF iter   2:  -232.89384708492912   -1.11759e-01   1.49855e-03 ADIIS/DIIS
+   @RHF iter   3:  -232.90845690252755   -1.46098e-02   3.19344e-04 ADIIS/DIIS
+   @RHF iter   4:  -232.90982760937942   -1.37071e-03   6.53609e-05 DIIS
+   @RHF iter   5:  -232.90989908132306   -7.14719e-05   3.01501e-05 DIIS
+   @RHF iter   6:  -232.90991837259355   -1.92913e-05   1.12276e-05 DIIS
+   @RHF iter   7:  -232.90992119695460   -2.82436e-06   2.88917e-06 DIIS
+   @RHF iter   8:  -232.90992145548671   -2.58532e-07   4.73260e-07 DIIS
+   @RHF iter   9:  -232.90992145911730   -3.63059e-09   1.73571e-07 DIIS
+   @RHF iter  10:  -232.90992145950270   -3.85398e-10   5.93789e-08 DIIS
+   @RHF iter  11:  -232.90992145955781   -5.51097e-11   1.17008e-08 DIIS
+   @RHF iter  12:  -232.90992145956000   -2.18847e-12   2.97833e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.222310     2A    -11.221658     3A    -11.219818  
+       4A    -11.219676     5A    -11.210587     6A    -11.208856  
+       7A     -1.087826     8A     -1.020594     9A     -0.988693  
+      10A     -0.839488    11A     -0.786705    12A     -0.720007  
+      13A     -0.667894    14A     -0.635663    15A     -0.604518  
+      16A     -0.575549    17A     -0.574155    18A     -0.517360  
+      19A     -0.491837    20A     -0.488506    21A     -0.454024  
+      22A     -0.330496    23A     -0.311121  
+
+    Virtual:                                                              
+
+      24A      0.132276    25A      0.192994    26A      0.240377  
+      27A      0.252043    28A      0.293003    29A      0.299686  
+      30A      0.300401    31A      0.304654    32A      0.318815  
+      33A      0.354162    34A      0.360006    35A      0.384731  
+      36A      0.414010    37A      0.477787    38A      0.505056  
+      39A      0.530769    40A      0.631274    41A      0.635112  
+      42A      0.696414    43A      0.732184    44A      0.763035  
+      45A      0.786060    46A      0.800428    47A      0.829432  
+      48A      0.833062    49A      0.864272    50A      0.904574  
+      51A      0.913564    52A      0.922123    53A      0.969219  
+      54A      0.984179    55A      1.106052    56A      1.129483  
+      57A      1.130365    58A      1.164075    59A      1.171509  
+      60A      1.184412    61A      1.192447    62A      1.228137  
+      63A      1.229583    64A      1.240448    65A      1.266425  
+      66A      1.277105    67A      1.278794    68A      1.310957  
+      69A      1.374572    70A      1.428861    71A      1.505978  
+      72A      1.514637    73A      1.638094    74A      1.661504  
+      75A      1.761549    76A      1.800855    77A      1.855830  
+      78A      1.860676    79A      1.905400    80A      2.036423  
+      81A      2.108981    82A      2.144497    83A      2.170528  
+      84A      2.223418    85A      2.228473    86A      2.313543  
+      87A      2.357791    88A      2.375565    89A      2.454210  
+      90A      2.467699    91A      2.549713    92A      2.580293  
+      93A      2.626305    94A      2.643149    95A      2.663758  
+      96A      2.795577    97A      2.916987    98A      2.938614  
+      99A      2.945673   100A      3.010046   101A      3.109652  
+     102A      3.119495   103A      3.262974   104A      3.478814  
+     105A      4.536155   106A      4.647330   107A      4.677823  
+     108A      4.685597   109A      4.836666   110A      4.940128  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    23 ]
+    NA   [    23 ]
+    NB   [    23 ]
+
+  @RHF Final Energy:  -232.90992145956000
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            220.9645349191038690
+    One-Electron Energy =                -750.9542358740325199
+    Two-Electron Energy =                 297.0797794953685980
+    Total Energy =                       -232.9099214595599960
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          1.9174176           -1.9258310           -0.0084134
+ Dipole Y            :          0.1424363           -0.1464439           -0.0040076
+ Dipole Z            :         -0.0021339            0.0024035            0.0002697
+ Magnitude           :                                                    0.0093230
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:06:11 2026
+Module time:
+	user time   =       2.12 seconds =       0.04 minutes
+	system time =       0.05 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1980.25 seconds =      33.00 minutes
+	system time =      28.70 seconds =       0.48 minutes
+	total time  =        700 seconds =      11.67 minutes
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 19:06:11 2026
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            1.327345851602     0.189861102580     0.729733951787    12.000000000000
+         C            1.326892205245     0.189565171284    -0.729321195392    12.000000000000
+         C            0.511506840759    -0.545071202193     1.478167568568    12.000000000000
+         C            0.511352989784    -0.545110440964    -1.478357582199    12.000000000000
+         C           -1.726931122601     0.364021011125     0.662413676602    12.000000000000
+         C           -1.726986347267     0.364010594160    -0.662369027834    12.000000000000
+         H            1.939928378571     0.935670218998     1.208700899079     1.007825032230
+         H            1.939505398255     0.935295547595    -1.208333602017     1.007825032230
+         H           -1.418024272060     1.222317745607     1.226129551786     1.007825032230
+         H           -1.418134206650     1.222235950683    -1.226226953710     1.007825032230
+         H            0.492212976492    -0.432819134750     2.548145258541     1.007825032230
+         H            0.492294296861    -0.432648808147    -2.548324197231     1.007825032230
+         H           -2.139610661556    -0.451842977730     1.228188920441     1.007825032230
+         H           -2.139703031600    -0.451908573044    -1.228038569107     1.007825032230
+         H           -0.053189397650    -1.363661938074     1.085496700686     1.007825032230
+         H           -0.053467881471    -1.363790235240    -1.086070465507     1.007825032230
+
+  Nuclear repulsion =  220.964534919103869
+
+  ==> Basis Set <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 56
+    Number of basis functions: 110
+    Number of Cartesian functions: 110
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> DirectJKGrad: Integral-Direct SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           4
+    Schwarz Cutoff:          1E-12
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000144206461     0.000057086856     0.000046737098
+       2       -0.000104539251    -0.000145936773     0.000106084457
+       3       -0.020671057428     0.008446097708    -0.007561182134
+       4       -0.020631592891     0.008497170602     0.007391233051
+       5        0.020683573718    -0.008466731972     0.007526644997
+       6        0.020690783570    -0.008442785228    -0.007525230804
+       7       -0.000005726611     0.000011188290     0.000023820417
+       8       -0.000020160930    -0.000017846468     0.000015972648
+       9        0.000012409358     0.000055687576    -0.000064457546
+      10        0.000013286934     0.000053222077     0.000052581023
+      11       -0.000027750085     0.000010008970    -0.000011401659
+      12       -0.000054526776    -0.000018271200    -0.000009743279
+      13       -0.000030916320    -0.000005971137     0.000003021658
+      14       -0.000030091059    -0.000007760659     0.000000277050
+      15        0.000007840925    -0.000022954804    -0.000020946897
+      16        0.000024260384    -0.000002203837     0.000026589920
+
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 19:06:12 2026
+Module time:
+	user time   =       3.15 seconds =       0.05 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =    1983.40 seconds =      33.06 minutes
+	system time =      28.70 seconds =       0.48 minutes
+	total time  =        701 seconds =      11.68 minutes
+
+      9  -2.32909921e+02   -4.15e-08 *    2.12e-04 *    8.52e-05 *    1.52e-03 *    7.79e-04 *  ~
+
+  Optimization converged!                                                                       ~
+
+  Final Energy : -232.90992145956 
+
+  Final Geometry : 
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    C            1.327345851602     0.189861102580     0.729733951787
+    C            1.326892205245     0.189565171284    -0.729321195392
+    C            0.511506840759    -0.545071202193     1.478167568568
+    C            0.511352989784    -0.545110440964    -1.478357582199
+    C           -1.726931122601     0.364021011125     0.662413676602
+    C           -1.726986347267     0.364010594160    -0.662369027834
+    H            1.939928378571     0.935670218998     1.208700899079
+    H            1.939505398255     0.935295547595    -1.208333602017
+    H           -1.418024272060     1.222317745607     1.226129551786
+    H           -1.418134206650     1.222235950683    -1.226226953710
+    H            0.492212976492    -0.432819134750     2.548145258541
+    H            0.492294296861    -0.432648808147    -2.548324197231
+    H           -2.139610661556    -0.451842977730     1.228188920441
+    H           -2.139703031600    -0.451908573044    -1.228038569107
+    H           -0.053189397650    -1.363661938074     1.085496700686
+    H           -0.053467881471    -1.363790235240    -1.086070465507
+
