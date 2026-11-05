@@ -1,8 +1,9 @@
 # Session Folders
-Every chat in this project should work with all three of these folders. If any is not connected, ask for access to it (request folder access) before starting work:
+Every chat in this project should work with all four of these folders. If any is not connected, ask for access to it (request folder access) before starting work:
 1. **Working folder (read/write):** `/Users/blink/github/UsingPsi4` — notebooks, inputs, outputs, JSON summaries, `styles/`.
 2. **Psi4 documentation (read-only):** `/Users/blink/github/psi4docs/sphinxman/1.11.x` — see "Psi4 Reference Documentation" below.
 3. **UsingGAMESS book (read-only):** `/Users/blink/github/UsingGAMESS` — see "UsingGAMESS Reference Book" below.
+4. **GAMESS documentation (read-only):** `/Users/blink/github/GAMESS-docs` — see "GAMESS Reference Documentation" below.
 
 # MystMD Book Project
 - **Format:** This folder is a MystMD (MyST Markdown) web book, configured by `myst.yml` (`book-theme` template). Write content as MyST Markdown (`.md`) pages or Jupyter notebooks (`.ipynb`) and add each new page to the table of contents in `myst.yml`.
@@ -28,6 +29,11 @@ Every chat in this project should work with all three of these folders. If any i
 - **Location:** `/Users/blink/github/UsingGAMESS` — a previous web book of computational chemistry exercises using GAMESS-US.
 - **Purpose:** This Psi4 book parallels the exercises in UsingGAMESS. Consult it for the topics, structure, and sequence of exercises, then write the Psi4 equivalents in this folder.
 - **Read-only:** Never modify, add, move, rename, or delete anything in the UsingGAMESS folder.
+
+# GAMESS Reference Documentation
+- **Location:** `/Users/blink/github/GAMESS-docs` — documentation for GAMESS-US.
+- **Use it:** Consult this folder to understand the GAMESS input, keywords, and methods used in the UsingGAMESS exercises, so the Psi4 versions reproduce the same calculations.
+- **Read-only:** Never modify, add, move, rename, or delete anything in the GAMESS-docs folder.
 
 # Plotting (matplotlib)
 - **Style sheet:** Always apply `styles/tufte.mplstyle` (in this Psi4 folder) before plotting:
