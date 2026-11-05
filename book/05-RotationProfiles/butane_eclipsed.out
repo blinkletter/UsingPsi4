@@ -1,0 +1,2738 @@
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.11 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, D. L. Poole, T. Győri, E. C. Mitchell, J. P. Pederson,
+    and A. M. Wallace
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    https://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Thursday, 05 November 2026 10:09AM
+
+    Process ID: 54365
+    Host:       MonkeyBook.local
+    PSIDATADIR: /Users/blink/miniconda3/envs/psi4/share/psi4
+    Memory:     3.7 GiB
+    Threads:    4
+    Addons:     a̶d̶c̶c̶, a̶m̶b̶i̶t̶, b̶s̶e̶, c̶c̶t̶3̶, c̶f̶o̶u̶r̶, c̶h̶e̶m̶p̶s̶2̶, c̶p̶p̶e̶, d̶d̶x̶, dftd3,
+                d̶f̶t̶d̶4̶, dkh, ecpint, einsums, f̶o̶r̶t̶e̶, gauxc, g̶c̶p̶, g̶d̶m̶a̶,
+                g̶e̶o̶m̶e̶t̶r̶i̶c̶, g̶p̶u̶_̶d̶f̶c̶c̶, i̶n̶t̶e̶g̶r̶a̶t̶o̶r̶x̶x̶, i̶p̶i̶,
+                l̶i̶b̶e̶f̶p̶, m̶d̶i̶, m̶p̶2̶d̶, m̶r̶c̶c̶, ooo, o̶p̶e̶n̶f̶e̶r̶m̶i̶o̶n̶p̶s̶i̶4̶,
+                pcmsolver, p̶s̶i̶4̶f̶o̶c̶k̶c̶i̶, p̶s̶i̶x̶a̶s̶, p̶y̶e̶i̶n̶s̶u̶m̶s̶, r̶e̶s̶p̶,
+                s̶i̶m̶i̶n̶t̶, s̶n̶s̶m̶p̶2̶, v̶2̶r̶d̶m̶_̶c̶a̶s̶s̶c̶f̶
+
+Scratch directory: /Users/blink/PSI4_SCRATCH/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, 4
+    Auxiliary basis highest AM E, G, H:  7, 7, 6
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 10:55:37 2026
+
+   => Loading Basis Set <=
+
+    Name: 3-21G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-4  entry C          line    68 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+    atoms 5-14 entry H          line    21 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        4 Threads,   3814 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            0.000000000000     0.770000000000     0.375579088042    12.000000000000
+         C            0.000000000000    -0.770000000000     0.375579088042    12.000000000000
+         C            1.257404894732    -1.283332810437    -0.350383966412    12.000000000000
+         C           -1.257404894732     1.283332810437    -0.350383966412    12.000000000000
+         H            0.930806220776     1.149999612921    -0.161822134087     1.007825032230
+         H            0.000000474073     1.150000387079     1.450381258592     1.007825032230
+         H           -0.930806220776    -1.149999612921    -0.161822134087     1.007825032230
+         H           -0.000000474073    -1.150000387079     1.450381258592     1.007825032230
+         H            1.257404657696    -2.423332810437    -0.350384376972     1.007825032230
+         H            2.188211115508    -0.903333584595     0.187017529422     1.007825032230
+         H            1.257405131769    -0.903332810437    -1.425186273816     1.007825032230
+         H           -1.257404657696     2.423332810437    -0.350384376972     1.007825032230
+         H           -2.188211115508     0.903333584595     0.187017529422     1.007825032230
+         H           -1.257405131769     0.903332810437    -1.425186273816     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.55911  B =      0.12982  C =      0.12974 [cm^-1]
+  Rotational constants: A =  16761.59667  B =   3891.89835  C =   3889.58332 [MHz]
+  Nuclear repulsion =  129.817154598805161
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 34
+  Nalpha       = 17
+  Nbeta        = 17
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 3-21G
+    Blend: 3-21G
+    Number of shells: 40
+    Number of basis functions: 56
+    Number of Cartesian functions: 56
+    Spherical Harmonics?: false
+    Max angular momentum: 1
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                  14
+      Number of AO shells:              40
+      Number of primitives:             66
+      Number of atomic orbitals:        56
+      Number of basis functions:        56
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 4
+
+  Performing in-core PK
+  Using 2548812 doubles for integral storage.
+  We computed 314412 shell quartets total.
+  Whereas there are 336610 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:             2861
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              4
+
+  Minimum eigenvalue in the overlap matrix is 1.3073455198E-02.
+  Reciprocal condition number of the overlap matrix is 2.8047441531E-03.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A         56      56 
+   -------------------------
+    Total      56      56
+   -------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter SAD:  -155.26297736691907   -1.55263e+02   0.00000e+00 
+   @RHF iter   1:  -156.33456784228696   -1.07159e+00   5.74454e-03 ADIIS/DIIS
+   @RHF iter   2:  -156.39631891790592   -6.17511e-02   2.32236e-03 ADIIS/DIIS
+   @RHF iter   3:  -156.40471756137319   -8.39864e-03   3.97418e-04 ADIIS/DIIS
+   @RHF iter   4:  -156.40521687358307   -4.99312e-04   5.14067e-05 DIIS
+   @RHF iter   5:  -156.40522332793654   -6.45435e-06   1.65548e-05 DIIS
+   @RHF iter   6:  -156.40522384733555   -5.19399e-07   1.36629e-06 DIIS
+   @RHF iter   7:  -156.40522385406319   -6.72765e-09   2.90368e-07 DIIS
+   @RHF iter   8:  -156.40522385445823   -3.95033e-10   5.41756e-08 DIIS
+   @RHF iter   9:  -156.40522385447161   -1.33866e-11   8.59684e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.170862     2A    -11.170750     3A    -11.170256  
+       4A    -11.170094     5A     -1.067644     6A     -0.967905  
+       7A     -0.844316     8A     -0.770017     9A     -0.625876  
+      10A     -0.592445    11A     -0.571519    12A     -0.538456  
+      13A     -0.498471    14A     -0.496639    15A     -0.460506  
+      16A     -0.444272    17A     -0.437665  
+
+    Virtual:                                                              
+
+      18A      0.252869    19A      0.288784    20A      0.290764  
+      21A      0.299809    22A      0.330738    23A      0.335545  
+      24A      0.337802    25A      0.342437    26A      0.367808  
+      27A      0.383316    28A      0.437275    29A      0.463551  
+      30A      0.475554    31A      0.921556    32A      0.950359  
+      33A      0.957730    34A      1.012055    35A      1.031786  
+      36A      1.043548    37A      1.064758    38A      1.093356  
+      39A      1.112989    40A      1.121503    41A      1.205981  
+      42A      1.269853    43A      1.278832    44A      1.322223  
+      45A      1.324812    46A      1.335212    47A      1.337229  
+      48A      1.363226    49A      1.378249    50A      1.381106  
+      51A      1.490919    52A      1.544472    53A      1.865924  
+      54A      2.061900    55A      2.389171    56A      2.553495  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    17 ]
+    NA   [    17 ]
+    NB   [    17 ]
+
+  @RHF Final Energy:  -156.40522385447161
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            129.8171545988051605
+    One-Electron Energy =                -466.4493686774551975
+    Two-Electron Energy =                 180.2269902241783939
+    Total Energy =                       -156.4052238544716147
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Y            :          0.0000000           -0.0000000            0.0000000
+ Dipole Z            :          0.5903617           -0.5624704            0.0278912
+ Magnitude           :                                                    0.0278912
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 10:55:37 2026
+Module time:
+	user time   =       0.64 seconds =       0.01 minutes
+	system time =       0.02 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =      36.00 seconds =       0.60 minutes
+	system time =       0.83 seconds =       0.01 minutes
+	total time  =       2743 seconds =      45.72 minutes
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 10:55:37 2026
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            0.000000000000     0.770000000000     0.375579088042    12.000000000000
+         C            0.000000000000    -0.770000000000     0.375579088042    12.000000000000
+         C            1.257404894732    -1.283332810437    -0.350383966412    12.000000000000
+         C           -1.257404894732     1.283332810437    -0.350383966412    12.000000000000
+         H            0.930806220776     1.149999612921    -0.161822134087     1.007825032230
+         H            0.000000474073     1.150000387079     1.450381258592     1.007825032230
+         H           -0.930806220776    -1.149999612921    -0.161822134087     1.007825032230
+         H           -0.000000474073    -1.150000387079     1.450381258592     1.007825032230
+         H            1.257404657696    -2.423332810437    -0.350384376972     1.007825032230
+         H            2.188211115508    -0.903333584595     0.187017529422     1.007825032230
+         H            1.257405131769    -0.903332810437    -1.425186273816     1.007825032230
+         H           -1.257404657696     2.423332810437    -0.350384376972     1.007825032230
+         H           -2.188211115508     0.903333584595     0.187017529422     1.007825032230
+         H           -1.257405131769     0.903332810437    -1.425186273816     1.007825032230
+
+  Nuclear repulsion =  129.817154598805161
+
+  ==> Basis Set <==
+
+  Basis Set: 3-21G
+    Blend: 3-21G
+    Number of shells: 40
+    Number of basis functions: 56
+    Number of Cartesian functions: 56
+    Spherical Harmonics?: false
+    Max angular momentum: 1
+
+  ==> DirectJKGrad: Integral-Direct SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           4
+    Schwarz Cutoff:          1E-12
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1       -0.011378375693    -0.019714628047    -0.013893190502
+       2        0.011378375693     0.019714628047    -0.013893190502
+       3       -0.016558077849     0.017701921722     0.009276812786
+       4        0.016558077849    -0.017701921722     0.009276812786
+       5        0.027728179872     0.008005210870    -0.019714297435
+       6       -0.003325337665     0.007077368437     0.033862089120
+       7       -0.027728179872    -0.008005210870    -0.019714297435
+       8        0.003325337665    -0.007077368437     0.033862089120
+       9       -0.005429313838    -0.033828198815     0.003241028185
+      10        0.025991933685     0.013452991985     0.018864644794
+      11       -0.003219748493     0.013142583956    -0.031637086948
+      12        0.005429313838     0.033828198815     0.003241028185
+      13       -0.025991933685    -0.013452991985     0.018864644794
+      14        0.003219748493    -0.013142583956    -0.031637086948
+
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 10:55:37 2026
+Module time:
+	user time   =       0.21 seconds =       0.00 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =      36.21 seconds =       0.60 minutes
+	system time =       0.83 seconds =       0.01 minutes
+	total time  =       2743 seconds =      45.72 minutes
+
+    			-----------------------------------------
+
+    			 OPTKING 3.0: for geometry optimizations 
+
+    			     By R.A. King, Bethel University     
+
+    			        with contributions from          
+
+    			    A.V. Copan, J. Cayton, A. Heide      
+
+    			-----------------------------------------
+
+    
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       6.000000            12.000000          0.00000000  1.45508912  0.70974161   
+	       6.000000            12.000000          0.00000000 -1.45508912  0.70974161   
+	       6.000000            12.000000          2.37615088 -2.42514754 -0.66212974   
+	       6.000000            12.000000         -2.37615088  2.42514754 -0.66212974   
+	       1.000000             1.007825          1.75896883  2.17318431 -0.30579951   
+	       1.000000             1.007825          0.00000090  2.17318578  2.74082336   
+	       1.000000             1.007825         -1.75896883 -2.17318431 -0.30579951   
+	       1.000000             1.007825         -0.00000090 -2.17318578  2.74082336   
+	       1.000000             1.007825          2.37615043 -4.57943532 -0.66213051   
+	       1.000000             1.007825          4.13511971 -1.70705307  0.35341191   
+	       1.000000             1.007825          2.37615133 -1.70705161 -2.69321174   
+	       1.000000             1.007825         -2.37615043  4.57943532 -0.66213051   
+	       1.000000             1.007825         -4.13511971  1.70705307  0.35341191   
+	       1.000000             1.007825         -2.37615133  1.70705161 -2.69321174   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         2.910178           1.540000
+	 R(1,4)           =         2.910178           1.540000
+	 R(1,5)           =         2.154288           1.140000
+	 R(1,6)           =         2.154288           1.140000
+	 R(2,3)           =         2.910178           1.540000
+	 R(2,7)           =         2.154288           1.140000
+	 R(2,8)           =         2.154288           1.140000
+	 R(3,9)           =         2.154288           1.140000
+	 R(3,10)          =         2.154288           1.140000
+	 R(3,11)          =         2.154288           1.140000
+	 R(4,12)          =         2.154288           1.140000
+	 R(4,13)          =         2.154288           1.140000
+	 R(4,14)          =         2.154288           1.140000
+	 B(1,2,3)         =         1.910633         109.471200
+	 B(1,2,7)         =         1.910633         109.471200
+	 B(1,2,8)         =         1.910634         109.471241
+	 B(1,4,12)        =         1.910633         109.471200
+	 B(1,4,13)        =         1.910634         109.471241
+	 B(1,4,14)        =         1.910634         109.471241
+	 B(2,1,4)         =         1.910633         109.471200
+	 B(2,1,5)         =         1.910633         109.471200
+	 B(2,1,6)         =         1.910634         109.471241
+	 B(2,3,9)         =         1.910633         109.471200
+	 B(2,3,10)        =         1.910634         109.471241
+	 B(2,3,11)        =         1.910634         109.471241
+	 B(3,2,7)         =         1.910634         109.471241
+	 B(3,2,8)         =         1.910634         109.471241
+	 B(4,1,5)         =         1.910634         109.471241
+	 B(4,1,6)         =         1.910634         109.471241
+	 B(5,1,6)         =         1.910633         109.471200
+	 B(7,2,8)         =         1.910633         109.471200
+	 B(9,3,10)        =         1.910633         109.471200
+	 B(9,3,11)        =         1.910633         109.471200
+	 B(10,3,11)       =         1.910634         109.471241
+	 B(12,4,13)       =         1.910633         109.471200
+	 B(12,4,14)       =         1.910633         109.471200
+	 B(13,4,14)       =         1.910634         109.471241
+	 D(1,2,3,9)       =         3.141593         180.000000
+	 D(1,2,3,10)      =         1.047198          60.000051
+	 D(1,2,3,11)      =        -1.047198         -60.000000
+	 D(2,1,4,12)      =         3.141593         180.000000
+	 D(2,1,4,13)      =         1.047198          60.000051
+	 D(2,1,4,14)      =        -1.047198         -60.000000
+	*D(3,2,1,4)       =         2.094395         120.000000
+	 D(3,2,1,5)       =        -0.000000          -0.000000
+	 D(3,2,1,6)       =        -2.094395        -119.999975
+	 D(4,1,2,7)       =         0.000000           0.000000
+	 D(4,1,2,8)       =        -2.094395        -119.999975
+	 D(5,1,2,7)       =        -2.094395        -120.000000
+	 D(5,1,2,8)       =         2.094396         120.000025
+	 D(5,1,4,12)      =        -1.047198         -60.000000
+	 D(5,1,4,13)      =         3.141593         180.000000
+	 D(5,1,4,14)      =         1.047197          59.999975
+	 D(6,1,2,7)       =         2.094396         120.000025
+	 D(6,1,2,8)       =         0.000000           0.000000
+	 D(6,1,4,12)      =         1.047198          60.000000
+	 D(6,1,4,13)      =        -1.047197         -59.999975
+	 D(6,1,4,14)      =         3.141593         180.000000
+	 D(7,2,3,9)       =        -1.047198         -60.000000
+	 D(7,2,3,10)      =         3.141593         180.000000
+	 D(7,2,3,11)      =         1.047197          59.999975
+	 D(8,2,3,9)       =         1.047198          60.000000
+	 D(8,2,3,10)      =        -1.047197         -59.999975
+	 D(8,2,3,11)      =         3.141593         180.000000
+
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       1.54000        0.12442        0.02450       1.56450
+	               R(1,4)       1.54000        0.02248        0.00444       1.54444
+	               R(1,5)       1.14000       -0.28507       -0.05437       1.08563
+	               R(1,6)       1.14000       -0.28246       -0.05377       1.08623
+	               R(2,3)       1.54000        0.02248        0.00444       1.54444
+	               R(2,7)       1.14000       -0.28507       -0.05437       1.08563
+	               R(2,8)       1.14000       -0.28246       -0.05377       1.08623
+	               R(3,9)       1.14000       -0.27870       -0.05310       1.08690
+	              R(3,10)       1.14000       -0.28506       -0.05435       1.08565
+	              R(3,11)       1.14000       -0.28184       -0.05365       1.08635
+	              R(4,12)       1.14000       -0.27870       -0.05310       1.08690
+	              R(4,13)       1.14000       -0.28506       -0.05435       1.08565
+	              R(4,14)       1.14000       -0.28184       -0.05365       1.08635
+	             B(1,2,3)     109.47120        0.00106        3.56045     113.03165
+	             B(1,2,7)     109.47120       -0.00020       -0.09428     109.37692
+	             B(1,2,8)     109.47124       -0.00013        0.35012     109.82137
+	            B(1,4,12)     109.47120        0.00062        2.36379     111.83499
+	            B(1,4,13)     109.47124        0.00028        0.99636     110.46760
+	            B(1,4,14)     109.47124        0.00025        0.86641     110.33765
+	             B(2,1,4)     109.47120        0.00106        3.56045     113.03165
+	             B(2,1,5)     109.47120       -0.00020       -0.09428     109.37692
+	             B(2,1,6)     109.47124       -0.00013        0.35012     109.82137
+	             B(2,3,9)     109.47120        0.00062        2.36379     111.83499
+	            B(2,3,10)     109.47124        0.00028        0.99636     110.46760
+	            B(2,3,11)     109.47124        0.00025        0.86641     110.33765
+	             B(3,2,7)     109.47124       -0.00032       -0.98513     108.48611
+	             B(3,2,8)     109.47124       -0.00036       -1.12456     108.34668
+	             B(4,1,5)     109.47124       -0.00032       -0.98513     108.48611
+	             B(4,1,6)     109.47124       -0.00036       -1.12456     108.34668
+	             B(5,1,6)     109.47120       -0.00005       -1.84594     107.62526
+	             B(7,2,8)     109.47120       -0.00005       -1.84594     107.62526
+	            B(9,3,10)     109.47120       -0.00042       -1.51761     107.95359
+	            B(9,3,11)     109.47120       -0.00041       -1.51945     107.95175
+	           B(10,3,11)     109.47124       -0.00031       -1.29960     108.17164
+	           B(12,4,13)     109.47120       -0.00042       -1.51761     107.95359
+	           B(12,4,14)     109.47120       -0.00041       -1.51945     107.95175
+	           B(13,4,14)     109.47124       -0.00031       -1.29960     108.17164
+	           D(1,2,3,9)     180.00000        0.00003        0.24476     180.24476
+	          D(1,2,3,10)      60.00005       -0.00000       -0.01999      59.98006
+	          D(1,2,3,11)     -60.00000        0.00005        0.41873     -59.58127
+	          D(2,1,4,12)     180.00000        0.00003        0.24476     180.24476
+	          D(2,1,4,13)      60.00005       -0.00000       -0.01999      59.98006
+	          D(2,1,4,14)     -60.00000        0.00005        0.41873     -59.58127
+	          *D(3,2,1,4)     120.00000        0.00000        0.00000     120.00000
+	           D(3,2,1,5)      -0.00000       -0.00013       -0.98037      -0.98037
+	           D(3,2,1,6)    -119.99997        0.00013        1.11806    -118.88192
+	           D(4,1,2,7)       0.00000       -0.00013       -0.98037      -0.98037
+	           D(4,1,2,8)    -119.99997        0.00013        1.11806    -118.88192
+	           D(5,1,2,7)    -120.00000       -0.00026       -1.96073    -121.96073
+	           D(5,1,2,8)     120.00003        0.00000        0.13769     120.13771
+	          D(5,1,4,12)     -60.00000        0.00023        1.72900     -58.27100
+	          D(5,1,4,13)     180.00000        0.00020        1.46430     181.46430
+	          D(5,1,4,14)      59.99997        0.00026        1.90299      61.90297
+	           D(6,1,2,7)     120.00003        0.00000        0.13769     120.13771
+	           D(6,1,2,8)       0.00000        0.00026        2.23616       2.23616
+	          D(6,1,4,12)      60.00000       -0.00024       -1.70481      58.29519
+	          D(6,1,4,13)     -59.99997       -0.00028       -1.96954     -61.96951
+	          D(6,1,4,14)     180.00000       -0.00022       -1.53085     178.46915
+	           D(7,2,3,9)     -60.00000        0.00023        1.72900     -58.27100
+	          D(7,2,3,10)     180.00000        0.00020        1.46430     181.46430
+	          D(7,2,3,11)      59.99997        0.00026        1.90299      61.90297
+	           D(8,2,3,9)      60.00000       -0.00024       -1.70481      58.29519
+	          D(8,2,3,10)     -59.99997       -0.00028       -1.96954     -61.96951
+	          D(8,2,3,11)     180.00000       -0.00022       -1.53085     178.46915
+	-------------------------------------------------------------------------------
+
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------~
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   ~
+	----------------------------------------------------------------------------------------------~
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o~
+	----------------------------------------------------------------------------------------------~
+	     1    -156.40522385   -1.56e+02      3.46e-02      1.42e-02 o    1.03e-01      4.69e-02 o  ~
+	----------------------------------------------------------------------------------------------
+
+Next Geometry in Ang 
+	Fragment 1 (Ang)
+
+	    C  -0.0309460805   0.7816395841   0.3688983426
+	    C   0.0309460805  -0.7816395841   0.3688983426
+	    C   1.2847985562  -1.3367189383  -0.3417689551
+	    C  -1.2847985562   1.3367189383  -0.3417689551
+	    H   0.8496620069   1.1769773303  -0.1279190240
+	    H  -0.0255930433   1.1504670593   1.3905755753
+	    H  -0.8496620069  -1.1769773303  -0.1279190240
+	    H   0.0255930433  -1.1504670593   1.3905755753
+	    H   1.3059941510  -2.4233869717  -0.3341537898
+	    H   2.1867402719  -0.9809841946   0.1466847171
+	    H   1.3082934803  -1.0086151150  -1.3771157413
+	    H  -1.3059941510   2.4233869717  -0.3341537898
+	    H  -2.1867402719   0.9809841946   0.1466847171
+	    H  -1.3082934803   1.0086151150  -1.3771157413
+
+
+    Structure for next step:
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    C       
+    C             1    1.564504
+    C             2    1.544444      1  113.031649
+    C             1    1.544444      2  113.031649      3  120.000000
+    H             1    1.085629      2  109.376920      4 -120.980367
+    H             1    1.086226      5  107.625260      2  119.267735
+    H             2    1.085629      1  109.376920      3 -120.980367
+    H             2    1.086226      7  107.625260      1  119.267735
+    H             3    1.086901      2  111.834986      8   58.295188
+    H             3    1.085649      9  107.953588      2  121.723103
+    H             3    1.086346      9  107.951752     10  116.717034
+    H             4    1.086901      1  111.834986      6   58.295188
+    H             4    1.085649     12  107.953588      1  121.723103
+    H             4    1.086346     12  107.951752     13  116.717034
+
+
+Scratch directory: /Users/blink/PSI4_SCRATCH/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, 4
+    Auxiliary basis highest AM E, G, H:  7, 7, 6
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 10:55:37 2026
+
+   => Loading Basis Set <=
+
+    Name: 3-21G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-4  entry C          line    68 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+    atoms 5-14 entry H          line    21 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        4 Threads,   3814 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            0.000000000000     0.782251941046     0.368166165299    12.000000000000
+         C            0.000000000000    -0.782251941046     0.368166165299    12.000000000000
+         C            1.230911866953    -1.386499486410    -0.342501132435    12.000000000000
+         C           -1.230911866953     1.386499486410    -0.342501132435    12.000000000000
+         H            0.895558395117     1.142443137727    -0.128651201374     1.007825032230
+         H            0.019939753091     1.150578925829     1.389843397981     1.007825032230
+         H           -0.895558395117    -1.142443137727    -0.128651201373     1.007825032230
+         H           -0.019939753091    -1.150578925830     1.389843397981     1.007825032230
+         H            1.209102013014    -2.473155364913    -0.334885967094     1.007825032230
+         H            2.146220485457    -1.066724254157     0.145952539719     1.007825032230
+         H            1.267368267413    -1.059581972067    -1.377847918662     1.007825032230
+         H           -1.209102013014     2.473155364913    -0.334885967094     1.007825032230
+         H           -2.146220485457     1.066724254157     0.145952539719     1.007825032230
+         H           -1.267368267413     1.059581972068    -1.377847918661     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.60060  B =      0.12354  C =      0.12343 [cm^-1]
+  Rotational constants: A =  18005.63965  B =   3703.56479  C =   3700.46661 [MHz]
+  Nuclear repulsion =  130.290685430090122
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 34
+  Nalpha       = 17
+  Nbeta        = 17
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is READ.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 3-21G
+    Blend: 3-21G
+    Number of shells: 40
+    Number of basis functions: 56
+    Number of Cartesian functions: 56
+    Spherical Harmonics?: false
+    Max angular momentum: 1
+
+   => Loading Basis Set <=
+
+    Name: 3-21G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-4  entry C          line    68 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+    atoms 5-14 entry H          line    21 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+
+  Reading orbitals from file /Users/blink/PSI4_SCRATCH/butane_eclipsed.default.54365.180.npy, no projection.
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                  14
+      Number of AO shells:              40
+      Number of primitives:             66
+      Number of atomic orbitals:        56
+      Number of basis functions:        56
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 4
+
+  Performing in-core PK
+  Using 2548812 doubles for integral storage.
+  We computed 312957 shell quartets total.
+  Whereas there are 336610 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:             2861
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              4
+
+  Minimum eigenvalue in the overlap matrix is 1.2962221703E-02.
+  Reciprocal condition number of the overlap matrix is 2.7533643853E-03.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Orbitals guess was supplied from a previous computation.
+
+   -------------------------------------------------------
+    Irrep   Nso     Nmo     Nalpha   Nbeta   Ndocc  Nsocc
+   -------------------------------------------------------
+     A         56      56      17      17      17       0
+   -------------------------------------------------------
+    Total      56      56      17      17      17       0
+   -------------------------------------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter   0:  -156.61724859216898   -1.56617e+02   4.34133e-03 
+   @RHF iter   1:  -156.42564860319763    1.91600e-01   5.80738e-04 ADIIS/DIIS
+   @RHF iter   2:  -156.42642896584303   -7.80363e-04   2.20044e-04 ADIIS/DIIS
+   @RHF iter   3:  -156.42650635618270   -7.73903e-05   5.01536e-05 DIIS
+   @RHF iter   4:  -156.42651440240991   -8.04623e-06   7.18241e-06 DIIS
+   @RHF iter   5:  -156.42651460399225   -2.01582e-07   1.85332e-06 DIIS
+   @RHF iter   6:  -156.42651461209195   -8.09970e-09   3.39689e-07 DIIS
+   @RHF iter   7:  -156.42651461249673   -4.04782e-10   5.65464e-08 DIIS
+   @RHF iter   8:  -156.42651461250949   -1.27613e-11   5.40739e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.158840     2A    -11.158568     3A    -11.150236  
+       4A    -11.150213     5A     -1.064736     6A     -0.980750  
+       7A     -0.864672     8A     -0.790671     9A     -0.631063  
+      10A     -0.600839    11A     -0.580140    12A     -0.551585  
+      13A     -0.507106    14A     -0.506005    15A     -0.460833  
+      16A     -0.454744    17A     -0.449384  
+
+    Virtual:                                                              
+
+      18A      0.265174    19A      0.303598    20A      0.312725  
+      21A      0.322152    22A      0.344143    23A      0.348188  
+      24A      0.354981    25A      0.361706    26A      0.379370  
+      27A      0.383870    28A      0.438866    29A      0.469918  
+      30A      0.486086    31A      0.888202    32A      0.916511  
+      33A      0.934753    34A      0.976875    35A      1.023527  
+      36A      1.031639    37A      1.062779    38A      1.084354  
+      39A      1.111136    40A      1.135382    41A      1.268322  
+      42A      1.307145    43A      1.314816    44A      1.366810  
+      45A      1.367287    46A      1.376403    47A      1.376884  
+      48A      1.414483    49A      1.431509    50A      1.439290  
+      51A      1.486280    52A      1.503892    53A      1.894704  
+      54A      2.064153    55A      2.352123    56A      2.576621  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    17 ]
+    NA   [    17 ]
+    NB   [    17 ]
+
+  @RHF Final Energy:  -156.42651461250949
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            130.2906854300901216
+    One-Electron Energy =                -467.3136291744141317
+    Two-Electron Energy =                 180.5964291318145456
+    Total Energy =                       -156.4265146125094930
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Y            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Z            :          0.5873259           -0.5729610            0.0143649
+ Magnitude           :                                                    0.0143649
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 10:55:37 2026
+Module time:
+	user time   =       0.58 seconds =       0.01 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =      36.89 seconds =       0.61 minutes
+	system time =       0.84 seconds =       0.01 minutes
+	total time  =       2743 seconds =      45.72 minutes
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 10:55:37 2026
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            0.000000000000     0.782251941046     0.368166165299    12.000000000000
+         C            0.000000000000    -0.782251941046     0.368166165299    12.000000000000
+         C            1.230911866953    -1.386499486410    -0.342501132435    12.000000000000
+         C           -1.230911866953     1.386499486410    -0.342501132435    12.000000000000
+         H            0.895558395117     1.142443137727    -0.128651201374     1.007825032230
+         H            0.019939753091     1.150578925829     1.389843397981     1.007825032230
+         H           -0.895558395117    -1.142443137727    -0.128651201373     1.007825032230
+         H           -0.019939753091    -1.150578925830     1.389843397981     1.007825032230
+         H            1.209102013014    -2.473155364913    -0.334885967094     1.007825032230
+         H            2.146220485457    -1.066724254157     0.145952539719     1.007825032230
+         H            1.267368267413    -1.059581972067    -1.377847918662     1.007825032230
+         H           -1.209102013014     2.473155364913    -0.334885967094     1.007825032230
+         H           -2.146220485457     1.066724254157     0.145952539719     1.007825032230
+         H           -1.267368267413     1.059581972068    -1.377847918661     1.007825032230
+
+  Nuclear repulsion =  130.290685430090122
+
+  ==> Basis Set <==
+
+  Basis Set: 3-21G
+    Blend: 3-21G
+    Number of shells: 40
+    Number of basis functions: 56
+    Number of Cartesian functions: 56
+    Spherical Harmonics?: false
+    Max angular momentum: 1
+
+  ==> DirectJKGrad: Integral-Direct SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           4
+    Schwarz Cutoff:          1E-12
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000144019525    -0.000039760910    -0.000048440853
+       2       -0.000144019526     0.000039760910    -0.000048440853
+       3       -0.001351474514    -0.001959834537     0.001587694475
+       4        0.001351474514     0.001959834537     0.001587694475
+       5       -0.000208600989     0.000122058113    -0.001716705006
+       6       -0.001960211182     0.000803961129     0.001397737283
+       7        0.000208600989    -0.000122058113    -0.001716705006
+       8        0.001960211182    -0.000803961129     0.001397737283
+       9        0.001539059592    -0.001749977979    -0.000904486486
+      10        0.000322297173    -0.000016093761     0.000421598797
+      11       -0.000328236200     0.000100940946    -0.000737398211
+      12       -0.001539059592     0.001749977979    -0.000904486486
+      13       -0.000322297173     0.000016093761     0.000421598797
+      14        0.000328236200    -0.000100940946    -0.000737398211
+
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 10:55:38 2026
+Module time:
+	user time   =       0.21 seconds =       0.00 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =      37.11 seconds =       0.62 minutes
+	system time =       0.84 seconds =       0.01 minutes
+	total time  =       2744 seconds =      45.73 minutes
+
+    			-----------------------------------------
+
+    			 OPTKING 3.0: for geometry optimizations 
+
+    			     By R.A. King, Bethel University     
+
+    			        with contributions from          
+
+    			    A.V. Copan, J. Cayton, A. Heide      
+
+    			-----------------------------------------
+
+    
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       6.000000            12.000000          0.00000000  1.47824193  0.69573322   
+	       6.000000            12.000000          0.00000000 -1.47824193  0.69573322   
+	       6.000000            12.000000          2.32608631 -2.62010430 -0.64723334   
+	       6.000000            12.000000         -2.32608631  2.62010430 -0.64723334   
+	       1.000000             1.007825          1.69236010  2.15890464 -0.24311554   
+	       1.000000             1.007825          0.03768067  2.17427906  2.62642338   
+	       1.000000             1.007825         -1.69236010 -2.15890464 -0.24311554   
+	       1.000000             1.007825         -0.03768067 -2.17427906  2.62642338   
+	       1.000000             1.007825          2.28487166 -4.67358631 -0.63284276   
+	       1.000000             1.007825          4.05576892 -2.01581669  0.27581033   
+	       1.000000             1.007825          2.39497893 -2.00231973 -2.60375521   
+	       1.000000             1.007825         -2.28487166  4.67358631 -0.63284276   
+	       1.000000             1.007825         -4.05576892  2.01581669  0.27581033   
+	       1.000000             1.007825         -2.39497893  2.00231973 -2.60375521   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         2.956484           1.564504
+	 R(1,4)           =         2.918576           1.544444
+	 R(1,5)           =         2.051541           1.085629
+	 R(1,6)           =         2.052669           1.086226
+	 R(2,3)           =         2.918576           1.544444
+	 R(2,7)           =         2.051541           1.085629
+	 R(2,8)           =         2.052669           1.086226
+	 R(3,9)           =         2.053946           1.086901
+	 R(3,10)          =         2.051579           1.085649
+	 R(3,11)          =         2.052896           1.086346
+	 R(4,12)          =         2.053946           1.086901
+	 R(4,13)          =         2.051579           1.085649
+	 R(4,14)          =         2.052896           1.086346
+	 B(1,2,3)         =         1.972774         113.031649
+	 B(1,2,7)         =         1.908987         109.376920
+	 B(1,2,8)         =         1.916744         109.821365
+	 B(1,4,12)        =         1.951889         111.834986
+	 B(1,4,13)        =         1.928023         110.467602
+	 B(1,4,14)        =         1.925755         110.337651
+	 B(2,1,4)         =         1.972774         113.031649
+	 B(2,1,5)         =         1.908987         109.376920
+	 B(2,1,6)         =         1.916744         109.821365
+	 B(2,3,9)         =         1.951889         111.834986
+	 B(2,3,10)        =         1.928023         110.467602
+	 B(2,3,11)        =         1.925755         110.337651
+	 B(3,2,7)         =         1.893440         108.486109
+	 B(3,2,8)         =         1.891006         108.346682
+	 B(4,1,5)         =         1.893440         108.486109
+	 B(4,1,6)         =         1.891006         108.346682
+	 B(5,1,6)         =         1.878415         107.625260
+	 B(7,2,8)         =         1.878415         107.625260
+	 B(9,3,10)        =         1.884146         107.953588
+	 B(9,3,11)        =         1.884114         107.951752
+	 B(10,3,11)       =         1.887951         108.171637
+	 B(12,4,13)       =         1.884146         107.953588
+	 B(12,4,14)       =         1.884114         107.951752
+	 B(13,4,14)       =         1.887951         108.171637
+	 D(1,2,3,9)       =         3.145865         180.244761
+	 D(1,2,3,10)      =         1.046850          59.980063
+	 D(1,2,3,11)      =        -1.039889         -59.581274
+	 D(2,1,4,12)      =         3.145865         180.244761
+	 D(2,1,4,13)      =         1.046850          59.980063
+	 D(2,1,4,14)      =        -1.039889         -59.581274
+	*D(3,2,1,4)       =         2.094395         120.000000
+	 D(3,2,1,5)       =        -0.017111          -0.980367
+	 D(3,2,1,6)       =        -2.074881        -118.881918
+	 D(4,1,2,7)       =        -0.017111          -0.980367
+	 D(4,1,2,8)       =        -2.074881        -118.881918
+	 D(5,1,2,7)       =        -2.128616        -121.960734
+	 D(5,1,2,8)       =         2.096799         120.137715
+	 D(5,1,4,12)      =        -1.017021         -58.271000
+	 D(5,1,4,13)      =         3.167150         181.464302
+	 D(5,1,4,14)      =         1.080411          61.902965
+	 D(6,1,2,7)       =         2.096799         120.137715
+	 D(6,1,2,8)       =         0.039028           2.236164
+	 D(6,1,4,12)      =         1.017443          58.295188
+	 D(6,1,4,13)      =        -1.081572         -61.969510
+	 D(6,1,4,14)      =         3.114874         178.469153
+	 D(7,2,3,9)       =        -1.017021         -58.271000
+	 D(7,2,3,10)      =         3.167150         181.464302
+	 D(7,2,3,11)      =         1.080411          61.902965
+	 D(8,2,3,9)       =         1.017443          58.295188
+	 D(8,2,3,10)      =        -1.081572         -61.969510
+	 D(8,2,3,11)      =         3.114874         178.469153
+
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       1.56450       -0.03717       -0.00803       1.55647
+	               R(1,4)       1.54444       -0.01148       -0.00252       1.54192
+	               R(1,5)       1.08563       -0.00539       -0.00190       1.08373
+	               R(1,6)       1.08623       -0.01278       -0.00349       1.08274
+	               R(2,3)       1.54444       -0.01148       -0.00252       1.54192
+	               R(2,7)       1.08563       -0.00539       -0.00190       1.08373
+	               R(2,8)       1.08623       -0.01278       -0.00349       1.08274
+	               R(3,9)       1.08690       -0.01411       -0.00377       1.08313
+	              R(3,10)       1.08565       -0.00376       -0.00155       1.08410
+	              R(3,11)       1.08635       -0.00595       -0.00201       1.08434
+	              R(4,12)       1.08690       -0.01411       -0.00377       1.08313
+	              R(4,13)       1.08565       -0.00376       -0.00155       1.08410
+	              R(4,14)       1.08635       -0.00595       -0.00201       1.08434
+	             B(1,2,3)     113.03165       -0.00028       -0.81579     112.21586
+	             B(1,2,7)     109.37692        0.00007        0.03741     109.41433
+	             B(1,2,8)     109.82137        0.00004       -0.08217     109.73920
+	            B(1,4,12)     111.83499       -0.00021       -1.01591     110.81908
+	            B(1,4,13)     110.46760        0.00004        0.22810     110.69570
+	            B(1,4,14)     110.33765        0.00006        0.32637     110.66402
+	             B(2,1,4)     113.03165       -0.00028       -0.81579     112.21586
+	             B(2,1,5)     109.37692        0.00007        0.03741     109.41433
+	             B(2,1,6)     109.82137        0.00004       -0.08217     109.73920
+	             B(2,3,9)     111.83499       -0.00021       -1.01591     110.81908
+	            B(2,3,10)     110.46760        0.00004        0.22810     110.69570
+	            B(2,3,11)     110.33765        0.00006        0.32637     110.66402
+	             B(3,2,7)     108.48611        0.00013        0.64320     109.12931
+	             B(3,2,8)     108.34668        0.00016        0.95766     109.30434
+	             B(4,1,5)     108.48611        0.00013        0.64320     109.12931
+	             B(4,1,6)     108.34668        0.00016        0.95766     109.30434
+	             B(5,1,6)     107.62526       -0.00010       -0.73373     106.89153
+	             B(7,2,8)     107.62526       -0.00010       -0.73373     106.89153
+	            B(9,3,10)     107.95359        0.00007        0.24604     108.19963
+	            B(9,3,11)     107.95175        0.00007        0.25774     108.20949
+	           B(10,3,11)     108.17164       -0.00003       -0.01824     108.15339
+	           B(12,4,13)     107.95359        0.00007        0.24604     108.19963
+	           B(12,4,14)     107.95175        0.00007        0.25774     108.20949
+	           B(13,4,14)     108.17164       -0.00003       -0.01824     108.15339
+	           D(1,2,3,9)     180.24476       -0.00001        0.14717     180.39194
+	          D(1,2,3,10)      59.98006        0.00001        0.35590      60.33596
+	          D(1,2,3,11)     -59.58127       -0.00002        0.02072     -59.56055
+	          D(2,1,4,12)     180.24476       -0.00001        0.14717     180.39194
+	          D(2,1,4,13)      59.98006        0.00001        0.35590      60.33596
+	          D(2,1,4,14)     -59.58127       -0.00002        0.02072     -59.56055
+	          *D(3,2,1,4)     120.00000        0.00000        0.00000     120.00000
+	           D(3,2,1,5)      -0.98037       -0.00003       -0.30225      -1.28262
+	           D(3,2,1,6)    -118.88192        0.00004        0.61323    -118.26869
+	           D(4,1,2,7)      -0.98037       -0.00003       -0.30225      -1.28262
+	           D(4,1,2,8)    -118.88192        0.00004        0.61323    -118.26869
+	           D(5,1,2,7)    -121.96073       -0.00005       -0.60451    -122.56524
+	           D(5,1,2,8)     120.13771        0.00001        0.31097     120.44869
+	          D(5,1,4,12)     -58.27100       -0.00001        0.10905     -58.16195
+	          D(5,1,4,13)     181.46430        0.00000        0.31777     181.78207
+	          D(5,1,4,14)      61.90297       -0.00002       -0.01741      61.88556
+	           D(6,1,2,7)     120.13771        0.00001        0.31097     120.44869
+	           D(6,1,2,8)       2.23616        0.00007        1.22646       3.46262
+	          D(6,1,4,12)      58.29519        0.00002        0.11731      58.41250
+	          D(6,1,4,13)     -61.96951        0.00003        0.32603     -61.64348
+	          D(6,1,4,14)     178.46915        0.00001       -0.00914     178.46001
+	           D(7,2,3,9)     -58.27100       -0.00001        0.10905     -58.16195
+	          D(7,2,3,10)     181.46430        0.00000        0.31777     181.78207
+	          D(7,2,3,11)      61.90297       -0.00002       -0.01741      61.88556
+	           D(8,2,3,9)      58.29519        0.00002        0.11731      58.41250
+	          D(8,2,3,10)     -61.96951        0.00003        0.32603     -61.64348
+	          D(8,2,3,11)     178.46915        0.00001       -0.00914     178.46001
+	-------------------------------------------------------------------------------
+
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   
+	----------------------------------------------------------------------------------------------
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+	----------------------------------------------------------------------------------------------
+	     2    -156.42651461   -2.13e-02      4.51e-03      1.30e-03 o    2.14e-02      7.94e-03 o  ~
+	----------------------------------------------------------------------------------------------
+
+Next Geometry in Ang 
+	Fragment 1 (Ang)
+
+	    C   0.0053086376   0.7782181356   0.3687356550
+	    C  -0.0053086376  -0.7782181356   0.3687356550
+	    C   1.2269005073  -1.3696329106  -0.3449932555
+	    C  -1.2269005073   1.3696329106  -0.3449932555
+	    H   0.9041346630   1.1323237628  -0.1223767902
+	    H   0.0385923417   1.1436823687   1.3873853060
+	    H  -0.9041346630  -1.1323237628  -0.1223767902
+	    H  -0.0385923417  -1.1436823687   1.3873853060
+	    H   1.1931948713  -2.4522171314  -0.3377940935
+	    H   2.1411925984  -1.0560661040   0.1459490652
+	    H   1.2668850177  -1.0387206216  -1.3768300036
+	    H  -1.1931948713   2.4522171314  -0.3377940935
+	    H  -2.1411925984   1.0560661040   0.1459490652
+	    H  -1.2668850177   1.0387206216  -1.3768300036
+
+
+    Structure for next step:
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    C       
+    C             1    1.556472
+    C             2    1.541921      1  112.215857
+    C             1    1.541921      2  112.215857      3  120.000000
+    H             1    1.083730      2  109.414331      4 -121.282621
+    H             1    1.082737      5  106.891531      2  118.768314
+    H             2    1.083730      1  109.414331      3 -121.282621
+    H             2    1.082737      7  106.891531      1  118.768314
+    H             3    1.083133      2  110.819077      8   58.412496
+    H             3    1.084103      9  108.199630      2  121.534857
+    H             3    1.084338      9  108.209489     10  116.963060
+    H             4    1.083133      1  110.819077      6   58.412496
+    H             4    1.084103     12  108.199630      1  121.534857
+    H             4    1.084338     12  108.209489     13  116.963060
+
+
+Scratch directory: /Users/blink/PSI4_SCRATCH/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, 4
+    Auxiliary basis highest AM E, G, H:  7, 7, 6
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 10:55:38 2026
+
+   => Loading Basis Set <=
+
+    Name: 3-21G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-4  entry C          line    68 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+    atoms 5-14 entry H          line    21 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        4 Threads,   3814 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            0.000000000000     0.778236241913     0.369463429038    12.000000000000
+         C            0.000000000000    -0.778236241913     0.369463429038    12.000000000000
+         C            1.236214735696    -1.361231902315    -0.344265481393    12.000000000000
+         C           -1.236214735696     1.361231902315    -0.344265481392    12.000000000000
+         H            0.896389627906     1.138464855660    -0.121649016165     1.007825032230
+         H            0.030789962908     1.143919012613     1.388113080093     1.007825032230
+         H           -0.896389627906    -1.138464855661    -0.121649016165     1.007825032230
+         H           -0.030789962908    -1.143919012614     1.388113080093     1.007825032230
+         H            1.209894591623    -2.444020854581    -0.337066319442     1.007825032230
+         H            2.148346599698    -1.041435666205     0.146676839273     1.007825032230
+         H            1.273941040561    -1.030054563167    -1.376102229506     1.007825032230
+         H           -1.209894591622     2.444020854581    -0.337066319442     1.007825032230
+         H           -2.148346599698     1.041435666207     0.146676839274     1.007825032230
+         H           -1.273941040562     1.030054563167    -1.376102229505     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.59665  B =      0.12539  C =      0.12539 [cm^-1]
+  Rotational constants: A =  17887.02350  B =   3759.18990  C =   3758.99832 [MHz]
+  Nuclear repulsion =  130.812583586419919
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 34
+  Nalpha       = 17
+  Nbeta        = 17
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is READ.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 3-21G
+    Blend: 3-21G
+    Number of shells: 40
+    Number of basis functions: 56
+    Number of Cartesian functions: 56
+    Spherical Harmonics?: false
+    Max angular momentum: 1
+
+   => Loading Basis Set <=
+
+    Name: 3-21G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-4  entry C          line    68 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+    atoms 5-14 entry H          line    21 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+
+  Reading orbitals from file /Users/blink/PSI4_SCRATCH/butane_eclipsed.default.54365.180.npy, no projection.
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                  14
+      Number of AO shells:              40
+      Number of primitives:             66
+      Number of atomic orbitals:        56
+      Number of basis functions:        56
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 4
+
+  Performing in-core PK
+  Using 2548812 doubles for integral storage.
+  We computed 313638 shell quartets total.
+  Whereas there are 336610 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:             2861
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              4
+
+  Minimum eigenvalue in the overlap matrix is 1.2725837401E-02.
+  Reciprocal condition number of the overlap matrix is 2.6871094098E-03.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Orbitals guess was supplied from a previous computation.
+
+   -------------------------------------------------------
+    Irrep   Nso     Nmo     Nalpha   Nbeta   Ndocc  Nsocc
+   -------------------------------------------------------
+     A         56      56      17      17      17       0
+   -------------------------------------------------------
+    Total      56      56      17      17      17       0
+   -------------------------------------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter   0:  -156.43884751081333   -1.56439e+02   5.24710e-04 
+   @RHF iter   1:  -156.42667334121612    1.21742e-02   7.55733e-05 DIIS
+   @RHF iter   2:  -156.42668433222875   -1.09910e-05   2.98428e-05 DIIS
+   @RHF iter   3:  -156.42668589025189   -1.55802e-06   6.68252e-06 DIIS
+   @RHF iter   4:  -156.42668604944475   -1.59193e-07   6.71883e-07 DIIS
+   @RHF iter   5:  -156.42668605117231   -1.72756e-09   1.85030e-07 DIIS
+   @RHF iter   6:  -156.42668605125652   -8.42135e-11   3.99260e-08 DIIS
+   @RHF iter   7:  -156.42668605126241   -5.88329e-12   4.96895e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.156622     2A    -11.156346     3A    -11.149010  
+       4A    -11.148982     5A     -1.067343     6A     -0.980936  
+       7A     -0.865639     8A     -0.792121     9A     -0.632040  
+      10A     -0.600758    11A     -0.581596    12A     -0.551156  
+      13A     -0.508689    14A     -0.508323    15A     -0.463580  
+      16A     -0.454821    17A     -0.446618  
+
+    Virtual:                                                              
+
+      18A      0.266158    19A      0.304877    20A      0.312641  
+      21A      0.322369    22A      0.344268    23A      0.351372  
+      24A      0.355619    25A      0.361894    26A      0.381186  
+      27A      0.385653    28A      0.441307    29A      0.471290  
+      30A      0.487405    31A      0.885503    32A      0.916457  
+      33A      0.936275    34A      0.977710    35A      1.025378  
+      36A      1.032037    37A      1.067097    38A      1.087502  
+      39A      1.110208    40A      1.139042    41A      1.272736  
+      42A      1.308689    43A      1.313302    44A      1.369640  
+      45A      1.370108    46A      1.379073    47A      1.379920  
+      48A      1.416884    49A      1.426202    50A      1.444942  
+      51A      1.489235    52A      1.502751    53A      1.894577  
+      54A      2.067329    55A      2.362424    56A      2.579056  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    17 ]
+    NA   [    17 ]
+    NB   [    17 ]
+
+  @RHF Final Energy:  -156.42668605126241
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            130.8125835864199189
+    One-Electron Energy =                -468.3493785703109324
+    Two-Electron Energy =                 181.1101089326286058
+    Total Energy =                       -156.4266860512624078
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Y            :         -0.0000000            0.0000000            0.0000000
+ Dipole Z            :          0.5798921           -0.5625335            0.0173586
+ Magnitude           :                                                    0.0173586
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 10:55:38 2026
+Module time:
+	user time   =       0.55 seconds =       0.01 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =      37.75 seconds =       0.63 minutes
+	system time =       0.85 seconds =       0.01 minutes
+	total time  =       2744 seconds =      45.73 minutes
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 10:55:38 2026
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            0.000000000000     0.778236241913     0.369463429038    12.000000000000
+         C            0.000000000000    -0.778236241913     0.369463429038    12.000000000000
+         C            1.236214735696    -1.361231902315    -0.344265481393    12.000000000000
+         C           -1.236214735696     1.361231902315    -0.344265481392    12.000000000000
+         H            0.896389627906     1.138464855660    -0.121649016165     1.007825032230
+         H            0.030789962908     1.143919012613     1.388113080093     1.007825032230
+         H           -0.896389627906    -1.138464855661    -0.121649016165     1.007825032230
+         H           -0.030789962908    -1.143919012614     1.388113080093     1.007825032230
+         H            1.209894591623    -2.444020854581    -0.337066319442     1.007825032230
+         H            2.148346599698    -1.041435666205     0.146676839273     1.007825032230
+         H            1.273941040561    -1.030054563167    -1.376102229506     1.007825032230
+         H           -1.209894591622     2.444020854581    -0.337066319442     1.007825032230
+         H           -2.148346599698     1.041435666207     0.146676839274     1.007825032230
+         H           -1.273941040562     1.030054563167    -1.376102229505     1.007825032230
+
+  Nuclear repulsion =  130.812583586419919
+
+  ==> Basis Set <==
+
+  Basis Set: 3-21G
+    Blend: 3-21G
+    Number of shells: 40
+    Number of basis functions: 56
+    Number of Cartesian functions: 56
+    Spherical Harmonics?: false
+    Max angular momentum: 1
+
+  ==> DirectJKGrad: Integral-Direct SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           4
+    Schwarz Cutoff:          1E-12
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.001550183001     0.001323441899     0.000686062215
+       2       -0.001550183001    -0.001323441899     0.000686062215
+       3        0.000948202125     0.000826851189    -0.000612851330
+       4       -0.000948202125    -0.000826851189    -0.000612851330
+       5       -0.000353535859    -0.000612504840     0.000485784431
+       6        0.000251001972    -0.000980432063    -0.000803753002
+       7        0.000353535859     0.000612504840     0.000485784431
+       8       -0.000251001972     0.000980432062    -0.000803753002
+       9       -0.000495261830     0.001255814013     0.000280597585
+      10       -0.000251671406    -0.000267106831    -0.000417495259
+      11        0.000341927739    -0.000367248992     0.000381655360
+      12        0.000495261830    -0.001255814013     0.000280597585
+      13        0.000251671406     0.000267106831    -0.000417495259
+      14       -0.000341927739     0.000367248992     0.000381655360
+
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 10:55:38 2026
+Module time:
+	user time   =       0.21 seconds =       0.00 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =      37.96 seconds =       0.63 minutes
+	system time =       0.86 seconds =       0.01 minutes
+	total time  =       2744 seconds =      45.73 minutes
+
+    			-----------------------------------------
+
+    			 OPTKING 3.0: for geometry optimizations 
+
+    			     By R.A. King, Bethel University     
+
+    			        with contributions from          
+
+    			    A.V. Copan, J. Cayton, A. Heide      
+
+    			-----------------------------------------
+
+    
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       6.000000            12.000000          0.00000000  1.47065336  0.69818469   
+	       6.000000            12.000000          0.00000000 -1.47065336  0.69818469   
+	       6.000000            12.000000          2.33610728 -2.57235549 -0.65056747   
+	       6.000000            12.000000         -2.33610728  2.57235549 -0.65056747   
+	       1.000000             1.007825          1.69393090  2.15138678 -0.22988332   
+	       1.000000             1.007825          0.05818460  2.16169364  2.62315355   
+	       1.000000             1.007825         -1.69393090 -2.15138678 -0.22988332   
+	       1.000000             1.007825         -0.05818460 -2.16169364  2.62315355   
+	       1.000000             1.007825          2.28636942 -4.61853006 -0.63696303   
+	       1.000000             1.007825          4.05978670 -1.96802819  0.27717906   
+	       1.000000             1.007825          2.40739967 -1.94652102 -2.60045633   
+	       1.000000             1.007825         -2.28636942  4.61853006 -0.63696303   
+	       1.000000             1.007825         -4.05978670  1.96802819  0.27717906   
+	       1.000000             1.007825         -2.40739967  1.94652102 -2.60045633   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         2.941307           1.556472
+	 R(1,4)           =         2.913808           1.541921
+	 R(1,5)           =         2.047953           1.083730
+	 R(1,6)           =         2.046076           1.082737
+	 R(2,3)           =         2.913808           1.541921
+	 R(2,7)           =         2.047953           1.083730
+	 R(2,8)           =         2.046076           1.082737
+	 R(3,9)           =         2.046824           1.083133
+	 R(3,10)          =         2.048657           1.084103
+	 R(3,11)          =         2.049102           1.084338
+	 R(4,12)          =         2.046824           1.083133
+	 R(4,13)          =         2.048657           1.084103
+	 R(4,14)          =         2.049102           1.084338
+	 B(1,2,3)         =         1.958536         112.215857
+	 B(1,2,7)         =         1.909640         109.414331
+	 B(1,2,8)         =         1.915310         109.739199
+	 B(1,4,12)        =         1.934158         110.819077
+	 B(1,4,13)        =         1.932004         110.695699
+	 B(1,4,14)        =         1.931451         110.664017
+	 B(2,1,4)         =         1.958536         112.215857
+	 B(2,1,5)         =         1.909640         109.414331
+	 B(2,1,6)         =         1.915310         109.739199
+	 B(2,3,9)         =         1.934158         110.819077
+	 B(2,3,10)        =         1.932004         110.695699
+	 B(2,3,11)        =         1.931451         110.664017
+	 B(3,2,7)         =         1.904666         109.129310
+	 B(3,2,8)         =         1.907721         109.304338
+	 B(4,1,5)         =         1.904666         109.129310
+	 B(4,1,6)         =         1.907721         109.304338
+	 B(5,1,6)         =         1.865609         106.891531
+	 B(7,2,8)         =         1.865609         106.891531
+	 B(9,3,10)        =         1.888440         108.199630
+	 B(9,3,11)        =         1.888612         108.209489
+	 B(10,3,11)       =         1.887633         108.153394
+	 B(12,4,13)       =         1.888440         108.199630
+	 B(12,4,14)       =         1.888612         108.209489
+	 B(13,4,14)       =         1.887633         108.153394
+	 D(1,2,3,9)       =         3.148433         180.391935
+	 D(1,2,3,10)      =         1.053061          60.335960
+	 D(1,2,3,11)      =        -1.039528         -59.560553
+	 D(2,1,4,12)      =         3.148433         180.391935
+	 D(2,1,4,13)      =         1.053061          60.335960
+	 D(2,1,4,14)      =        -1.039528         -59.560553
+	*D(3,2,1,4)       =         2.094395         120.000000
+	 D(3,2,1,5)       =        -0.022386          -1.282621
+	 D(3,2,1,6)       =        -2.064178        -118.268690
+	 D(4,1,2,7)       =        -0.022386          -1.282621
+	 D(4,1,2,8)       =        -2.064178        -118.268690
+	 D(5,1,2,7)       =        -2.139167        -122.565241
+	 D(5,1,2,8)       =         2.102226         120.448689
+	 D(5,1,4,12)      =        -1.015118         -58.161953
+	 D(5,1,4,13)      =         3.172696         181.782071
+	 D(5,1,4,14)      =         1.080107          61.885559
+	 D(6,1,2,7)       =         2.102226         120.448689
+	 D(6,1,2,8)       =         0.060434           3.462619
+	 D(6,1,4,12)      =         1.019490          58.412496
+	 D(6,1,4,13)      =        -1.075882         -61.643479
+	 D(6,1,4,14)      =         3.114715         178.460009
+	 D(7,2,3,9)       =        -1.015118         -58.161953
+	 D(7,2,3,10)      =         3.172696         181.782071
+	 D(7,2,3,11)      =         1.080107          61.885559
+	 D(8,2,3,9)       =         1.019490          58.412496
+	 D(8,2,3,10)      =        -1.075882         -61.643479
+	 D(8,2,3,11)      =         3.114715         178.460009
+
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       1.55647        0.01415        0.00196       1.55843
+	               R(1,4)       1.54192       -0.00048       -0.00016       1.54176
+	               R(1,5)       1.08373        0.00590        0.00126       1.08499
+	               R(1,6)       1.08274        0.00890        0.00170       1.08443
+	               R(2,3)       1.54192       -0.00048       -0.00016       1.54176
+	               R(2,7)       1.08373        0.00590        0.00126       1.08499
+	               R(2,8)       1.08274        0.00890        0.00170       1.08443
+	               R(3,9)       1.08313        0.01023        0.00189       1.08502
+	              R(3,10)       1.08410        0.00395        0.00097       1.08507
+	              R(3,11)       1.08434        0.00382        0.00093       1.08527
+	              R(4,12)       1.08313        0.01023        0.00189       1.08502
+	              R(4,13)       1.08410        0.00395        0.00097       1.08507
+	              R(4,14)       1.08434        0.00382        0.00093       1.08527
+	             B(1,2,3)     112.21586        0.00010        0.24512     112.46098
+	             B(1,2,7)     109.41433       -0.00001        0.06671     109.48104
+	             B(1,2,8)     109.73920        0.00001        0.18953     109.92873
+	            B(1,4,12)     110.81908        0.00008        0.28162     111.10069
+	            B(1,4,13)     110.69570       -0.00004       -0.13836     110.55734
+	            B(1,4,14)     110.66402       -0.00005       -0.20639     110.45762
+	             B(2,1,4)     112.21586        0.00010        0.24512     112.46098
+	             B(2,1,5)     109.41433       -0.00001        0.06671     109.48104
+	             B(2,1,6)     109.73920        0.00001        0.18953     109.92873
+	             B(2,3,9)     110.81908        0.00008        0.28162     111.10069
+	            B(2,3,10)     110.69570       -0.00004       -0.13836     110.55734
+	            B(2,3,11)     110.66402       -0.00005       -0.20639     110.45762
+	             B(3,2,7)     109.12931       -0.00005       -0.21473     108.91458
+	             B(3,2,8)     109.30434       -0.00006       -0.23381     109.07053
+	             B(4,1,5)     109.12931       -0.00005       -0.21473     108.91458
+	             B(4,1,6)     109.30434       -0.00006       -0.23381     109.07053
+	             B(5,1,6)     106.89153        0.00001       -0.07196     106.81957
+	             B(7,2,8)     106.89153        0.00001       -0.07196     106.81957
+	            B(9,3,10)     108.19963       -0.00001        0.01068     108.21031
+	            B(9,3,11)     108.20949       -0.00001        0.02350     108.23299
+	           B(10,3,11)     108.15339        0.00003        0.03090     108.18430
+	           B(12,4,13)     108.19963       -0.00001        0.01068     108.21031
+	           B(12,4,14)     108.20949       -0.00001        0.02350     108.23299
+	           B(13,4,14)     108.15339        0.00003        0.03090     108.18430
+	           D(1,2,3,9)     180.39194        0.00001        0.13877     180.53071
+	          D(1,2,3,10)      60.33596       -0.00001        0.03174      60.36770
+	          D(1,2,3,11)     -59.56055        0.00002        0.21664     -59.34392
+	          D(2,1,4,12)     180.39194        0.00001        0.13877     180.53071
+	          D(2,1,4,13)      60.33596       -0.00001        0.03174      60.36770
+	          D(2,1,4,14)     -59.56055        0.00002        0.21664     -59.34392
+	          *D(3,2,1,4)     120.00000        0.00000        0.00000     120.00000
+	           D(3,2,1,5)      -1.28262        0.00001        0.06354      -1.21908
+	           D(3,2,1,6)    -118.26869       -0.00001        0.00169    -118.26700
+	           D(4,1,2,7)      -1.28262        0.00001        0.06354      -1.21908
+	           D(4,1,2,8)    -118.26869       -0.00001        0.00169    -118.26700
+	           D(5,1,2,7)    -122.56524        0.00001        0.12708    -122.43816
+	           D(5,1,2,8)     120.44869       -0.00000        0.06523     120.51392
+	          D(5,1,4,12)     -58.16195        0.00002        0.23512     -57.92684
+	          D(5,1,4,13)     181.78207        0.00001        0.12808     181.91015
+	          D(5,1,4,14)      61.88556        0.00003        0.31298      62.19854
+	           D(6,1,2,7)     120.44869       -0.00000        0.06523     120.51392
+	           D(6,1,2,8)       3.46262       -0.00001        0.00338       3.46600
+	          D(6,1,4,12)      58.41250       -0.00002       -0.10158      58.31092
+	          D(6,1,4,13)     -61.64348       -0.00004       -0.20862     -61.85209
+	          D(6,1,4,14)     178.46001       -0.00002       -0.02372     178.43629
+	           D(7,2,3,9)     -58.16195        0.00002        0.23512     -57.92684
+	          D(7,2,3,10)     181.78207        0.00001        0.12808     181.91015
+	          D(7,2,3,11)      61.88556        0.00003        0.31298      62.19854
+	           D(8,2,3,9)      58.41250       -0.00002       -0.10158      58.31092
+	          D(8,2,3,10)     -61.64348       -0.00004       -0.20862     -61.85209
+	          D(8,2,3,11)     178.46001       -0.00002       -0.02372     178.43629
+	-------------------------------------------------------------------------------
+
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   
+	----------------------------------------------------------------------------------------------
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+	----------------------------------------------------------------------------------------------
+	     3    -156.42668605   -1.71e-04      1.72e-03      5.87e-04 o    5.46e-03      2.75e-03 o  ~
+	----------------------------------------------------------------------------------------------
+
+Next Geometry in Ang 
+	Fragment 1 (Ang)
+
+	    C  -0.0018191393   0.7792149001   0.3689350101
+	    C   0.0018191393  -0.7792149001   0.3689350101
+	    C   1.2371085788  -1.3653699079  -0.3434676781
+	    C  -1.2371085788   1.3653699079  -0.3434676781
+	    H   0.8938533571   1.1431464181  -0.1235421106
+	    H   0.0281493275   1.1489156613   1.3879621097
+	    H  -0.8938533571  -1.1431464181  -0.1235421106
+	    H  -0.0281493275  -1.1489156613   1.3879621097
+	    H   1.2126603667  -2.4501085372  -0.3387171199
+	    H   2.1490554926  -1.0445859486   0.1493050723
+	    H   1.2740920039  -1.0310714804  -1.3753049817
+	    H  -1.2126603667   2.4501085372  -0.3387171199
+	    H  -2.1490554926   1.0445859486   0.1493050723
+	    H  -1.2740920039   1.0310714804  -1.3753049817
+
+
+    Structure for next step:
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    C       
+    C             1    1.558434
+    C             2    1.541764      1  112.460982
+    C             1    1.541764      2  112.460982      3  120.000000
+    H             1    1.084993      2  109.481039      4 -121.219082
+    H             1    1.084432      5  106.819573      2  118.988968
+    H             2    1.084993      1  109.481039      3 -121.219082
+    H             2    1.084432      7  106.819573      1  118.988968
+    H             3    1.085025      2  111.100694      8   58.310918
+    H             3    1.085069      9  108.210305      2  121.545413
+    H             3    1.085270      9  108.232991     10  117.017927
+    H             4    1.085025      1  111.100694      6   58.310918
+    H             4    1.085069     12  108.210305      1  121.545413
+    H             4    1.085270     12  108.232991     13  117.017927
+
+
+Scratch directory: /Users/blink/PSI4_SCRATCH/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, 4
+    Auxiliary basis highest AM E, G, H:  7, 7, 6
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 10:55:38 2026
+
+   => Loading Basis Set <=
+
+    Name: 3-21G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-4  entry C          line    68 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+    atoms 5-14 entry H          line    21 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        4 Threads,   3814 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            0.000000000000     0.779217023558     0.368833040076    12.000000000000
+         C            0.000000000000    -0.779217023559     0.368833040076    12.000000000000
+         C            1.233917651354    -1.368254307815    -0.343569648091    12.000000000000
+         C           -1.233917651354     1.368254307815    -0.343569648091    12.000000000000
+         H            0.896519680362     1.141056536692    -0.123644080615     1.007825032230
+         H            0.030831478674     1.148846813657     1.387860139642     1.007825032230
+         H           -0.896519680362    -1.141056536692    -0.123644080615     1.007825032230
+         H           -0.030831478674    -1.148846813658     1.387860139642     1.007825032230
+         H            1.206937104085    -2.452932904925    -0.338819089907     1.007825032230
+         H            2.146610973683    -1.049600229611     0.149203102301     1.007825032230
+         H            1.271681419838    -1.034043131792    -1.375406951711     1.007825032230
+         H           -1.206937104084     2.452932904925    -0.338819089907     1.007825032230
+         H           -2.146610973683     1.049600229611     0.149203102302     1.007825032230
+         H           -1.271681419838     1.034043131792    -1.375406951711     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.59772  B =      0.12493  C =      0.12493 [cm^-1]
+  Rotational constants: A =  17919.16930  B =   3745.31064  C =   3745.24790 [MHz]
+  Nuclear repulsion =  130.674571271676285
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 34
+  Nalpha       = 17
+  Nbeta        = 17
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is READ.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 3-21G
+    Blend: 3-21G
+    Number of shells: 40
+    Number of basis functions: 56
+    Number of Cartesian functions: 56
+    Spherical Harmonics?: false
+    Max angular momentum: 1
+
+   => Loading Basis Set <=
+
+    Name: 3-21G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-4  entry C          line    68 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+    atoms 5-14 entry H          line    21 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+
+  Reading orbitals from file /Users/blink/PSI4_SCRATCH/butane_eclipsed.default.54365.180.npy, no projection.
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                  14
+      Number of AO shells:              40
+      Number of primitives:             66
+      Number of atomic orbitals:        56
+      Number of basis functions:        56
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 4
+
+  Performing in-core PK
+  Using 2548812 doubles for integral storage.
+  We computed 313476 shell quartets total.
+  Whereas there are 336610 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:             2861
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              4
+
+  Minimum eigenvalue in the overlap matrix is 1.2802636812E-02.
+  Reciprocal condition number of the overlap matrix is 2.7081164470E-03.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Orbitals guess was supplied from a previous computation.
+
+   -------------------------------------------------------
+    Irrep   Nso     Nmo     Nalpha   Nbeta   Ndocc  Nsocc
+   -------------------------------------------------------
+     A         56      56      17      17      17       0
+   -------------------------------------------------------
+    Total      56      56      17      17      17       0
+   -------------------------------------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter   0:  -156.42159710749323   -1.56422e+02   1.71664e-04 
+   @RHF iter   1:  -156.42672433081702   -5.12722e-03   2.22564e-05 DIIS
+   @RHF iter   2:  -156.42672535777746   -1.02696e-06   7.60472e-06 DIIS
+   @RHF iter   3:  -156.42672547357955   -1.15802e-07   2.30242e-06 DIIS
+   @RHF iter   4:  -156.42672548931921   -1.57397e-08   2.75750e-07 DIIS
+   @RHF iter   5:  -156.42672548964336   -3.24150e-10   5.02609e-08 DIIS
+   @RHF iter   6:  -156.42672548965092   -7.56017e-12   1.48376e-08 DIIS
+   @RHF iter   7:  -156.42672548965137   -4.54747e-13   2.51740e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.157383     2A    -11.157109     3A    -11.149546  
+       4A    -11.149520     5A     -1.066731     6A     -0.981012  
+       7A     -0.864945     8A     -0.791659     9A     -0.631596  
+      10A     -0.600506    11A     -0.581426    12A     -0.551401  
+      13A     -0.507837    14A     -0.507661    15A     -0.462786  
+      16A     -0.454450    17A     -0.447694  
+
+    Virtual:                                                              
+
+      18A      0.265756    19A      0.304382    20A      0.312448  
+      21A      0.322169    22A      0.344018    23A      0.350452  
+      24A      0.355219    25A      0.361577    26A      0.380636  
+      27A      0.384804    28A      0.441091    29A      0.470829  
+      30A      0.487167    31A      0.886593    32A      0.916467  
+      33A      0.936059    34A      0.977788    35A      1.024561  
+      36A      1.032002    37A      1.066601    38A      1.086251  
+      39A      1.111665    40A      1.138003    41A      1.271056  
+      42A      1.307985    43A      1.313273    44A      1.368369  
+      45A      1.368926    46A      1.377891    47A      1.378650  
+      48A      1.415298    49A      1.427158    50A      1.442733  
+      51A      1.487582    52A      1.502422    53A      1.893988  
+      54A      2.066827    55A      2.360239    56A      2.577035  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    17 ]
+    NA   [    17 ]
+    NB   [    17 ]
+
+  @RHF Final Energy:  -156.42672548965137
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            130.6745712716762853
+    One-Electron Energy =                -468.0760734867578776
+    Two-Electron Energy =                 180.9747767254301891
+    Total Energy =                       -156.4267254896513748
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :         -0.0000000            0.0000000            0.0000000
+ Dipole Y            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Z            :          0.5805962           -0.5639945            0.0166017
+ Magnitude           :                                                    0.0166017
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 10:55:38 2026
+Module time:
+	user time   =       0.52 seconds =       0.01 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =      38.59 seconds =       0.64 minutes
+	system time =       0.87 seconds =       0.01 minutes
+	total time  =       2744 seconds =      45.73 minutes
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 10:55:38 2026
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            0.000000000000     0.779217023558     0.368833040076    12.000000000000
+         C            0.000000000000    -0.779217023559     0.368833040076    12.000000000000
+         C            1.233917651354    -1.368254307815    -0.343569648091    12.000000000000
+         C           -1.233917651354     1.368254307815    -0.343569648091    12.000000000000
+         H            0.896519680362     1.141056536692    -0.123644080615     1.007825032230
+         H            0.030831478674     1.148846813657     1.387860139642     1.007825032230
+         H           -0.896519680362    -1.141056536692    -0.123644080615     1.007825032230
+         H           -0.030831478674    -1.148846813658     1.387860139642     1.007825032230
+         H            1.206937104085    -2.452932904925    -0.338819089907     1.007825032230
+         H            2.146610973683    -1.049600229611     0.149203102301     1.007825032230
+         H            1.271681419838    -1.034043131792    -1.375406951711     1.007825032230
+         H           -1.206937104084     2.452932904925    -0.338819089907     1.007825032230
+         H           -2.146610973683     1.049600229611     0.149203102302     1.007825032230
+         H           -1.271681419838     1.034043131792    -1.375406951711     1.007825032230
+
+  Nuclear repulsion =  130.674571271676285
+
+  ==> Basis Set <==
+
+  Basis Set: 3-21G
+    Blend: 3-21G
+    Number of shells: 40
+    Number of basis functions: 56
+    Number of Cartesian functions: 56
+    Spherical Harmonics?: false
+    Max angular momentum: 1
+
+  ==> DirectJKGrad: Integral-Direct SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           4
+    Schwarz Cutoff:          1E-12
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000108390353     0.000268684745    -0.000107861834
+       2       -0.000108390353    -0.000268684745    -0.000107861834
+       3       -0.000071988023     0.000147524663     0.000058336732
+       4        0.000071988023    -0.000147524663     0.000058336732
+       5        0.000024272905     0.000092966105    -0.000035630452
+       6       -0.000031395382     0.000074324006     0.000069748987
+       7       -0.000024272905    -0.000092966105    -0.000035630452
+       8        0.000031395382    -0.000074324006     0.000069748987
+       9       -0.000069052014    -0.000249484094     0.000028947022
+      10        0.000110614076     0.000088376873     0.000119331510
+      11       -0.000030251814     0.000080899087    -0.000132871965
+      12        0.000069052014     0.000249484094     0.000028947022
+      13       -0.000110614076    -0.000088376873     0.000119331510
+      14        0.000030251814    -0.000080899087    -0.000132871965
+
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 10:55:38 2026
+Module time:
+	user time   =       0.23 seconds =       0.00 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =      38.82 seconds =       0.65 minutes
+	system time =       0.87 seconds =       0.01 minutes
+	total time  =       2744 seconds =      45.73 minutes
+
+    			-----------------------------------------
+
+    			 OPTKING 3.0: for geometry optimizations 
+
+    			     By R.A. King, Bethel University     
+
+    			        with contributions from          
+
+    			    A.V. Copan, J. Cayton, A. Heide      
+
+    			-----------------------------------------
+
+    
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       6.000000            12.000000          0.00000000  1.47250677  0.69699343   
+	       6.000000            12.000000          0.00000000 -1.47250677  0.69699343   
+	       6.000000            12.000000          2.33176642 -2.58562591 -0.64925254   
+	       6.000000            12.000000         -2.33176642  2.58562591 -0.64925254   
+	       1.000000             1.007825          1.69417666  2.15628435 -0.23365345   
+	       1.000000             1.007825          0.05826305  2.17100584  2.62267556   
+	       1.000000             1.007825         -1.69417666 -2.15628435 -0.23365345   
+	       1.000000             1.007825         -0.05826305 -2.17100584  2.62267556   
+	       1.000000             1.007825          2.28078058 -4.63537139 -0.64027529   
+	       1.000000             1.007825          4.05650684 -1.98345698  0.28195300   
+	       1.000000             1.007825          2.40312960 -1.95405832 -2.59914245   
+	       1.000000             1.007825         -2.28078058  4.63537139 -0.64027529   
+	       1.000000             1.007825         -4.05650684  1.98345698  0.28195300   
+	       1.000000             1.007825         -2.40312960  1.95405832 -2.59914245   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         2.945014           1.558434
+	 R(1,4)           =         2.913511           1.541764
+	 R(1,5)           =         2.050339           1.084993
+	 R(1,6)           =         2.049280           1.084432
+	 R(2,3)           =         2.913511           1.541764
+	 R(2,7)           =         2.050339           1.084993
+	 R(2,8)           =         2.049280           1.084432
+	 R(3,9)           =         2.050399           1.085025
+	 R(3,10)          =         2.050483           1.085069
+	 R(3,11)          =         2.050863           1.085270
+	 R(4,12)          =         2.050399           1.085025
+	 R(4,13)          =         2.050483           1.085069
+	 R(4,14)          =         2.050863           1.085270
+	 B(1,2,3)         =         1.962814         112.460982
+	 B(1,2,7)         =         1.910805         109.481039
+	 B(1,2,8)         =         1.918618         109.928731
+	 B(1,4,12)        =         1.939073         111.100694
+	 B(1,4,13)        =         1.929590         110.557335
+	 B(1,4,14)        =         1.927849         110.457622
+	 B(2,1,4)         =         1.962814         112.460982
+	 B(2,1,5)         =         1.910805         109.481039
+	 B(2,1,6)         =         1.918618         109.928731
+	 B(2,3,9)         =         1.939073         111.100694
+	 B(2,3,10)        =         1.929590         110.557335
+	 B(2,3,11)        =         1.927849         110.457622
+	 B(3,2,7)         =         1.900918         108.914579
+	 B(3,2,8)         =         1.903640         109.070532
+	 B(4,1,5)         =         1.900918         108.914579
+	 B(4,1,6)         =         1.903640         109.070532
+	 B(5,1,6)         =         1.864353         106.819573
+	 B(7,2,8)         =         1.864353         106.819573
+	 B(9,3,10)        =         1.888626         108.210305
+	 B(9,3,11)        =         1.889022         108.232991
+	 B(10,3,11)       =         1.888172         108.184298
+	 B(12,4,13)       =         1.888626         108.210305
+	 B(12,4,14)       =         1.889022         108.232991
+	 B(13,4,14)       =         1.888172         108.184298
+	 D(1,2,3,9)       =         3.150855         180.530709
+	 D(1,2,3,10)      =         1.053615          60.367697
+	 D(1,2,3,11)      =        -1.035747         -59.343916
+	 D(2,1,4,12)      =         3.150855         180.530709
+	 D(2,1,4,13)      =         1.053615          60.367697
+	 D(2,1,4,14)      =        -1.035747         -59.343916
+	*D(3,2,1,4)       =         2.094395         120.000000
+	 D(3,2,1,5)       =        -0.021277          -1.219082
+	 D(3,2,1,6)       =        -2.064149        -118.266999
+	 D(4,1,2,7)       =        -0.021277          -1.219082
+	 D(4,1,2,8)       =        -2.064149        -118.266999
+	 D(5,1,2,7)       =        -2.136949        -122.438164
+	 D(5,1,2,8)       =         2.103365         120.513919
+	 D(5,1,4,12)      =        -1.011014         -57.926835
+	 D(5,1,4,13)      =         3.174931         181.910153
+	 D(5,1,4,14)      =         1.085569          62.198540
+	 D(6,1,2,7)       =         2.103365         120.513919
+	 D(6,1,2,8)       =         0.060493           3.466002
+	 D(6,1,4,12)      =         1.017718          58.310918
+	 D(6,1,4,13)      =        -1.079523         -61.852094
+	 D(6,1,4,14)      =         3.114301         178.436293
+	 D(7,2,3,9)       =        -1.011014         -57.926835
+	 D(7,2,3,10)      =         3.174931         181.910153
+	 D(7,2,3,11)      =         1.085569          62.198540
+	 D(8,2,3,9)       =         1.017718          58.310918
+	 D(8,2,3,10)      =        -1.079523         -61.852094
+	 D(8,2,3,11)      =         3.114301         178.436293
+
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       1.55843       -0.00304       -0.00066       1.55777
+	               R(1,4)       1.54176        0.00089        0.00017       1.54193
+	               R(1,5)       1.08499       -0.00055       -0.00009       1.08490
+	               R(1,6)       1.08443       -0.00074       -0.00013       1.08430
+	               R(2,3)       1.54176        0.00089        0.00017       1.54193
+	               R(2,7)       1.08499       -0.00055       -0.00009       1.08490
+	               R(2,8)       1.08443       -0.00074       -0.00013       1.08430
+	               R(3,9)       1.08502       -0.00207       -0.00041       1.08462
+	              R(3,10)       1.08507       -0.00143       -0.00029       1.08478
+	              R(3,11)       1.08527       -0.00124       -0.00025       1.08502
+	              R(4,12)       1.08502       -0.00207       -0.00041       1.08462
+	              R(4,13)       1.08507       -0.00143       -0.00029       1.08478
+	              R(4,14)       1.08527       -0.00124       -0.00025       1.08502
+	             B(1,2,3)     112.46098        0.00001        0.02822     112.48921
+	             B(1,2,7)     109.48104       -0.00001       -0.04225     109.43879
+	             B(1,2,8)     109.92873       -0.00000       -0.02303     109.90570
+	            B(1,4,12)     111.10069        0.00001        0.02466     111.12535
+	            B(1,4,13)     110.55734        0.00001        0.02116     110.57850
+	            B(1,4,14)     110.45762        0.00000        0.00935     110.46697
+	             B(2,1,4)     112.46098        0.00001        0.02822     112.48921
+	             B(2,1,5)     109.48104       -0.00001       -0.04225     109.43879
+	             B(2,1,6)     109.92873       -0.00000       -0.02303     109.90570
+	             B(2,3,9)     111.10069        0.00001        0.02466     111.12535
+	            B(2,3,10)     110.55734        0.00001        0.02116     110.57850
+	            B(2,3,11)     110.45762        0.00000        0.00935     110.46697
+	             B(3,2,7)     108.91458        0.00000        0.01716     108.93174
+	             B(3,2,8)     109.07053        0.00000        0.02226     109.09279
+	             B(4,1,5)     108.91458        0.00000        0.01716     108.93174
+	             B(4,1,6)     109.07053        0.00000        0.02226     109.09279
+	             B(5,1,6)     106.81957        0.00000       -0.00348     106.81609
+	             B(7,2,8)     106.81957        0.00000       -0.00348     106.81609
+	            B(9,3,10)     108.21031       -0.00001       -0.02264     108.18767
+	            B(9,3,11)     108.23299       -0.00000       -0.01956     108.21343
+	           B(10,3,11)     108.18430       -0.00000       -0.01544     108.16886
+	           B(12,4,13)     108.21031       -0.00001       -0.02264     108.18767
+	           B(12,4,14)     108.23299       -0.00000       -0.01956     108.21343
+	           B(13,4,14)     108.18430       -0.00000       -0.01544     108.16886
+	           D(1,2,3,9)     180.53071        0.00000       -0.06017     180.47054
+	          D(1,2,3,10)      60.36770        0.00000       -0.06199      60.30570
+	          D(1,2,3,11)     -59.34392        0.00000       -0.06239     -59.40631
+	          D(2,1,4,12)     180.53071        0.00000       -0.06017     180.47054
+	          D(2,1,4,13)      60.36770        0.00000       -0.06199      60.30570
+	          D(2,1,4,14)     -59.34392        0.00000       -0.06239     -59.40631
+	          *D(3,2,1,4)     120.00000        0.00000        0.00000     120.00000
+	           D(3,2,1,5)      -1.21908       -0.00000       -0.01104      -1.23013
+	           D(3,2,1,6)    -118.26700        0.00000        0.03136    -118.23563
+	           D(4,1,2,7)      -1.21908       -0.00000       -0.01104      -1.23013
+	           D(4,1,2,8)    -118.26700        0.00000        0.03136    -118.23563
+	           D(5,1,2,7)    -122.43816       -0.00000       -0.02209    -122.46025
+	           D(5,1,2,8)     120.51392        0.00000        0.02032     120.53424
+	          D(5,1,4,12)     -57.92684       -0.00000       -0.08318     -58.01001
+	          D(5,1,4,13)     181.91015       -0.00000       -0.08500     181.82515
+	          D(5,1,4,14)      62.19854       -0.00000       -0.08540      62.11314
+	           D(6,1,2,7)     120.51392        0.00000        0.02032     120.53424
+	           D(6,1,2,8)       3.46600        0.00000        0.06273       3.52873
+	          D(6,1,4,12)      58.31092        0.00000       -0.06551      58.24541
+	          D(6,1,4,13)     -61.85209        0.00000       -0.06733     -61.91942
+	          D(6,1,4,14)     178.43629        0.00000       -0.06773     178.36857
+	           D(7,2,3,9)     -57.92684       -0.00000       -0.08318     -58.01001
+	          D(7,2,3,10)     181.91015       -0.00000       -0.08500     181.82515
+	          D(7,2,3,11)      62.19854       -0.00000       -0.08540      62.11314
+	           D(8,2,3,9)      58.31092        0.00000       -0.06551      58.24541
+	          D(8,2,3,10)     -61.85209        0.00000       -0.06733     -61.91942
+	          D(8,2,3,11)     178.43629        0.00000       -0.06773     178.36857
+	-------------------------------------------------------------------------------
+
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   
+	----------------------------------------------------------------------------------------------
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+	----------------------------------------------------------------------------------------------
+	     4    -156.42672549   -3.94e-05      3.69e-04      9.00e-05 o    1.49e-03      7.74e-04 o  ~
+	----------------------------------------------------------------------------------------------
+
+Next Geometry in Ang 
+	Fragment 1 (Ang)
+
+	    C  -0.0001563240   0.7788858833   0.3688308358
+	    C   0.0001563240  -0.7788858833   0.3688308358
+	    C   1.2340768852  -1.3684423553  -0.3435052030
+	    C  -1.2340768852   1.3684423553  -0.3435052030
+	    H   0.8965422992   1.1401200219  -0.1235594204
+	    H   0.0311596845   1.1480679233   1.3878670903
+	    H  -0.8965422992  -1.1401200219  -0.1235594204
+	    H  -0.0311596845  -1.1480679233   1.3878670903
+	    H   1.2077945683  -2.4527263730  -0.3377994232
+	    H   2.1468615669  -1.0492826978   0.1481395922
+	    H   1.2714590823  -1.0355438761  -1.3755169599
+	    H  -1.2077945683   2.4527263730  -0.3377994232
+	    H  -2.1468615669   1.0492826978   0.1481395922
+	    H  -1.2714590823   1.0355438761  -1.3755169599
+
+
+    Structure for next step:
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    C       
+    C             1    1.557772
+    C             2    1.541934      1  112.489207
+    C             1    1.541934      2  112.489207      3  120.000000
+    H             1    1.084899      2  109.438793      4 -121.230125
+    H             1    1.084302      5  106.816093      2  118.936707
+    H             2    1.084899      1  109.438793      3 -121.230125
+    H             2    1.084302      7  106.816093      1  118.936707
+    H             3    1.084618      2  111.125351      8   58.245409
+    H             3    1.084783      9  108.187666      2  121.572183
+    H             3    1.085019      9  108.213428     10  116.977021
+    H             4    1.084618      1  111.125351      6   58.245409
+    H             4    1.084783     12  108.187666      1  121.572183
+    H             4    1.085019     12  108.213428     13  116.977021
+
+
+Scratch directory: /Users/blink/PSI4_SCRATCH/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, 4
+    Auxiliary basis highest AM E, G, H:  7, 7, 6
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 10:55:38 2026
+
+   => Loading Basis Set <=
+
+    Name: 3-21G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-4  entry C          line    68 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+    atoms 5-14 entry H          line    21 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        4 Threads,   3814 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            0.000000000000     0.778885899028     0.368807275783    12.000000000000
+         C            0.000000000000    -0.778885899028     0.368807275783    12.000000000000
+         C            1.233802211236    -1.368690009457    -0.343528763001    12.000000000000
+         C           -1.233802211237     1.368690009457    -0.343528763001    12.000000000000
+         H            0.896771105477     1.139940061134    -0.123582980395     1.007825032230
+         H            0.031390103431     1.148061646316     1.387843530314     1.007825032230
+         H           -0.896771105477    -1.139940061134    -0.123582980395     1.007825032230
+         H           -0.031390103430    -1.148061646316     1.387843530314     1.007825032230
+         H            1.207302276849    -2.452968730349    -0.337822983228     1.007825032230
+         H            2.146650930537    -1.049713556110     0.148116032183     1.007825032230
+         H            1.271251220957    -1.035799039620    -1.375540519899     1.007825032230
+         H           -1.207302276849     2.452968730349    -0.337822983227     1.007825032230
+         H           -2.146650930537     1.049713556111     0.148116032184     1.007825032230
+         H           -1.271251220958     1.035799039620    -1.375540519899     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.59804  B =      0.12492  C =      0.12491 [cm^-1]
+  Rotational constants: A =  17928.91135  B =   3744.97902  C =   3744.75652 [MHz]
+  Nuclear repulsion =  130.684778077024959
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 34
+  Nalpha       = 17
+  Nbeta        = 17
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is READ.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 3-21G
+    Blend: 3-21G
+    Number of shells: 40
+    Number of basis functions: 56
+    Number of Cartesian functions: 56
+    Spherical Harmonics?: false
+    Max angular momentum: 1
+
+   => Loading Basis Set <=
+
+    Name: 3-21G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-4  entry C          line    68 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+    atoms 5-14 entry H          line    21 file /Users/blink/miniconda3/envs/psi4/share/psi4/basis/3-21g.gbs 
+
+  Reading orbitals from file /Users/blink/PSI4_SCRATCH/butane_eclipsed.default.54365.180.npy, no projection.
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                  14
+      Number of AO shells:              40
+      Number of primitives:             66
+      Number of atomic orbitals:        56
+      Number of basis functions:        56
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 4
+
+  Performing in-core PK
+  Using 2548812 doubles for integral storage.
+  We computed 313482 shell quartets total.
+  Whereas there are 336610 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:             2861
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              4
+
+  Minimum eigenvalue in the overlap matrix is 1.2791152967E-02.
+  Reciprocal condition number of the overlap matrix is 2.7052294713E-03.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Orbitals guess was supplied from a previous computation.
+
+   -------------------------------------------------------
+    Irrep   Nso     Nmo     Nalpha   Nbeta   Ndocc  Nsocc
+   -------------------------------------------------------
+     A         56      56      17      17      17       0
+   -------------------------------------------------------
+    Total      56      56      17      17      17       0
+   -------------------------------------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter   0:  -156.42760512569646   -1.56428e+02   3.60298e-05 
+   @RHF iter   1:  -156.42672620771319    8.78918e-04   4.90403e-06 DIIS
+   @RHF iter   2:  -156.42672627749306   -6.97799e-08   1.46439e-06 DIIS
+   @RHF iter   3:  -156.42672628474216   -7.24910e-09   4.62138e-07 DIIS
+   @RHF iter   4:  -156.42672628523616   -4.93998e-10   7.18061e-08 DIIS
+   @RHF iter   5:  -156.42672628525861   -2.24532e-11   9.22130e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.157303     2A    -11.157027     3A    -11.149451  
+       4A    -11.149425     5A     -1.066805     6A     -0.981006  
+       7A     -0.865196     8A     -0.791690     9A     -0.631652  
+      10A     -0.600546    11A     -0.581404    12A     -0.551476  
+      13A     -0.507925    14A     -0.507755    15A     -0.462726  
+      16A     -0.454420    17A     -0.447860  
+
+    Virtual:                                                              
+
+      18A      0.265813    19A      0.304502    20A      0.312455  
+      21A      0.322165    22A      0.344096    23A      0.350538  
+      24A      0.355305    25A      0.361708    26A      0.380668  
+      27A      0.384809    28A      0.441323    29A      0.470991  
+      30A      0.487286    31A      0.886448    32A      0.916473  
+      33A      0.935772    34A      0.977576    35A      1.024633  
+      36A      1.031978    37A      1.066954    38A      1.086319  
+      39A      1.111530    40A      1.138116    41A      1.271462  
+      42A      1.308029    43A      1.313405    44A      1.368606  
+      45A      1.369072    46A      1.378140    47A      1.378884  
+      48A      1.415759    49A      1.427120    50A      1.442896  
+      51A      1.487869    52A      1.502207    53A      1.894091  
+      54A      2.066816    55A      2.360059    56A      2.577512  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    17 ]
+    NA   [    17 ]
+    NB   [    17 ]
+
+  @RHF Final Energy:  -156.42672628525861
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            130.6847780770249585
+    One-Electron Energy =                -468.0956750477103014
+    Two-Electron Energy =                 180.9841706854267613
+    Total Energy =                       -156.4267262852586100
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Y            :         -0.0000000            0.0000000            0.0000000
+ Dipole Z            :          0.5807474           -0.5643321            0.0164153
+ Magnitude           :                                                    0.0164153
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 10:55:39 2026
+Module time:
+	user time   =       0.56 seconds =       0.01 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =      39.49 seconds =       0.66 minutes
+	system time =       0.88 seconds =       0.01 minutes
+	total time  =       2745 seconds =      45.75 minutes
+
+*** tstart() called on MonkeyBook.local
+*** at Thu Nov  5 10:55:39 2026
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            0.000000000000     0.778885899028     0.368807275783    12.000000000000
+         C            0.000000000000    -0.778885899028     0.368807275783    12.000000000000
+         C            1.233802211236    -1.368690009457    -0.343528763001    12.000000000000
+         C           -1.233802211237     1.368690009457    -0.343528763001    12.000000000000
+         H            0.896771105477     1.139940061134    -0.123582980395     1.007825032230
+         H            0.031390103431     1.148061646316     1.387843530314     1.007825032230
+         H           -0.896771105477    -1.139940061134    -0.123582980395     1.007825032230
+         H           -0.031390103430    -1.148061646316     1.387843530314     1.007825032230
+         H            1.207302276849    -2.452968730349    -0.337822983228     1.007825032230
+         H            2.146650930537    -1.049713556110     0.148116032183     1.007825032230
+         H            1.271251220957    -1.035799039620    -1.375540519899     1.007825032230
+         H           -1.207302276849     2.452968730349    -0.337822983227     1.007825032230
+         H           -2.146650930537     1.049713556111     0.148116032184     1.007825032230
+         H           -1.271251220958     1.035799039620    -1.375540519899     1.007825032230
+
+  Nuclear repulsion =  130.684778077024959
+
+  ==> Basis Set <==
+
+  Basis Set: 3-21G
+    Blend: 3-21G
+    Number of shells: 40
+    Number of basis functions: 56
+    Number of Cartesian functions: 56
+    Spherical Harmonics?: false
+    Max angular momentum: 1
+
+  ==> DirectJKGrad: Integral-Direct SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           4
+    Schwarz Cutoff:          1E-12
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000018346927     0.000037057573    -0.000025918981
+       2       -0.000018346927    -0.000037057573    -0.000025918981
+       3        0.000081130385    -0.000012773746     0.000002287889
+       4       -0.000081130385     0.000012773746     0.000002287889
+       5        0.000013788188    -0.000056414491     0.000011809061
+       6        0.000007785140    -0.000030848610     0.000006975510
+       7       -0.000013788188     0.000056414491     0.000011809061
+       8       -0.000007785140     0.000030848610     0.000006975510
+       9        0.000013110402     0.000040143293    -0.000005924885
+      10       -0.000029758129    -0.000016596583    -0.000025132095
+      11        0.000002880229    -0.000016908908     0.000035903501
+      12       -0.000013110402    -0.000040143293    -0.000005924885
+      13        0.000029758129     0.000016596583    -0.000025132095
+      14       -0.000002880229     0.000016908908     0.000035903501
+
+
+*** tstop() called on MonkeyBook.local at Thu Nov  5 10:55:39 2026
+Module time:
+	user time   =       0.20 seconds =       0.00 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =      39.69 seconds =       0.66 minutes
+	system time =       0.89 seconds =       0.01 minutes
+	total time  =       2745 seconds =      45.75 minutes
+
+    			-----------------------------------------
+
+    			 OPTKING 3.0: for geometry optimizations 
+
+    			     By R.A. King, Bethel University     
+
+    			        with contributions from          
+
+    			    A.V. Copan, J. Cayton, A. Heide      
+
+    			-----------------------------------------
+
+    
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       6.000000            12.000000          0.00000000  1.47188103  0.69694474   
+	       6.000000            12.000000          0.00000000 -1.47188103  0.69694474   
+	       6.000000            12.000000          2.33154827 -2.58644927 -0.64917528   
+	       6.000000            12.000000         -2.33154827  2.58644927 -0.64917528   
+	       1.000000             1.007825          1.69465179  2.15417451 -0.23353799   
+	       1.000000             1.007825          0.05931870  2.16952209  2.62264418   
+	       1.000000             1.007825         -1.69465179 -2.15417451 -0.23353799   
+	       1.000000             1.007825         -0.05931870 -2.16952209  2.62264418   
+	       1.000000             1.007825          2.28147065 -4.63543909 -0.63839292   
+	       1.000000             1.007825          4.05658235 -1.98367113  0.27989874   
+	       1.000000             1.007825          2.40231664 -1.95737651 -2.59939486   
+	       1.000000             1.007825         -2.28147065  4.63543909 -0.63839292   
+	       1.000000             1.007825         -4.05658235  1.98367113  0.27989874   
+	       1.000000             1.007825         -2.40231664  1.95737651 -2.59939486   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         2.943762           1.557772
+	 R(1,4)           =         2.913832           1.541934
+	 R(1,5)           =         2.050163           1.084899
+	 R(1,6)           =         2.049034           1.084302
+	 R(2,3)           =         2.913832           1.541934
+	 R(2,7)           =         2.050163           1.084899
+	 R(2,8)           =         2.049034           1.084302
+	 R(3,9)           =         2.049630           1.084618
+	 R(3,10)          =         2.049942           1.084783
+	 R(3,11)          =         2.050390           1.085019
+	 R(4,12)          =         2.049630           1.084618
+	 R(4,13)          =         2.049942           1.084783
+	 R(4,14)          =         2.050390           1.085019
+	 B(1,2,3)         =         1.963307         112.489207
+	 B(1,2,7)         =         1.910067         109.438793
+	 B(1,2,8)         =         1.918216         109.905704
+	 B(1,4,12)        =         1.939503         111.125351
+	 B(1,4,13)        =         1.929959         110.578498
+	 B(1,4,14)        =         1.928012         110.466975
+	 B(2,1,4)         =         1.963307         112.489207
+	 B(2,1,5)         =         1.910067         109.438793
+	 B(2,1,6)         =         1.918216         109.905704
+	 B(2,3,9)         =         1.939503         111.125351
+	 B(2,3,10)        =         1.929959         110.578498
+	 B(2,3,11)        =         1.928012         110.466975
+	 B(3,2,7)         =         1.901218         108.931741
+	 B(3,2,8)         =         1.904028         109.092794
+	 B(4,1,5)         =         1.901218         108.931741
+	 B(4,1,6)         =         1.904028         109.092794
+	 B(5,1,6)         =         1.864293         106.816093
+	 B(7,2,8)         =         1.864293         106.816093
+	 B(9,3,10)        =         1.888231         108.187666
+	 B(9,3,11)        =         1.888681         108.213428
+	 B(10,3,11)       =         1.887903         108.168856
+	 B(12,4,13)       =         1.888231         108.187666
+	 B(12,4,14)       =         1.888681         108.213428
+	 B(13,4,14)       =         1.887903         108.168856
+	 D(1,2,3,9)       =         3.149805         180.470537
+	 D(1,2,3,10)      =         1.052533          60.305705
+	 D(1,2,3,11)      =        -1.036836         -59.406306
+	 D(2,1,4,12)      =         3.149805         180.470537
+	 D(2,1,4,13)      =         1.052533          60.305705
+	 D(2,1,4,14)      =        -1.036836         -59.406306
+	*D(3,2,1,4)       =         2.094395         120.000000
+	 D(3,2,1,5)       =        -0.021470          -1.230125
+	 D(3,2,1,6)       =        -2.063601        -118.235635
+	 D(4,1,2,7)       =        -0.021470          -1.230125
+	 D(4,1,2,8)       =        -2.063601        -118.235635
+	 D(5,1,2,7)       =        -2.137335        -122.460250
+	 D(5,1,2,8)       =         2.103719         120.534240
+	 D(5,1,4,12)      =        -1.012466         -58.010015
+	 D(5,1,4,13)      =         3.173448         181.825153
+	 D(5,1,4,14)      =         1.084079          62.113142
+	 D(6,1,2,7)       =         2.103719         120.534240
+	 D(6,1,2,8)       =         0.061588           3.528730
+	 D(6,1,4,12)      =         1.016574          58.245409
+	 D(6,1,4,13)      =        -1.080698         -61.919423
+	 D(6,1,4,14)      =         3.113119         178.368566
+	 D(7,2,3,9)       =        -1.012466         -58.010015
+	 D(7,2,3,10)      =         3.173448         181.825153
+	 D(7,2,3,11)      =         1.084079          62.113142
+	 D(8,2,3,9)       =         1.016574          58.245409
+	 D(8,2,3,10)      =        -1.080698         -61.919423
+	 D(8,2,3,11)      =         3.113119         178.368566
+
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       1.55777        0.00036        0.00002       1.55779
+	               R(1,4)       1.54193       -0.00044       -0.00008       1.54186
+	               R(1,5)       1.08490        0.00010        0.00003       1.08493
+	               R(1,6)       1.08430        0.00003        0.00001       1.08431
+	               R(2,3)       1.54193       -0.00044       -0.00008       1.54186
+	               R(2,7)       1.08490        0.00010        0.00003       1.08493
+	               R(2,8)       1.08430        0.00003        0.00001       1.08431
+	               R(3,9)       1.08462        0.00033        0.00005       1.08467
+	              R(3,10)       1.08478        0.00034        0.00007       1.08485
+	              R(3,11)       1.08502        0.00032        0.00007       1.08508
+	              R(4,12)       1.08462        0.00033        0.00005       1.08467
+	              R(4,13)       1.08478        0.00034        0.00007       1.08485
+	              R(4,14)       1.08502        0.00032        0.00007       1.08508
+	             B(1,2,3)     112.48921       -0.00000        0.00070     112.48991
+	             B(1,2,7)     109.43879        0.00000        0.02075     109.45954
+	             B(1,2,8)     109.90570        0.00000        0.01099     109.91670
+	            B(1,4,12)     111.12535       -0.00000       -0.00551     111.11984
+	            B(1,4,13)     110.57850       -0.00000       -0.00132     110.57718
+	            B(1,4,14)     110.46697       -0.00000        0.00025     110.46722
+	             B(2,1,4)     112.48921       -0.00000        0.00070     112.48991
+	             B(2,1,5)     109.43879        0.00000        0.02075     109.45954
+	             B(2,1,6)     109.90570        0.00000        0.01099     109.91670
+	             B(2,3,9)     111.12535       -0.00000       -0.00551     111.11984
+	            B(2,3,10)     110.57850       -0.00000       -0.00132     110.57718
+	            B(2,3,11)     110.46697       -0.00000        0.00025     110.46722
+	             B(3,2,7)     108.93174       -0.00000       -0.01850     108.91324
+	             B(3,2,8)     109.09279       -0.00000       -0.00950     109.08329
+	             B(4,1,5)     108.93174       -0.00000       -0.01850     108.91324
+	             B(4,1,6)     109.09279       -0.00000       -0.00950     109.08329
+	             B(5,1,6)     106.81609       -0.00000       -0.00508     106.81102
+	             B(7,2,8)     106.81609       -0.00000       -0.00508     106.81102
+	            B(9,3,10)     108.18767        0.00000        0.00241     108.19008
+	            B(9,3,11)     108.21343        0.00000        0.00250     108.21593
+	           B(10,3,11)     108.16886        0.00000        0.00198     108.17084
+	           B(12,4,13)     108.18767        0.00000        0.00241     108.19008
+	           B(12,4,14)     108.21343        0.00000        0.00250     108.21593
+	           B(13,4,14)     108.16886        0.00000        0.00198     108.17084
+	           D(1,2,3,9)     180.47054       -0.00000        0.00993     180.48047
+	          D(1,2,3,10)      60.30570       -0.00000        0.01140      60.31710
+	          D(1,2,3,11)     -59.40631       -0.00000        0.00962     -59.39669
+	          D(2,1,4,12)     180.47054       -0.00000        0.00993     180.48047
+	          D(2,1,4,13)      60.30570       -0.00000        0.01140      60.31710
+	          D(2,1,4,14)     -59.40631       -0.00000        0.00962     -59.39669
+	          *D(3,2,1,4)     120.00000        0.00000        0.00000     120.00000
+	           D(3,2,1,5)      -1.23013        0.00000        0.00854      -1.22158
+	           D(3,2,1,6)    -118.23563       -0.00000       -0.00386    -118.23950
+	           D(4,1,2,7)      -1.23013        0.00000        0.00854      -1.22158
+	           D(4,1,2,8)    -118.23563       -0.00000       -0.00386    -118.23950
+	           D(5,1,2,7)    -122.46025        0.00000        0.01708    -122.44317
+	           D(5,1,2,8)     120.53424        0.00000        0.00468     120.53892
+	          D(5,1,4,12)     -58.01001        0.00000        0.02377     -57.98624
+	          D(5,1,4,13)     181.82515        0.00000        0.02524     181.85040
+	          D(5,1,4,14)      62.11314        0.00000        0.02346      62.13660
+	           D(6,1,2,7)     120.53424        0.00000        0.00468     120.53892
+	           D(6,1,2,8)       3.52873       -0.00000       -0.00773       3.52100
+	          D(6,1,4,12)      58.24541       -0.00000        0.00219      58.24760
+	          D(6,1,4,13)     -61.91942       -0.00000        0.00366     -61.91576
+	          D(6,1,4,14)     178.36857       -0.00000        0.00188     178.37045
+	           D(7,2,3,9)     -58.01001        0.00000        0.02377     -57.98624
+	          D(7,2,3,10)     181.82515        0.00000        0.02524     181.85040
+	          D(7,2,3,11)      62.11314        0.00000        0.02346      62.13660
+	           D(8,2,3,9)      58.24541       -0.00000        0.00219      58.24760
+	          D(8,2,3,10)     -61.91942       -0.00000        0.00366     -61.91576
+	          D(8,2,3,11)     178.36857       -0.00000        0.00188     178.37045
+	-------------------------------------------------------------------------------
+
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   
+	----------------------------------------------------------------------------------------------
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+	----------------------------------------------------------------------------------------------
+	     5    -156.42672629   -7.96e-07 *    5.29e-05 *    2.20e-05 o    4.41e-04 *    1.87e-04 o  ~
+	----------------------------------------------------------------------------------------------
+
+Next Geometry in Ang 
+	Fragment 1 (Ang)
+
+	    C  -0.0000081852   0.7788941235   0.3687974019
+	    C   0.0000081852  -0.7788941235   0.3687974019
+	    C   1.2337486996  -1.3686731871  -0.3434994378
+	    C  -1.2337486996   1.3686731871  -0.3434994378
+	    H   0.8965967110   1.1403385583  -0.1236776744
+	    H   0.0313075215   1.1482701303   1.3877768710
+	    H  -0.8965967110  -1.1403385583  -0.1236776744
+	    H  -0.0313075215  -1.1482701303   1.3877768710
+	    H   1.2070696842  -2.4530013925  -0.3378869646
+	    H   2.1466317797  -1.0498235115   0.1483103318
+	    H   1.2712960356  -1.0356351917  -1.3755289361
+	    H  -1.2070696842   2.4530013925  -0.3378869646
+	    H  -2.1466317797   1.0498235115   0.1483103318
+	    H  -1.2712960356   1.0356351917  -1.3755289361
+
+
+    Final optimized geometry and variables:
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    C       
+    C             1    1.557772
+    C             2    1.541934      1  112.489207
+    C             1    1.541934      2  112.489207      3  120.000000
+    H             1    1.084899      2  109.438793      4 -121.230125
+    H             1    1.084302      5  106.816093      2  118.936707
+    H             2    1.084899      1  109.438793      3 -121.230125
+    H             2    1.084302      7  106.816093      1  118.936707
+    H             3    1.084618      2  111.125351      8   58.245409
+    H             3    1.084783      9  108.187666      2  121.572183
+    H             3    1.085019      9  108.213428     10  116.977021
+    H             4    1.084618      1  111.125351      6   58.245409
+    H             4    1.084783     12  108.187666      1  121.572183
+    H             4    1.085019     12  108.213428     13  116.977021
+
