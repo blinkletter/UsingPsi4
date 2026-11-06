@@ -14,6 +14,7 @@ Close the notebooks in Jupyter before running, or Jupyter may save the
 old IDs back over the fixed files.
 """
 import argparse
+import json
 import sys
 import uuid
 from collections import Counter
@@ -67,6 +68,11 @@ def main():
     total = 0
 
     for path, nb in books.items():
+        # nbformat.read() quietly adds IDs to cells that have none, but only in
+        # memory. Count them in the raw file so the notebook is written back.
+        raw = json.loads(path.read_text())
+        missing = sum(1 for c in raw["cells"] if "id" not in c)
+
         changed = 0
         for cell in nb.cells:
             cid = cell.get("id")
@@ -80,11 +86,12 @@ def main():
             cell["id"] = new_id(used)
             changed += 1
 
-        if changed:
+        if changed or missing:
             nb.nbformat_minor = max(nb.nbformat_minor, 5)  # cell IDs need format 4.5+
             nbformat.write(nb, path)
-            total += changed
-            print(f"  fixed {path.relative_to(folder)}  ({changed} cell{'s' if changed != 1 else ''})")
+            n = changed if not args.duplicates_only else changed + missing  # full mode already counted them
+            total += n
+            print(f"  fixed {path.relative_to(folder)}  ({n} cell{'s' if n != 1 else ''})")
 
     print(f"\n{len(books)} notebook(s) checked, {total} cell ID(s) replaced.")
 
